@@ -1,0 +1,29 @@
+/**
+ * @fileview caption
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.caption {
+	
+}
+.caption > .avatar {
+	width: calc(130 / 32 * 1rem);
+	height: calc(130 / 32 * 1rem);
+	border: calc(2 / 32 * 1rem) solid #fff;
+	border-radius: calc(65 / 32 * 1rem);
+	margin: auto;
+	overflow: hidden;
+}
+.caption > .avatar > .logo {
+	width: calc(197 / 32 * 1rem);
+	height: calc(197 / 32 * 1rem);
+	margin-left: calc(-32 / 32 * 1rem);
+	margin-top: calc(-28 / 32 * 1rem);
+}
+.caption > .name {
+	padding-top: calc(24 / 32 * 1rem);
+	padding-bottom: calc(18 / 32 * 1rem);
+	color: #efefef;
+	text-align: center;
+}

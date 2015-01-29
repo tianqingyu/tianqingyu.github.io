@@ -1,0 +1,43 @@
+/**
+ * @fileview 站点css
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+/* 绝对定位布局 */
+#root {
+	position: relative;
+}
+#header,
+#footer,
+#content {
+	position: absolute;
+	width: 100%;
+}
+#header {
+	top: 0;
+	left: 0;
+}
+#footer {
+	bottom: 0;
+	left: 0;
+}
+#content {
+	top: calc(88 / 32 * 1rem);
+	left: 0;
+	height: calc(100% - 2.75rem - 3.0625rem);
+	overflow: auto;
+}
+#content.nofooter {
+	height: calc(100% - 2.75rem);
+}
+
+a {
+	text-decoration: none;
+}

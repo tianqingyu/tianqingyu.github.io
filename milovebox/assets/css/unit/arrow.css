@@ -1,0 +1,17 @@
+/**
+ * @fileview arrow
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.arrow {
+	display: inline-block;
+	width: calc(39 / 32 * 1rem);
+	height: calc(39 / 32 * 1rem);
+	text-indent: -999px;
+	background: transparent url(../../imgs/arrow-right.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.arrow.right {
+	background-image: url(../../imgs/arrow-right.png);
+}

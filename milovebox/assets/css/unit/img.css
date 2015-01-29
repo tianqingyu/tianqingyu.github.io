@@ -1,0 +1,28 @@
+/**
+ * @fileview img
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.img {
+	display: block;
+	background: transparent url(../../imgs/img.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+
+.img.img01 {
+	width: calc(280 / 32 * 1rem);
+	height: calc(200 / 32 * 1rem);
+}
+
+.img.img02 {
+	width: calc(166 / 32 * 1rem);
+	height: calc(62 / 32 * 1rem);
+	background-image: url(../../imgs/img-02.png);
+}
+
+.img.img03 {
+	width: calc(172 / 32 * 1rem);
+	height: calc(167 / 32 * 1rem);
+	background-image: url(../../imgs/img-03.png);
+}

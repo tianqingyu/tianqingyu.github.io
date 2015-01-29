@@ -1,0 +1,21 @@
+/**
+ * @fileview login
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+@import url(../../global/global.css);
+@import url(../../global/site.css);
+
+.mod-login .login1 {
+	width: calc(402 / 32 * 1rem);
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(76 / 32 * 1rem);
+}
+
+.mod-login .login2,
+.mod-login .register {
+	width: calc(237 / 32 * 1rem);
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(76 / 32 * 1rem);
+}

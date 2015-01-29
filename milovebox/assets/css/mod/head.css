@@ -1,0 +1,26 @@
+/**
+ * @fileview 表单
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.header {
+	color: #fff;
+	height: calc(88 / 32 * 1rem);
+	line-height: calc(88 / 32 * 1rem);
+}
+.header a {
+	color: #fff;
+}
+.header > h3 {
+	text-align: center;
+}
+.header > .actions {
+	margin-top: calc(-88 / 32 * 1rem);
+	padding: 0 calc(25 / 32 * 1rem);
+}
+.header > .actions .ellipsis {
+	float: right;
+	text-indent: -999px;
+	margin-top: calc(40 / 32 * 1rem);
+}

@@ -1,0 +1,39 @@
+/**
+ * @fileview button
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.button {
+	display: inline-block;
+	height: calc(106 / 32 * 1rem);
+	width: calc(608 / 32 * 1rem);
+	line-height: calc(106 / 32 * 1rem);
+	font-size: 1.3rem;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	background: transparent url(../../imgs/button.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+	background-origin: padding-box;
+}
+
+.button.pin {
+	background-image: url(../../imgs/button-02.png);
+}
+
+.button.stress {
+	color: #f3c901;
+}
+
+.button.disabled {
+	color: #b9b9b9;
+}
+
+.button.noshadow {
+	background-image: url(../../imgs/button-03.png);
+}
+
+.button.min {
+	background-size: auto 100%;
+}

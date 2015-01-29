@@ -1,0 +1,19 @@
+/**
+ * @fileview logo
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.logo {
+	display: block;
+	width: calc(427 / 32 * 1rem);
+	height: calc(427 / 32 * 1rem);
+	background: transparent url(../../imgs/logo.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+
+.logo.logo02 {
+	width: calc(191 / 32 * 1rem);
+	height: calc(149 / 32 * 1rem);
+	background-image: url(../../imgs/logo-02.png);
+}
