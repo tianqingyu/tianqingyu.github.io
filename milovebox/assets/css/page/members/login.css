@@ -8,11 +8,6 @@
 @import url(../../global/site.css?150131001);
 
 
-.mod-imgs {
-	background-color: red;
-	width: 100%;
-	overflow: hidden;
-}
 .mod-imgs .img01 {
 	margin-left: calc(-80 / 32 * 1rem);
 }
@@ -26,7 +21,6 @@
 }
 
 .mod-logo .logo {
-	background-color: blue;
 	margin: 0 auto;
 	margin-top: calc(-200 / 32 * 1rem);
 }
