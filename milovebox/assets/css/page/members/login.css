@@ -4,8 +4,8 @@
  * @date 2015/1/20
  */
 
-@import url(../../global/global.css);
-@import url(../../global/site.css);
+@import url(../../global/global.css?150131001);
+@import url(../../global/site.css?150131001);
 
 .mod-imgs .img01 {
 	margin-left: calc(-80 / 32 * 1rem);
