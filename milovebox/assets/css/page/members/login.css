@@ -7,7 +7,9 @@
 @import url(../../global/global.css?150131002);
 @import url(../../global/site.css?150131002);
 
-
+.mod-imgs {
+	overflow-x: hidden;
+}
 .mod-imgs .img01 {
 	margin-left: calc(-80 / 32 * 1rem);
 }
@@ -16,8 +18,8 @@
 	margin-left: calc(-20 / 32 * 1rem);
 }
 .mod-imgs .img03 {
-	position: absolute;
-	right: -2rem;
+	float: right;
+	margin-right: -2rem;
 }
 
 .mod-logo .logo {
