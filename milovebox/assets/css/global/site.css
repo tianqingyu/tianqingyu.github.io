@@ -39,6 +39,20 @@ body,
 	height: calc(100% - 2.75rem);
 }
 
+.footer > .content {
+	text-align: center;
+	line-height: calc(98 / 32 * 1rem);
+}
+.footer .login {
+	margin-right: calc(48 / 32 * 1rem);
+}
+.footer .login,
+.footer .register {
+	width: calc(237 / 32 * 1rem);
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+}
+
 a {
 	text-decoration: none;
 }

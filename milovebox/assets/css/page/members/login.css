@@ -7,9 +7,11 @@
 @import url(../../global/global.css?150131002);
 @import url(../../global/site.css?150131002);
 
-.mod-imgs {
-	overflow-x: hidden;
+
+.layout {
+	overflow: hidden;
 }
+
 .mod-imgs .img01 {
 	margin-left: calc(-80 / 32 * 1rem);
 }
@@ -25,16 +27,19 @@
 .mod-logo .logo {
 	margin: 0 auto;
 	margin-top: calc(-200 / 32 * 1rem);
+	position: relative;
+	left: calc(56 / 32 * 1rem);
 }
 
 .mod-login {
 	padding-top: calc(20 / 32 * 1rem);
+	padding-bottom: 60px;
 }
 .mod-login .content {
 	margin: 0 auto;
 	width: calc(430 / 32 * 1rem);
 }
-.mod-login .login1 {
+.mod-login .login {
 	width: calc(402 / 32 * 1rem);
 	height: calc(76 / 32 * 1rem);
 	line-height: calc(70 / 32 * 1rem);
@@ -55,18 +60,4 @@
 }
 .mod-login .content > div:last-child {
 	text-align: center;
-}
-
-.footer .content {
-	text-align: center;
-	line-height: calc(98 / 32 * 1rem);
-}
-.footer .login2 {
-	margin-right: calc(48 / 32 * 1rem);
-}
-.footer .login2,
-.footer .register {
-	width: calc(237 / 32 * 1rem);
-	height: calc(76 / 32 * 1rem);
-	line-height: calc(70 / 32 * 1rem);
 }
