@@ -10,7 +10,7 @@
 	width: calc(21 / 32 * 1rem);
 	height: calc(32 / 32 * 1rem);
 	margin-right: calc(10 / 32 * 1rem);
-	vertical-align: text-bottom;
+	vertical-align: middle;
 	background: transparent url(../../imgs/arrow-left-02.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }
