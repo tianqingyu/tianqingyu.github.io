@@ -1,0 +1,53 @@
+/**
+ * @fileview login
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+@import url(../../global/global.css?_=150131002);
+@import url(../../global/site.css?_=150131002);
+
+@import url(../../mod/caption.css?_=150131002);
+@import url(../../mod/list.css?_=150131002);
+
+.mod-caption,
+.mod-register {
+	padding: 0 calc(20 / 32 * 1rem);
+}
+
+.mod-caption .name {
+	color: #efefef;
+}
+
+.mod-register .list {
+	margin-top: calc(40 / 32 * 1rem);
+	color: #ccc;
+}
+.mod-register .item {
+	padding-left: calc(15 / 32 * 1rem);
+}
+.mod-register .item label span {
+	display: inline-block;
+	width: calc(140 / 32 * 1rem);;
+}
+.mod-register .mobile {
+	width: calc(266 / 32 * 1rem);;
+}
+.mod-register .captcha {
+	width: calc(200 / 32 * 1rem);
+}
+
+.mod-register .input {
+	border: 0;
+	background: none;
+}
+
+.mod-register .actions {
+	text-align: center;
+	padding-top: calc(167 / 32 * 1rem);
+}
+.mod-register .actions .button {
+	width: calc(401 / 32 * 1rem);
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+}
