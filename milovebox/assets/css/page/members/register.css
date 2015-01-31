@@ -44,7 +44,7 @@
 
 .mod-register .actions {
 	text-align: center;
-	padding-top: calc(167 / 32 * 1rem);
+	padding-top: calc(107 / 32 * 1rem);
 }
 .mod-register .actions .button {
 	width: calc(401 / 32 * 1rem);
