@@ -22,8 +22,6 @@
 .mod-logo .logo {
 	margin: 0 auto;
 	margin-top: calc(-200 / 32 * 1rem);
-	position: relative;
-	left: calc(44 / 32 * 1rem);
 }
 
 .mod-login {
