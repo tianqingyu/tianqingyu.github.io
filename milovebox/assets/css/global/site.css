@@ -32,7 +32,8 @@ body,
 	top: calc(88 / 32 * 1rem);
 	left: 0;
 	height: calc(100% - 2.75rem - 3.0625rem);
-	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 #content.nofooter {
 	height: calc(100% - 2.75rem);

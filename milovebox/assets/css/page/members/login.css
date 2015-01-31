@@ -7,15 +7,62 @@
 @import url(../../global/global.css);
 @import url(../../global/site.css);
 
+
+.mod-imgs .img02 {
+	margin-top: calc(44 / 32 * 1rem);
+}
+.mod-imgs .img03 {
+	float: right;
+	margin-right: -2rem;
+}
+
+.mod-logo .logo {
+	margin: 0 auto;
+	margin-top: calc(-200 / 32 * 1rem);
+	position: relative;
+	left: calc(88 / 32 * 1rem);
+}
+
+.mod-login {
+	padding-top: calc(20 / 32 * 1rem);
+}
+.mod-login .content {
+	margin: 0 auto;
+	width: calc(430 / 32 * 1rem);
+}
 .mod-login .login1 {
 	width: calc(402 / 32 * 1rem);
 	height: calc(76 / 32 * 1rem);
-	line-height: calc(76 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+}
+.mod-login .content > div {
+	margin-bottom: calc(28 / 32 * 1rem);
+}
+.mod-login .content > div:nth-child(3) {
+	color: #888;
+	margin-left: calc(10 / 32 * 1rem);
+	margin-bottom: calc(41 / 32 * 1rem);
+}
+.mod-login .content > div:nth-child(3) a {
+	color: #888;
+	float: right;
+	margin-right: calc(20 / 32 * 1rem);
+	text-decoration: underline;
+}
+.mod-login .content > div:last-child {
+	text-align: center;
 }
 
-.mod-login .login2,
-.mod-login .register {
+.footer .content {
+	text-align: center;
+	line-height: calc(98 / 32 * 1rem);
+}
+.footer .login2 {
+	margin-right: calc(48 / 32 * 1rem);
+}
+.footer .login2,
+.footer .register {
 	width: calc(237 / 32 * 1rem);
 	height: calc(76 / 32 * 1rem);
-	line-height: calc(76 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
 }

@@ -21,6 +21,6 @@
 }
 .header > .actions .ellipsis {
 	float: right;
-	text-indent: -999px;
+	text-indent: -9999px;
 	margin-top: calc(40 / 32 * 1rem);
 }
