@@ -1,0 +1,27 @@
+/**
+ * @fileview 
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+@import url(../../global/global.css);
+@import url(../../global/site.css);
+
+@import url(../../mod/caption.css);
+@import url(../../mod/list.css);
+
+.layout {
+	padding: 0 calc(24 / 32 * 1rem);
+}
+
+.mod-caption {
+	margin-top: calc(30 / 32 * 1rem);
+}
+
+.mod-exchange > .content {
+	text-align: center;
+	margin-top: calc(40 / 32 * 1rem);
+}
+.mod-exchange .cart-auto {
+	margin: calc(5 / 32 * 1rem);
+}

@@ -8,3 +8,37 @@
 @import url(../../global/site.css);
 
 @import url(../../mod/caption.css);
+@import url(../../mod/list.css);
+
+.layout {
+	padding: 0 calc(24 / 32 * 1rem);
+}
+
+.mod-caption {
+	margin-top: calc(30 / 32 * 1rem);
+}
+
+.mod-raffle {
+	margin-top: calc(42 / 32 * 1rem);
+}
+.mod-raffle .arrow {
+	float: right;
+	margin-top: calc(26 / 32 * 1rem);
+}
+.mod-raffle .item {
+	padding: 0 calc(20 / 32 * 1rem);
+}
+
+.mod-raffle .item-panel {
+	display: -webkit-flex;
+	display: flex;
+}
+.mod-raffle .cart {
+	flex: 1;
+	margin-top: calc(10 / 32 * 1rem);
+	margin-bottom: calc(5 / 32 * 1rem);
+}
+
+.mod-raffle .list:last-child {
+	margin-top: calc(40 / 32 * 1rem);
+}

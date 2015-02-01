@@ -5,7 +5,7 @@
  */
 
 .list {
-	color: #fff;
+	color: #bbb;
 }
 .list .content .item {
 	height: calc(86 / 32 * 1rem);
