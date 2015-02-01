@@ -4,11 +4,11 @@
  * @date 2015/1/20
  */
 
-@import url(../../global/global.css?_=150131002);
-@import url(../../global/site.css?_=150131002);
+@import url(../../global/global.css);
+@import url(../../global/site.css);
 
-@import url(../../mod/caption.css?_=150131002);
-@import url(../../mod/list.css?_=150131002);
+@import url(../../mod/caption.css);
+@import url(../../mod/list.css);
 
 .mod-caption,
 .mod-pwdfind {

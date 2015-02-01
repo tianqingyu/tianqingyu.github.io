@@ -10,40 +10,44 @@
 .pins:before {
 	content: "\0020";
 	position: absolute;
-	top: calc(12 / 32 * 1rem);
-	left: calc(12 / 32 * 1rem);
+	top: calc(8 / 32 * 1rem);
+	left: calc(8 / 32 * 1rem);
 	width: calc(44 / 32 * 1rem);
 	height: calc(44 / 32 * 1rem);
+	z-index: 2;
 	background: transparent url(../../imgs/pin.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }
 .pins:after {
 	content: "\0020";
 	position: absolute;
-	top: calc(12 / 32 * 1rem);
-	right: calc(12 / 32 * 1rem);
+	top: calc(8 / 32 * 1rem);
+	right: calc(8 / 32 * 1rem);
 	width: calc(44 / 32 * 1rem);
 	height: calc(44 / 32 * 1rem);
+	z-index: 2;
 	background: transparent url(../../imgs/pin.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }
-.pins-inner:before {
+.pins .inner:before {
 	content: "\0020";
 	position: absolute;
-	bottom: calc(12 / 32 * 1rem);
-	left: calc(12 / 32 * 1rem);
+	bottom: calc(8 / 32 * 1rem);
+	left: calc(8 / 32 * 1rem);
 	width: calc(44 / 32 * 1rem);
 	height: calc(44 / 32 * 1rem);
+	z-index: 2;
 	background: transparent url(../../imgs/pin.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }
-.pins-inner:after {
+.pins .inner:after {
 	content: "\0020";
 	position: absolute;
-	bottom: calc(12 / 32 * 1rem);
-	right: calc(12 / 32 * 1rem);
+	bottom: calc(8 / 32 * 1rem);
+	right: calc(8 / 32 * 1rem);
 	width: calc(44 / 32 * 1rem);
 	height: calc(44 / 32 * 1rem);
+	z-index: 2;
 	background: transparent url(../../imgs/pin.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }

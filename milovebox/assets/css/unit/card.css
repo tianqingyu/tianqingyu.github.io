@@ -18,3 +18,20 @@
 .cart img {
 	margin: auto;
 }
+
+.cart-auto {
+	box-shadow: -2px 2px 8px rgba(0,0,0,0.3);
+}
+.cart-auto,
+.cart-auto .inner {
+	display: inline-block;
+}
+.cart-auto .title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.cart-auto .title div {
+	margin: calc(10 / 32 * 1rem) 0;
+}
