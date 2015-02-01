@@ -4,3 +4,12 @@
  * @date 2015/1/20
  */
 
+.cart {
+	display: block;
+	background: transparent url(../../imgs/button-04.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.cart.min {
+	width: calc(191 / 32 * 1rem);
+	height: calc(178 / 32 * 1rem);
+}

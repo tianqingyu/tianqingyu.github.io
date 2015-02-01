@@ -9,20 +9,32 @@
 	background: transparent url(../../imgs/img.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }
-
 .img.img01 {
 	width: calc(280 / 32 * 1rem);
 	height: calc(200 / 32 * 1rem);
 }
-
 .img.img02 {
 	width: calc(166 / 32 * 1rem);
 	height: calc(62 / 32 * 1rem);
 	background-image: url(../../imgs/img-02.png);
 }
-
 .img.img03 {
 	width: calc(172 / 32 * 1rem);
 	height: calc(167 / 32 * 1rem);
 	background-image: url(../../imgs/img-03.png);
+}
+.img.img04 {
+	width: calc(154 / 32 * 1rem);
+	height: calc(147 / 32 * 1rem);
+	background-image: url(../../imgs/img-04.png);
+}
+.img.img05 {
+	width: calc(148 / 32 * 1rem);
+	height: calc(114 / 32 * 1rem);
+	background-image: url(../../imgs/img-05.png);
+}
+.img.img06 {
+	width: calc(140 / 32 * 1rem);
+	height: calc(152 / 32 * 1rem);
+	background-image: url(../../imgs/img-06.png);
 }
