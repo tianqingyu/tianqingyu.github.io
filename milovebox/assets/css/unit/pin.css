@@ -4,9 +4,11 @@
  * @date 2015/1/20
  */
 
-.pins {
+.pins,
+.pins02 {
 	position: relative;
 }
+
 .pins:before {
 	content: "\0020";
 	position: absolute;
@@ -49,5 +51,50 @@
 	height: calc(44 / 32 * 1rem);
 	z-index: 2;
 	background: transparent url(../../imgs/pin.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+
+.pins02:before {
+	content: "\0020";
+	position: absolute;
+	top: calc(12 / 32 * 1rem);
+	left: calc(12 / 32 * 1rem);
+	width: calc(22 / 32 * 1rem);
+	height: calc(22 / 32 * 1rem);
+	z-index: 2;
+	background: transparent url(../../imgs/pin-02.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.pins02:after {
+	content: "\0020";
+	position: absolute;
+	top: calc(12 / 32 * 1rem);
+	right: calc(12 / 32 * 1rem);
+	width: calc(22 / 32 * 1rem);
+	height: calc(22 / 32 * 1rem);
+	z-index: 2;
+	background: transparent url(../../imgs/pin-02.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.pins02 .inner:before {
+	content: "\0020";
+	position: absolute;
+	bottom: calc(12 / 32 * 1rem);
+	left: calc(8 / 32 * 1rem);
+	width: calc(22 / 32 * 1rem);
+	height: calc(22 / 32 * 1rem);
+	z-index: 2;
+	background: transparent url(../../imgs/pin-02.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.pins02 .inner:after {
+	content: "\0020";
+	position: absolute;
+	bottom: calc(8 / 32 * 1rem);
+	right: calc(8 / 32 * 1rem);
+	width: calc(22 / 32 * 1rem);
+	height: calc(22 / 32 * 1rem);
+	z-index: 2;
+	background: transparent url(../../imgs/pin-02.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }

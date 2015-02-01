@@ -9,6 +9,7 @@
 
 @import url(../../mod/caption.css);
 @import url(../../mod/list.css);
+@import url(../../mod/dialog.css);
 
 .layout {
 	padding: 0 calc(24 / 32 * 1rem);
@@ -18,10 +19,93 @@
 	margin-top: calc(30 / 32 * 1rem);
 }
 
+/* 积分兑换
+ ----------------------*/
 .mod-exchange > .content {
 	text-align: center;
 	margin-top: calc(40 / 32 * 1rem);
 }
 .mod-exchange .cart-auto {
 	margin: calc(5 / 32 * 1rem);
+}
+
+/* 兑换物品
+ ----------------------*/
+.mod-goods {
+	margin-top: calc(40 / 32 * 1rem);
+	margin-bottom: calc(80 / 32 * 1rem);
+}
+.mod-goods > .content {
+	text-align: center;
+}
+.mod-goods .button {
+	width: 100%;
+	height: calc(82 / 32 * 1rem);
+	line-height: calc(80 / 32 * 1rem);
+	font-weight: normal;
+	text-align: left;
+}
+.mod-goods .button span:first-child {
+	margin-left: calc(40 / 32 * 1rem);
+}
+.mod-goods .button span:last-child {
+	float: right;
+	margin-right: calc(40 / 32 * 1rem);
+}
+.mod-goods .picture .content {
+	text-align: center;
+}
+.mod-goods .picture img {
+	max-width: 100%;
+}
+.mod-goods .condition span:last-child {
+	text-decoration: line-through;
+}
+.mod-goods .list {
+	width: 98%;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: calc(-6 / 32 * 1rem);
+}
+.mod-goods .item-panel {
+	padding: 1px 0;
+}
+.mod-goods .item-panel > div {
+	margin: calc(20 / 32 * 1rem) 0;
+	margin-left: calc(30 / 32 * 1rem);
+}
+
+/* 兑换确认
+----------------------*/
+.mod-confirm .goods  {
+	height: calc(150 / 32 * 1rem);
+	padding-top: calc(30 / 32 * 1rem);
+	padding-left: calc(30 / 32 * 1rem); 
+}
+.mod-confirm .goods img {
+	float: left;
+	margin-right: calc(20 / 32 * 1rem);
+}
+.mod-confirm .goods div:nth-child(2n) {
+	margin: calc(15 / 32 * 1rem);
+}
+.mod-confirm .line {
+	width: 90%;
+	margin: auto;
+}
+.mod-confirm .quantity {
+	padding: calc(30 / 32 * 1rem) calc(40 / 32 * 1rem);
+} 
+.mod-confirm .quantity > span:last-child {
+	float: right;
+}
+.mod-confirm .quantity span.stress {
+	margin: 0 10px;
+	vertical-align: middle;
+}
+
+.footer .exchange {
+	width: calc(401 / 32 * 1rem);
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
 }

@@ -17,3 +17,14 @@
 	height: calc(19 / 32 * 1rem);
 	background-image: url(../../imgs/hr-02.png);
 }
+
+.line-h {
+	display: inline-block;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: calc(4 / 32 * 1rem);
+	height: calc(66 / 32 * 1rem);
+	background: transparent url(../../imgs/hr-03.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
