@@ -27,3 +27,14 @@
 	color: #efefef;
 	text-align: center;
 }
+
+.caption > .info {
+	padding-bottom: calc(18 / 32 * 1rem);
+}
+.caption > .info > .left {
+	color: #eee;
+}
+.caption > .info > .right {
+	float: right;
+	color: #bbb;
+}

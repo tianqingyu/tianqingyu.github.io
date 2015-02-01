@@ -1,0 +1,15 @@
+/**
+ * @fileview text
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.text {
+	color: #efefef;
+}
+.text.lesser {
+	color: #bbb;
+}
+.text.stress {
+	color: #f3c901;
+}

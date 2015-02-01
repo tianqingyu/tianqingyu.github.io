@@ -23,6 +23,15 @@
 			font-weight: bold;
 			color: blue;
 		}
+		.d-padding {
+			padding: 10px;
+		}
+		.d-padding-v {
+			padding: 10px 0;
+		}
+		.d-padding-h {
+			padding: 0 10px;
+		}
 		
 		/* override */
 		.button.min {
@@ -36,157 +45,68 @@
 <body>
 	
 	<div class="d-preview">
-	  <h3>button</h3>
+	  <h3>按钮</h3>
 	  <div>
-	    <code>
-	      &lt;span class="button"&gt;确认&lt;/span&gt;
-	    </code>
-	    
 	    <div class="show">
-	      <span class="button">确认</span>
+	      <a href="javascript:void(0)" class="button">确认</a>
+	      <a href="javascript:void(0)" class="button pin">确认</a>
+	      <a href="javascript:void(0)" class="button stress">确认</a>
+	      <a href="javascript:void(0)" class="button disabled">确认</a>
+	      <a href="javascript:void(0)" class="button noshadow">确认</a>
+	      <a href="javascript:void(0)" class="button min noshadow">确认</a>
 	    </div>
 	  </div>
 	</div>
 	
 	<div class="d-preview">
-	  <h3>button.pin</h3>
+	  <h3>箭头</h3>
 	  <div>
-	    <code>
-	      &lt;span class="button pin"&gt;确认&lt;/span&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <span class="button pin">确认</span>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>button.stress</h3>
-	  <div>
-	    <code>
-	      &lt;span class="button stress"&gt;确认&lt;/span&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <span class="button stress">确认</span>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>button.disabled</h3>
-	  <div>
-	    <code>
-	      &lt;span class="button disabled"&gt;确认&lt;/span&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <span class="button disabled">确认</span>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>button.noshadow</h3>
-	  <div>
-	    <code>
-	      &lt;span class="button noshadow"&gt;确认&lt;/span&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <span class="button noshadow">确认</span>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>button.min.noshadow</h3>
-	  <div>
-	    <code>
-	      &lt;span class="button min noshadow"&gt;确认&lt;/span&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <span class="button min noshadow">确认</span>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>arrow.right</h3>
-	  <div>
-	    <code>
-	      &lt;span class="arrow right"&gt;&lt;/span&gt;
-	    </code>
-	    
 	    <div class="show bg05">
-	      <span class="arrow right">arrow</span>
+	      <a href="javascript:void(0)" class="arrow right">right</a>
+	      <a href="javascript:void(0)" class="arrow down">down</a>
 	    </div>
 	  </div>
 	</div>
 	
 	<div class="d-preview">
-	  <h3>symbol.arrow-left</h3>
+	  <h3>符号</h3>
 	  <div>
-	    <code>
-	      &lt;span class="arrow-left"&gt;&lt;/span&gt;
-	    </code>
-	    
 	    <div class="show bg">
-	      <span class="arrow-left">返回</span>
+	      <a href="javascript:void(0)" class="arrow-left">返回</a>
+	      <a href="javascript:void(0)" class="ellipsis"></a>
+	      <a href="javascript:void(0)" class="minus"></a>
+	      <a href="javascript:void(0)" class="plus"></a>
 	    </div>
 	  </div>
 	</div>
 	
 	<div class="d-preview">
-	  <h3>symbol.ellipsis</h3>
+	  <h3>线条</h3>
 	  <div>
-	    <code>
-	      &lt;span class="ellipsis"&gt;&lt;/span&gt;
-	    </code>
-	    
-	    <div class="show bg">
-	      <span class="ellipsis"></span>
+	    <div class="show">
+	      <div class="d-padding-v">
+	        <hr class="line" />
+	      </div>
+	      
+	      <div class="d-paddng-v">
+	        <hr class="line pin" />
+	      </div>
 	    </div>
 	  </div>
 	</div>
 	
 	<div class="d-preview">
-	  <h3>img.img01</h3>
+	  <h3>图片</h3>
 	  <div>
-	    <code>
-	      &lt;img src="../assets/imgs/blank.png" class="img img01" /&gt;
-	    </code>
-	    
 	    <div class="show">
 	      <img src="../assets/imgs/blank.png" class="img img01" />
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>img.img02</h3>
-	  <div>
-	    <code>
-	      &lt;img src="../assets/imgs/blank.png" class="img img02" /&gt;
-	    </code>
-	    
-	    <div class="show">
 	      <img src="../assets/imgs/blank.png" class="img img02" />
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>img.img03</h3>
-	  <div>
-	    <code>
-	      &lt;img src="../assets/imgs/blank.png" class="img img03" /&gt;
-	    </code>
-	    
-	    <div class="show">
 	      <img src="../assets/imgs/blank.png" class="img img03" />
+	      <img src="../assets/imgs/blank.png" class="img img04" />
+	      <img src="../assets/imgs/blank.png" class="img img05" />
+	      <img src="../assets/imgs/blank.png" class="img img06" />
+	      <img src="../assets/imgs/blank.png" class="img img07" />
+	      <img src="../assets/imgs/blank.png" class="img img08" />
 	    </div>
 	  </div>
 	</div>
@@ -194,24 +114,8 @@
 	<div class="d-preview">
 	  <h3>logo</h3>
 	  <div>
-	    <code>
-	      &lt;img src="../assets/imgs/blank.png" class="logo" /&gt;
-	    </code>
-	    
 	    <div class="show">
 	      <img src="../assets/imgs/blank.png" class="logo" />
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>logo.logo02</h3>
-	  <div>
-	    <code>
-	      &lt;img src="../assets/imgs/blank.png" class="logo logo02" /&gt;
-	    </code>
-	    
-	    <div class="show">
 	      <img src="../assets/imgs/blank.png" class="logo logo02" />
 	    </div>
 	  </div>
@@ -220,65 +124,27 @@
 	<div class="d-preview">
 	  <h3>input</h3>
 	  <div>
-	    <code>
-	      &lt;input type="text" class="input" /&gt;
-	    </code>
-	    
 	    <div class="show">
 	      <input type="text" class="input" />
+	      
+	      <div class="d-padding-v">
+	        <label><input type="radio" class="radio" name="rdo" /> radio1</label>
+	        <label><input type="radio" class="radio" name="rdo" /> radio2</label>
+	      </div>
 	    </div>
 	  </div>
 	</div>
 	
 	<div class="d-preview">
-	  <h3>radio</h3>
+	  <h3>背景图片</h3>
 	  <div>
-	    <code>
-	      &lt;input type="radio" class="radio" /&gt;
-	    </code>
-	    
 	    <div class="show">
-	      <input type="radio" class="radio" name="rdo" />
-	      <input type="radio" class="radio" name="rdo" />
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>bg02</h3>
-	  <div>
-	    <code>
-	      &lt;div class="bg02"&gt;bg&lt;/div&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <div class="bg02">bg</div>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>line</h3>
-	  <div>
-	    <code>
-	      &lt;hr class="line" /&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <hr class="line" />
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="d-preview">
-	  <h3>line.pin</h3>
-	  <div>
-	    <code>
-	      &lt;hr class="line pin" /&gt;
-	    </code>
-	    
-	    <div class="show">
-	      <hr class="line pin" />
+	      <div class="bg">bg</div>
+	      <div class="bg02">bg2</div>
+	      <div class="bg03">bg3</div>
+	      <div class="bg04">bg4</div>
+	      <div class="bg05">bg5</div>
+	      <div class="bg06">bg6</div>
 	    </div>
 	  </div>
 	</div>
@@ -308,6 +174,10 @@
 	          <img src="../assets/imgs/blank.png" class="logo" />
 	        </div>
 	        <div class="name">milovebox</div>
+	        <div class="info">
+	          <span class="left">当前积分：3000</span>
+	          <span class="right">已使用：2000</span>
+	        </div>
 	        <hr class="line pin" />
 	      </div>
 	    </div>
@@ -315,9 +185,9 @@
 	</div>
 	
 	<div class="d-preview">
-	  <h3>list</h3>
+	  <h3>列表</h3>
 	  <div>
-	    <div class="show bg04" style="padding:20px;">
+	    <div class="show bg04 d-padding">
 	      <div class="list bg">
 	        <div class="inner bg03">
 	          <div class="content">
@@ -329,6 +199,25 @@
 	            <hr class="line" />
 	          </div>
 	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="d-preview">
+	  <h3>卡片</h3>
+	  <div>
+	    <div class="show">
+	      <div class="cart min">
+	        <img src="../assets/imgs/blank.png" class="img img04" />
+	      </div>
+	      
+	      <div class="cart min">
+	        <img src="../assets/imgs/blank.png" class="img img05" />
+	      </div>
+	      
+	      <div class="cart min">
+	        <img src="../assets/imgs/blank.png" class="img img06" />
 	      </div>
 	    </div>
 	  </div>

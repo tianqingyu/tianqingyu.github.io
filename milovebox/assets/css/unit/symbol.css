@@ -15,12 +15,27 @@
 	background-size: 100% 100%;
 }
 
-.ellipsis {
+.ellipsis,
+.minus,
+.plus {
 	display: inline-block;
 	content: "\0020";
-	width: calc(38 / 32 * 1rem);
-	height: calc(9 / 32 * 1rem);
 	vertical-align: middle;
 	background: transparent url(../../imgs/ellipsis.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
+}
+.ellipsis {
+	width: calc(38 / 32 * 1rem);
+	height: calc(9 / 32 * 1rem);
+	background-image: url(../../imgs/ellipsis.png);
+}
+.minus {
+	width: calc(40 / 32 * 1rem);
+	height: calc(40 / 32 * 1rem);
+	background-image: url(../../imgs/symbol-minus.png);
+}
+.plus {
+	width: calc(40 / 32 * 1rem);
+	height: calc(40 / 32 * 1rem);
+	background-image: url(../../imgs/symbol-plus.png);
 }
