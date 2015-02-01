@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<meta name="format-detection" content="telephone=no"/>
-	<title>会员系统</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>密码找回</title>
 	
-	<link rel="stylesheet" href="../../assets/css/global/site.css" />
+	<link rel="stylesheet" href="../../assets/css/page/members/pwdfind.css?_=150131001" />
 </head>
 <body>
 	
@@ -25,16 +25,67 @@
 	  </header>
 	  
 	  <div id="content">
-	    <div class="layout">
-	      <div class="content">
-	        <span>content</span>
+	    <div class="main">
+	      <!-- START -->
+	      <div class="layout">
+	        <div class="mod mod-caption">
+	          <div class="content">
+	            <div class="caption">
+			      <div class="name">密码找回</div>
+			      <hr class="line pin" />
+			    </div>
+	          </div>
+	        </div>
 	      </div>
+	      
+	      <div class="layout">
+	        <div class="mod mod-pwdfind">
+	          <div class="content">
+	            <div class="list bg">
+			      <div class="inner bg03">
+			        <div class="content">
+			          <div class="item">
+			            <label>
+			              <span>用户名</span>
+			              <input type="text" class="input" placeholder="请输入用户名" />
+			            </label>
+			          </div>
+			          <hr class="line">
+			          <div class="item">
+			            <label>
+			              <span>注册手机号</span>
+			              <input type="text" class="input" placeholder="请输入手机号" />
+			            </label>
+			          </div>
+			          <hr class="line">
+			          <div class="item">
+			            <label>
+			              <span>确认手机号</span>
+			              <input type="text" class="input confirm-mobile" placeholder="请确认手机号" />
+			              <a href="javascript:void(0)" class="button min stress noshadow captcha">发送验证码</a>
+			            </label>
+			          </div>
+			          <hr class="line">
+			          <div class="item">
+			            <label>
+			              <span>验证码</span>
+			              <input type="text" class="input" placeholder="请输入手机收到的验证码" />
+			            </label>
+			          </div>
+			          <hr class="line">
+			        </div>
+			      </div>
+			    </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- END -->
 	    </div>
 	  </div>
 	  
-	  <footer id="footer" class="bg02">
+	  <footer id="footer" class="footer bg02">
 	    <div class="content">
-	      <span>footer</span>
+	      <a class="button pin stress next" href="javascript:void(0)">下一步</a>
 	    </div>
 	  </footer>
 	</div>

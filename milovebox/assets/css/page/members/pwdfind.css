@@ -1,5 +1,5 @@
 /**
- * @fileview login
+ * @fileview 
  * @author 若何
  * @date 2015/1/20
  */
@@ -11,7 +11,7 @@
 @import url(../../mod/list.css?_=150131002);
 
 .mod-caption,
-.mod-register {
+.mod-pwdfind {
 	padding: 0 calc(20 / 32 * 1rem);
 }
 
@@ -19,37 +19,33 @@
 	color: #efefef;
 }
 
-.mod-register .list {
+.mod-pwdfind .list {
 	margin-top: calc(40 / 32 * 1rem);
 	color: #ccc;
 }
-.mod-register .item {
+.mod-pwdfind .item {
 	padding-left: calc(15 / 32 * 1rem);
 }
-.mod-register .item label span {
+.mod-pwdfind .item label span {
 	display: inline-block;
-	width: calc(140 / 32 * 1rem);;
+	width: calc(170 / 32 * 1rem);;
 }
-.mod-register .mobile {
-	width: calc(266 / 32 * 1rem);;
+.mod-pwdfind .confirm-mobile {
+	width: calc(236 / 32 * 1rem);;
 }
-.mod-register .captcha {
+.mod-pwdfind .captcha {
 	float: right;
 	width: calc(200 / 32 * 1rem);
 	height: calc(86 / 32 * 1rem);
 	line-height: calc(86 / 32 * 1rem);
 }
 
-.mod-register .input {
+.mod-pwdfind .input {
 	border: 0;
 	background: none;
 }
 
-.mod-register .actions {
-	text-align: center;
-	padding-top: calc(107 / 32 * 1rem);
-}
-.mod-register .actions .button {
+.footer .next {
 	width: calc(401 / 32 * 1rem);
 	height: calc(76 / 32 * 1rem);
 	line-height: calc(70 / 32 * 1rem);
