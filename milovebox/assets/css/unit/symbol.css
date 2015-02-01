@@ -21,6 +21,7 @@
 	display: inline-block;
 	content: "\0020";
 	vertical-align: middle;
+	text-indent: -9999px;
 	background: transparent url(../../imgs/ellipsis.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
 }

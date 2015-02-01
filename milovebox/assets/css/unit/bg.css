@@ -7,7 +7,9 @@
 .bg,
 .bg02,
 .bg03,
-.bg04 {
+.bg04,
+.bg05,
+.bg06 {
 	display: block;
 	background: transparent url(../../imgs/bg.png) no-repeat scroll 0 0;
 	background-size: cover;
@@ -16,6 +18,7 @@
 .bg02 {
 	height: calc(98 / 32 * 1rem);
 	background-image: url(../../imgs/bg-02.png);
+	background-size: 100% 100%;
 }
 
 .bg03 {
@@ -32,4 +35,5 @@
 
 .bg06 {
 	background-image: url(../../imgs/bg-06.png);
+	background-size: 100% 100%;
 }

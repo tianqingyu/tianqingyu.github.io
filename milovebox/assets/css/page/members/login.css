@@ -24,6 +24,9 @@
 	margin-right: -2rem;
 }
 
+.mod-logo > .content {
+	text-align: center;
+}
 .mod-logo .logo {
 	margin: 0 auto;
 	margin-top: calc(-200 / 32 * 1rem);

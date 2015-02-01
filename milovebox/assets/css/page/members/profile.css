@@ -38,6 +38,9 @@
 	margin-top: calc(26 / 32 * 1rem);
 }
 
+.mod-logo > .content {
+	text-align: center;
+}
 .mod-logo img {
 	margin: 0 auto;
 	margin-top: calc(40 / 32 * 1rem);

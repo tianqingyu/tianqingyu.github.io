@@ -1,0 +1,51 @@
+/**
+ * @fileview done
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.done .mod-imgs > .content {
+	overflow: hidden;
+}
+.done .mod-imgs img:first-child {
+	float: left;
+	margin-left: -5rem;
+}
+.done .mod-imgs img:last-child {
+	float: right;
+	margin-right: -3.3rem;
+}
+
+.done .mod-success {
+	text-align: center;
+	margin-top: calc(-100 / 32 * 1rem);
+}
+.done .mod-success .content div,
+.done .mod-success .content p {
+	margin: calc(20 / 32 * 1rem) 0;
+}
+.done .mod-success .content .stress {
+	margin-bottom: calc(60 / 32 * 1rem);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.done .mod-logo {
+	margin-top: calc(100 / 32 * 1rem);
+}
+.done .mod-logo > .content {
+	text-align: center;
+}
+.done .mod-logo .logo {
+	width: calc(327 / 32 * 1rem);
+	height: calc(327 / 32 * 1rem);
+}
+
+.footer .button {
+	width: calc(236 / 32 * 1rem);
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+}
+.footer .button:first-child {
+	margin-right: calc(40 / 32 * 1rem);
+}

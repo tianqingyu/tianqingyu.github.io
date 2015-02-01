@@ -5,7 +5,7 @@
  */
 
 .logo {
-	display: block;
+	display: inline-block;
 	width: calc(427 / 32 * 1rem);
 	height: calc(427 / 32 * 1rem);
 	background: transparent url(../../imgs/logo.png) no-repeat scroll 0 0;
