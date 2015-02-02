@@ -6,11 +6,11 @@
 	<meta name="format-detection" content="telephone=no" />
 	<title>收货信息</title>
 	
-	<link rel="stylesheet" href="../../assets/css/page/members/login.css?_=150131006" />
+	<link rel="stylesheet" href="../../assets/css/page/points/receipt.css" />
 </head>
 <body>
 	
-	<div id="root" class="bg04">
+	<div id="root" class="page-findpwd bg04">
 	  <header id="header">
 	    <div class="content">
 	      <div class="header bg05">
@@ -28,9 +28,66 @@
 	    <div class="main">
 	      <!-- START -->
 	      <div class="layout">
-	        <div class="mod">
+	        <div class="mod mod-caption">
 	          <div class="content">
-	            xxx
+	            <div class="caption">
+			      <div class="name">收货信息</div>
+			      <hr class="line pin" />
+			    </div>
+	          </div>
+	        </div>
+	      </div>
+	      
+	      <div class="layout">
+	        <div class="mod mod-goods bg06">
+	          <div class="content">
+	            <div class="goods text">
+	              <div><img src="../../assets/imgs/demo/img05.jpg" /></div>
+	              <div>kz-73020000m移动电源</div>
+	              <div>3000积分</div>
+	            </div>
+	          </div>
+	        </div>
+	        
+	        <div class="mod mod-receipt">
+	          <div class="content">
+	            <div class="list bg">
+			      <div class="inner bg03">
+			        <div class="content">
+			          <div class="item">
+			            <label>
+			              <span>收货地址</span>
+			              <input type="text" class="input" placeholder="请输入收货地址" />
+			            </label>
+			          </div>
+			          <hr class="line">
+			          <div class="item">
+			            <label>
+			              <span>收货人</span>
+			              <input type="text" class="input" placeholder="6-16位数字或字母" />
+			            </label>
+			          </div>
+			          <hr class="line">
+			          <div class="item">
+			            <label>
+			              <span>手机号</span>
+			              <input type="text" class="input" placeholder="请输入注册者手机号" />
+			            </label>
+			          </div>
+			          <hr class="line">
+			          <div class="item">
+			            <label>
+			              <span>验证码</span>
+			              <input type="text" class="input inp-captcha" placeholder="请输入验证码" />
+			              <a href="javascript:void(0)" class="button min disabled noshadow captcha">
+			                <img src="../../assets/imgs/captcha.png" />
+			              </a>
+			            </label>
+			          </div>
+			          <hr class="line">
+			        </div>
+			      </div>
+			    </div>
 	          </div>
 	        </div>
 	      </div>
@@ -40,8 +97,7 @@
 	  
 	  <footer id="footer" class="footer bg02">
 	    <div class="content">
-	      <a class="button pin disabled login" href="javascript:void(0)">登 录</a>
-	      <a class="button pin stress register" href="javascript:void(0)">注 册</a>
+	      <a class="button pin stress confirm" href="javascript:void(0)">确 认</a>
 	    </div>
 	  </footer>
 	</div>

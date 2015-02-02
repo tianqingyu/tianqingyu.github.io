@@ -45,12 +45,14 @@
 	font-weight: normal;
 	text-align: left;
 }
-.mod-goods .button span:first-child {
-	margin-left: calc(40 / 32 * 1rem);
-}
 .mod-goods .button span:last-child {
 	float: right;
 	margin-right: calc(40 / 32 * 1rem);
+}
+.mod-goods .button span:first-child {
+	float: none;
+	margin-right: auto;
+	margin-left: calc(40 / 32 * 1rem);
 }
 .mod-goods .picture .content {
 	text-align: center;
@@ -104,8 +106,12 @@
 	vertical-align: middle;
 }
 
-.footer .exchange {
-	width: calc(401 / 32 * 1rem);
-	height: calc(76 / 32 * 1rem);
-	line-height: calc(70 / 32 * 1rem);
+/* 兑换记录
+----------------------*/
+.mod-records .item span:first-child {
+	margin-left: calc(35 / 32 * 1rem);
+}
+.mod-records .item span:last-child {
+	float: right;
+	margin-right: calc(35 / 32 * 1rem);
 }

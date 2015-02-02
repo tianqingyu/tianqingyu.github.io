@@ -1,5 +1,5 @@
 /**
- * @fileview 收货信息
+ * @fileview 
  * @author 若何
  * @date 2015/1/20
  */
@@ -11,7 +11,7 @@
 @import url(../../mod/list.css);
 
 .mod-caption,
-.mod-pwdreset {
+.mod-receipt {
 	padding: 0 calc(20 / 32 * 1rem);
 }
 
@@ -19,33 +19,48 @@
 	color: #efefef;
 }
 
-.mod-pwdreset .list {
+.mod-goods  {
+	height: calc(175 / 32 * 1rem);
+	padding-top: calc(30 / 32 * 1rem);
+	padding-left: calc(30 / 32 * 1rem);
+	margin: 0 calc(20 / 32 * 1rem);
+	margin-top: calc(40 / 32 * 1rem);
+}
+.mod-goods img {
+	float: left;
+	margin-right: calc(20 / 32 * 1rem);
+}
+.mod-goods div:nth-child(2n) {
+	margin: calc(15 / 32 * 1rem);
+}
+
+.mod-receipt .list {
 	margin-top: calc(40 / 32 * 1rem);
 	color: #ccc;
 }
-.mod-pwdreset .item {
+.mod-receipt .item {
 	padding-left: calc(15 / 32 * 1rem);
 }
-.mod-pwdreset .item label span {
+.mod-receipt .item label span {
 	display: inline-block;
 	width: calc(130 / 32 * 1rem);;
 }
-.mod-pwdreset .inp-captcha {
+.mod-receipt .inp-captcha {
 	width: calc(276 / 32 * 1rem);;
 }
-.mod-pwdreset .captcha {
+.mod-receipt .captcha {
 	float: right;
 	width: calc(200 / 32 * 1rem);
 	height: calc(86 / 32 * 1rem);
 	line-height: calc(86 / 32 * 1rem);
 }
-.mod-pwdreset .captcha img {
+.mod-receipt .captcha img {
 	width: 50%;
 	height: 50%;
 	vertical-align: middle;
 }
 
-.mod-pwdreset .input {
+.mod-receipt .input {
 	border: 0;
 	background: none;
 }

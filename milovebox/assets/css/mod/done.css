@@ -40,12 +40,3 @@
 	width: calc(327 / 32 * 1rem);
 	height: calc(327 / 32 * 1rem);
 }
-
-.footer .button {
-	width: calc(236 / 32 * 1rem);
-	height: calc(76 / 32 * 1rem);
-	line-height: calc(70 / 32 * 1rem);
-}
-.footer .button:first-child {
-	margin-right: calc(40 / 32 * 1rem);
-}

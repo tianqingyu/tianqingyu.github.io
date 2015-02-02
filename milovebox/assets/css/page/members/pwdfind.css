@@ -44,9 +44,3 @@
 	border: 0;
 	background: none;
 }
-
-.footer .next {
-	width: calc(401 / 32 * 1rem);
-	height: calc(76 / 32 * 1rem);
-	line-height: calc(70 / 32 * 1rem);
-}

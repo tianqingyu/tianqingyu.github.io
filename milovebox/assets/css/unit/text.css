@@ -7,6 +7,9 @@
 .text {
 	color: #efefef;
 }
+.text.minor {
+	color: #888;
+}
 .text.lesser {
 	color: #bbb;
 }
