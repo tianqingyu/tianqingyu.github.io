@@ -18,16 +18,19 @@
 	color: #efefef;
 }
 
+.mod-public {
+	margin: calc(40 / 32 * 1rem) calc(20 / 32 * 1rem);
+}
 .mod-public .pictures .inner {
 	position: relative;
-	padding: calc(40 / 32 * 1rem);
+	padding: calc(40 / 32 * 1rem) calc(20 / 32 * 1rem);
 	text-align: center;
 }
 .mod-public .pictures .pic {
 	display: inline-block;
 	position: relative;
 	transform: scale(0.8);
-	transtion: transform .5s;
+	transition: all .5s;
 }
 .mod-public .pictures .pic:before {
 	content: "\0020";
@@ -49,3 +52,22 @@
 .mod-public .pictures .scale:before {
 	background: none;
 }
+.mod-public .pictures img {
+	width: calc(308 / 32 * 1rem);
+	height: calc(198 / 32 * 1rem);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
