@@ -56,18 +56,35 @@
 	width: calc(308 / 32 * 1rem);
 	height: calc(198 / 32 * 1rem);
 }
+.mod-public .text {
+	text-indent: 2rem;
+	padding: calc(30 / 32 * 1rem);
+	line-height: calc(45 / 32 * 1rem);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mod-donate .amount,
+.mod-donate .points,
+.mod-donate .remaining {
+	width: calc(400 / 32 * 1rem);
+	margin: auto;
+	margin-bottom: calc(40 / 32 * 1rem);
+}
+.mod-donate .amount {
+	margin-bottom: calc(60 / 32 * 1rem);
+}
+.mod-donate .amount span.text {
+	margin-left: calc(30 / 32 * 1rem);
+}
+.mod-donate .amount strong {
+	font-size: 1.5rem;
+}
+.mod-donate .points a:nth-of-type(1) {
+	margin-left: calc(30 / 32 * 1rem);
+}
+.mod-donate .points span.text {
+	vertical-align: middle;
+	margin: 0 calc(16 / 32 * 1rem);
+}
+.mod-donate .remaining {
+	text-align: right;
+}
