@@ -8,7 +8,15 @@
 @import url(../../global/site.css);
 
 @import url(../../mod/list.css);
+@import url(../../mod/caption.css);
 
+
+.mod-caption  {
+	padding: 0 calc(20 / 32 * 1rem);
+}
+.mod-caption .name {
+	color: #efefef;
+}
 
 .mod-calendar > .content {
 	display: -webkit-flex;
@@ -100,8 +108,21 @@
 	background: none;
 }
 
+/* 信息确认
+-----------------------------------*/
+.mod-info {
+	margin: 0 calc(20 / 32 * 1rem);
+	margin-top: calc(40 / 32 * 1rem);
+}
+.mod-info > .content {
+	text-align: center;
+	padding: calc(30 / 32 * 1rem);
+}
+.mod-info > .content > div {
+	margin: calc(50 / 32 * 1rem) 0;
+}
 
-
-
+/* 预约成功
+-----------------------------------*/
 
 
