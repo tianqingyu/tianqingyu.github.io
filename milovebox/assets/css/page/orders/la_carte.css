@@ -42,3 +42,28 @@
 .mod-la-carte .category li {
 	margin: calc(20 / 32 * 1rem);
 }
+
+/* 预览菜品
+---------------------------------------*/
+.mod-preview > .content {
+	padding: calc(20 / 32 * 1rem);
+}
+.mod-preview h2.button,
+.mod-preview div.button {
+	width: 100%;
+	height: calc(78 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+	text-align: left;
+}
+.mod-preview h2.button span:first-child,
+.mod-preview div.button span:first-child {
+	margin-left: calc(40 / 32 * 1rem);
+}
+.mod-preview .list {
+	margin: 0 calc(6 / 32 * 1rem);
+	margin-top: calc(-12 / 32 * 1rem);
+}
+.mod-preview div.button span:last-child {
+	float: right;
+	margin-right: calc(30 / 32 * 1rem);
+}

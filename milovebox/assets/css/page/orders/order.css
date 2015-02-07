@@ -1,0 +1,89 @@
+/**
+ * @fileview 
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+@import url(../../global/global.css);
+@import url(../../global/site.css);
+
+@import url(../../mod/list.css);
+
+.mod-nav > .content {
+	text-align: center;
+}
+.mod-nav a.button {
+	width: calc(237 / 32 * 1rem);
+	height: calc(78 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+	margin: 0 calc(15 / 32 * 1rem);
+	margin-top: calc(12 / 32 * 1rem);
+}
+
+.mod-todo {
+	margin: calc(20 / 32 * 1rem);
+}
+.mod-todo .list {
+	margin: 0 calc(6 / 32 * 1rem);
+	margin-top: calc(-14 / 32 * 1rem);
+}
+.mod-todo div.button {
+	width: 100%;
+	height: calc(78 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+}
+.mod-todo div.button a {
+	display: inline-block;
+	vertical-align: middle;
+	color: #efefef;
+	width: 48%;
+}
+.mod-todo div.button hr {
+	vertical-align: middle;
+}
+.mod-todo div.pin {
+	text-align: left;
+}
+.mod-todo div.pin span:first-child {
+	margin-left: calc(40 / 32 * 1rem);
+}
+.mod-todo div.pin span:last-child {
+	float: right;
+	font-size: 0.6rem;
+	margin-right: calc(40 / 32 * 1rem);
+	color: #a3a29e;
+}
+.mod-todo .item-panel {
+	padding: 5px 1px;
+}
+.mod-todo .item-panel div {
+	margin: calc(25 / 32 * 1rem);
+}
+.mod-todo .item-panel div:last-child {
+	text-align: right;
+}
+.mod-todo .item-panel span:first-child {
+	color: #a3a29e;
+}
+
+/* 历史订单
+----------------------------------*/
+.mod-history {
+	margin: calc(20 / 32 * 1rem);
+}
+.mod-history .content {
+	padding: calc(30 / 32 * 1rem);
+}
+.mod-history .content div:nth-child(1) {
+	font-size: 0.6rem;
+	color: #a3a29e;
+}
+.mod-history .content div:nth-child(2) {
+	margin: calc(20 / 32 * 1rem) 0;
+}
+.mod-history .content div:last-child {
+	margin-top: calc(20 / 32 * 1rem);
+}
+.mod-history .content div:last-child span:last-child {
+	float: right;
+}

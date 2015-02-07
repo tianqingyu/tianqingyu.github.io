@@ -11,7 +11,18 @@
 	height: calc(32 / 32 * 1rem);
 	margin-right: calc(10 / 32 * 1rem);
 	vertical-align: text-top;
-	background: transparent url(../../imgs/arrow-left-02.png) no-repeat scroll 0 0;
+	background: transparent url(../../imgs/symbol-arrow-left.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+
+.arrow-right:after {
+	display: inline-block;
+	content: "\0020";
+	width: calc(21 / 32 * 1rem);
+	height: calc(32 / 32 * 1rem);
+	margin-left: calc(10 / 32 * 1rem);
+	vertical-align: text-top;
+	background: transparent url(../../imgs/symbol-arrow-right.png) no-repeat scroll right 0;
 	background-size: 100% 100%;
 }
 
