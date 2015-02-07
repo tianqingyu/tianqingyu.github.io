@@ -1,0 +1,114 @@
+/**
+ * @fileview 菜（名称、种类、价格、份量等统称为菜）
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+.course {
+	position: relative;
+	color: #a3a29e;
+	padding: calc(17 / 32 * 1rem);
+	padding-right: calc(26 / 32 * 1rem);
+	border: calc(2 / 32 * 1rem) solid transparent;
+}
+.course > .picture,
+.course > .desc {
+	float: left;
+}
+.course > .picture img {
+	width: calc(275 / 32 * 1rem);
+	height: calc(174 / 32 * 1rem);
+}
+.course .desc {
+	margin-left: calc(20 / 32 * 1rem);
+}
+.course .desc h3 {
+	margin-top: calc(5 / 32 * 1rem);
+}
+.course .desc h4 {
+	margin-top: calc(10 / 32 * 1rem);
+	font-size: 0.8rem;
+}
+.course .desc .props > div {
+	margin-top: calc(15 / 32 * 1rem);
+}
+.course .desc .price em {
+	font-size: 1.5rem;
+	font-style: normal;
+}
+.course .desc .unit {
+	display: none;
+}
+.course .desc .quantity {
+	margin-left: calc(130 / 32 * 1rem);
+}
+.course .desc .quantity span {
+	vertical-align: middle;
+	margin: 0 calc(6 / 32 * 1rem);
+}
+.course .flag {
+	display: none;
+}
+
+/* 已点
+----------------------------------*/
+.course.selected {
+	border: calc(2 / 32 * 1rem) solid #f3c901;
+}
+.course.selected .flag {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.course.selected .flag:after {
+	content: "\0020";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 0;
+	border: calc(60 / 32 * 1rem) solid #f3c901;
+	border-top: 0;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	transform: rotate(45deg) translate(10px, -18px);
+}
+.course.selected .flag span {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	z-index: 2;
+	width: 1.7rem;
+	font-size: 0.8rem;
+	color: #000;
+}
+
+/* 预览
+----------------------------------*/
+.course.preview {
+	background: none;
+}
+.course.preview h4 {
+	display: none;
+}
+.course.preview .picture img {
+	width: calc(165 / 32 * 1rem);
+	height: calc(105 / 32 * 1rem);
+}
+.course.preview .desc {
+	width: 67%;
+}
+.course.preview .desc .quantity {
+	float: right;
+	margin-left: 0;
+	margin-top: calc(-50 / 32 * 1rem);
+}
+.course.preview .desc .price {
+	color: #a3a29e;
+}
+.course.preview .desc .unit {
+	display: inline;
+}
+.course.preview .desc .price em {
+	font-size: 1rem;
+}

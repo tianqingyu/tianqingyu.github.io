@@ -1,0 +1,107 @@
+/**
+ * @fileview 
+ * @author 若何
+ * @date 2015/1/20
+ */
+
+@import url(../../global/global.css);
+@import url(../../global/site.css);
+
+@import url(../../mod/list.css);
+
+
+.mod-calendar > .content {
+	display: -webkit-flex;
+	display: flex;
+	align-item: center;
+	color: #efefef;
+}
+.mod-calendar > .content > div {
+	flex: 1;
+	height: calc(78 / 32 * 1rem);
+	margin-top: calc(8 / 32 * 1rem);
+	text-align: center;
+	background: transparent url(../../../imgs/button-05.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.mod-calendar > .content > div:first-child {
+	margin-left: calc(10 / 32 * 1rem);
+}
+.mod-calendar > .content > div:last-child {
+	margin-right: calc(10 / 32 * 1rem);
+	line-height: calc(90 / 32 * 1rem);
+}
+.mod-calendar > .content > div h2 {
+	font-size: 0.8rem;
+	margin-top: 3px;
+}
+.mod-calendar > .content > div div {
+	font-size: 0.5rem;
+	margin-top: 3px;
+}
+.mod-calendar .selected {
+	color: #f3c901;
+}
+
+.mod-booking {
+	padding: 0 calc(20 / 32 * 1rem);
+}
+.mod-booking .time {
+	margin-top: calc(29 / 32 * 1rem);
+	margin-bottom: calc(29 / 32 * 1rem);
+	text-align: center;
+}
+.mod-booking .time input {
+	width: calc(100 / 32 * 1rem);
+	text-align: center;
+}
+.mod-booking .peoples {
+	text-align: left;
+	height: calc(76 / 32 * 1rem);
+	line-height: calc(76 / 32 * 1rem);
+	width: 100%;
+	color: #a19e9d;
+}
+.mod-booking .peoples > span:first-child {
+	margin-left: calc(30 / 32 * 1rem);
+}
+.mod-booking .peoples > span:last-child {
+	float: right;
+	margin-right: calc(30 / 32 * 1rem);
+	margin-top: calc(-6 / 32 * 1rem);
+}
+.mod-booking .peoples > span:last-child span {
+	vertical-align: middle;
+	margin: 0 calc(10 / 32 * 1rem);
+}
+.mod-booking .list {
+	margin-top: calc(40 / 32 * 1rem);
+	color: #ccc;
+}
+.mod-booking .item {
+	padding-left: calc(15 / 32 * 1rem);
+}
+.mod-booking .item label span {
+	display: inline-block;
+	width: calc(140 / 32 * 1rem);;
+}
+.mod-booking .mobile {
+	width: calc(266 / 32 * 1rem);;
+}
+.mod-booking .captcha {
+	float: right;
+	width: calc(200 / 32 * 1rem);
+	height: calc(86 / 32 * 1rem);
+	line-height: calc(86 / 32 * 1rem);
+}
+
+.mod-booking .list .input {
+	border: 0;
+	background: none;
+}
+
+
+
+
+
+
