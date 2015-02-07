@@ -11,16 +11,13 @@
 	padding-right: calc(26 / 32 * 1rem);
 	border: calc(2 / 32 * 1rem) solid transparent;
 }
-.course > .picture,
-.course > .desc {
+.course > .picture {
 	float: left;
+	margin-right: calc(20 / 32 * 1rem);
 }
 .course > .picture img {
 	width: calc(275 / 32 * 1rem);
 	height: calc(174 / 32 * 1rem);
-}
-.course .desc {
-	margin-left: calc(20 / 32 * 1rem);
 }
 .course .desc h3 {
 	margin-top: calc(5 / 32 * 1rem);
@@ -40,11 +37,15 @@
 	display: none;
 }
 .course .desc .quantity {
-	margin-left: calc(130 / 32 * 1rem);
+	float: right;
 }
 .course .desc .quantity span {
 	vertical-align: middle;
 	margin: 0 calc(6 / 32 * 1rem);
+}
+.course .desc .quantity .minus,
+.course .desc .quantity span {
+	visibility: hidden;
 }
 .course .flag {
 	display: none;
@@ -54,6 +55,10 @@
 ----------------------------------*/
 .course.selected {
 	border: calc(2 / 32 * 1rem) solid #f3c901;
+}
+.course.selected .desc .quantity .minus,
+.course.selected .desc .quantity span {
+	visibility: visible;
 }
 .course.selected .flag {
 	display: block;
@@ -95,12 +100,11 @@
 	width: calc(165 / 32 * 1rem);
 	height: calc(105 / 32 * 1rem);
 }
-.course.preview .desc {
-	width: 67%;
+.course.preview .desc .quantity .minus,
+.course.preview .desc .quantity span {
+	visibility: visible;
 }
 .course.preview .desc .quantity {
-	float: right;
-	margin-left: 0;
 	margin-top: calc(-50 / 32 * 1rem);
 }
 .course.preview .desc .price {

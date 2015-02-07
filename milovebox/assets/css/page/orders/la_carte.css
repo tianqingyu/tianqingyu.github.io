@@ -8,7 +8,37 @@
 @import url(../../global/site.css);
 
 @import url(../../mod/list.css);
-@import url(../../mod/caption.css);
+@import url(../../mod/course.css);
 
 
+.mod-category {
+	text-align: center;
+}
+.mod-category a {
+	display: inline-block;
+	width: calc(146 / 32 * 1rem);
+	height: calc(78 / 32 * 1rem);
+	line-height: calc(70 / 32 * 1rem);
+	margin: 0 calc(5 / 32 * 1rem);
+	margin-top: calc(14 / 32 * 1rem);
+	text-align: center;
+	color: #f4f4f4;
+	background: transparent url(../../../imgs/button-05.png) no-repeat scroll 0 0;
+	background-size: 100% 100%;
+}
+.mod-category a.selected {
+	color: #f3c901;
+}
 
+.mod-la-carte .category {
+	margin: calc(20 / 32 * 1rem) 0;
+}
+.mod-la-carte .category h2 {
+	padding: calc(10 / 32 * 1rem) 0;
+	padding-left: calc(20 / 32 * 1rem);
+	color: #000;
+	background-color: #f3c901;
+}
+.mod-la-carte .category li {
+	margin: calc(20 / 32 * 1rem);
+}
