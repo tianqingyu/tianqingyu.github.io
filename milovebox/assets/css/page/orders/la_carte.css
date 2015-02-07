@@ -4,28 +4,10 @@
  * @date 2015/1/20
  */
 
-
-@import url(../../../libs/normalize.css);
-@import url(../../../libs/html5-doctor-reset.css);
-
-@import url(../../unit/arrow.css);
-@import url(../../unit/bg.css);
-@import url(../../unit/button.css);
-@import url(../../unit/card.css);
-@import url(../../unit/img.css);
-@import url(../../unit/input.css);
-@import url(../../unit/line.css);
-@import url(../../unit/logo.css);
-@import url(../../unit/radio.css);
-@import url(../../unit/symbol.css);
-@import url(../../unit/pin.css);
-@import url(../../unit/text.css);
-@import url(../../unit/calendar.css);
-
-@import url(../../global/site.css);
-
+@import url(../../global/global.css);
+ @import url(../../global/site.css);
+ 
 @import url(../../mod/head.css);
-
 @import url(../../mod/list.css);
 @import url(../../mod/course.css);
 
