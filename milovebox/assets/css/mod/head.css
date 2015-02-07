@@ -6,8 +6,8 @@
 
 .header {
 	color: #fff;
-	height: calc(88 / 32 * 1rem);
-	line-height: calc(88 / 32 * 1rem);
+	height: 2.75rem;
+	line-height: 2.75rem;
 }
 .header a {
 	color: #fff;
@@ -16,11 +16,11 @@
 	text-align: center;
 }
 .header > .actions {
-	margin-top: calc(-88 / 32 * 1rem);
-	padding: 0 calc(25 / 32 * 1rem);
+	margin-top: -2.75rem;
+	padding: 0 0.78125rem;
 }
 .header > .actions .ellipsis {
 	float: right;
 	text-indent: -9999px;
-	margin-top: calc(40 / 32 * 1rem);
+	margin-top: 1.25rem;
 }
