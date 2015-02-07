@@ -61,19 +61,21 @@ body,
 	height: 100%;
 }
 #footer.footer > .content .button {
-	height: calc(76 / 32 * 1rem);
-	line-height: calc(70 / 32 * 1rem);
-	flex: 1;
-	margin: auto calc(20 / 32 * 1rem);;
+	height: 2rem;
+	line-height: 2.1875rem;
+	margin: auto 0.625rem;
+	-webkit-flex: 1;
+	        flex: 1;
 }
 #footer.footer > .content .button:first-child {
-	margin-left: calc(40 / 32 * 1rem);;
+	margin-left: 1.25rem;
 }
 #footer.footer > .content .button:last-child {
-	margin-right: calc(60 / 32 * 1rem);;
+	margin-right: 1.875rem;
 }
 #footer.footer > .content .button:only-child {
-	flex: none;
+	-webkit-flex: none;
+	        flex: none;
 	margin: auto;
 	width: 55%;
 }
