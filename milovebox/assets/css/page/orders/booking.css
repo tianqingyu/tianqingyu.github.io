@@ -19,7 +19,7 @@
 .mod-calendar > .content > div {
 	flex: 1;
 	height: calc(78 / 32 * 1rem);
-	margin-top: calc(8 / 32 * 1rem);
+	margin-top: calc(14 / 32 * 1rem);
 	text-align: center;
 	background: transparent url(../../../imgs/button-05.png) no-repeat scroll 0 0;
 	background-size: 100% 100%;
@@ -33,7 +33,7 @@
 }
 .mod-calendar > .content > div h2 {
 	font-size: 0.8rem;
-	margin-top: 3px;
+	margin-top: calc(14 / 32 * 1rem);;
 }
 .mod-calendar > .content > div div {
 	font-size: 0.5rem;
