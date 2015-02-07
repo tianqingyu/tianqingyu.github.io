@@ -33,18 +33,19 @@ body,
 	left: 0;
 }
 #content {
-	top: calc(88 / 32 * 1rem);
 	left: 0;
-	height: calc(100% - 2.75rem - 3.0625rem);
+	right: 0;
+	top: 2.75rem;
+	bottom: 3.0625rem;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 #content.nofooter {
-	height: calc(100% - 2.75rem);
+	bottom: 0;
 }
 #content.noheader {
 	top: 0;
-	height: calc(100% - 3.0625rem);
+	bottom: 0;
 }
 
 #float {
