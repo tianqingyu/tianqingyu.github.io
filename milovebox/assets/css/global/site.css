@@ -61,7 +61,7 @@ body,
 	height: 100%;
 }
 #footer.footer > .content .button {
-	height: 2rem;
+	height: 2.375rem;
 	line-height: 2.1875rem;
 	margin: auto 0.625rem;
 	-webkit-flex: 1;
