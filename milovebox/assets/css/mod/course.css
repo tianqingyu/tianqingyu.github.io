@@ -76,7 +76,8 @@
 	border-top: 0;
 	border-left-color: transparent;
 	border-right-color: transparent;
-	transform: rotate(45deg) translate(10px, -18px);
+	-webkit-transform: rotate(45deg) translate(10px, -18px);
+	        transform: rotate(45deg) translate(10px, -18px);
 }
 .course.selected .flag span {
 	position: absolute;
