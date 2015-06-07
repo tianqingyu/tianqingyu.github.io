@@ -1,0 +1,38 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+.mod-login .content {
+	text-align: center;
+}
+.mod-login .logo {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+.mod-login h3 {
+	margin: 15px 0;
+	font-size: 18px;
+	color: #5db1ff;
+}
+.mod-login p {
+	color: #999;
+}
+.mod-login .remember {
+	width: 256px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.mod-login .findback {
+	margin-top: 15px;
+	margin-bottom: 60px;
+}
+.mod-login .findback a {
+	color: #5db1ff;
+}
+
+.page-login .mod-copyright {
+	color: #555;
+	background-color: #fff;
+}

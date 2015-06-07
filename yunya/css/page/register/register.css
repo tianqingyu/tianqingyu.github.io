@@ -1,0 +1,28 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+.mod-register .content {
+	text-align: center;
+}
+.mod-register .logo {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+.mod-register h3 {
+	margin: 15px 0;
+	font-size: 18px;
+	color: #5db1ff;
+}
+.mod-register p {
+	color: #999;
+}
+.mod-register .submit {
+	margin-bottom: 40px;
+}
+
+.page-register .mod-copyright {
+	color: #555;
+	background-color: #fff;
+}

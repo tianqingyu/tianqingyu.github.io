@@ -1,0 +1,70 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+.mod-banner {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+.mod-banner img {
+	width: 100%;
+}
+.mod-banner .text {
+	position: absolute;
+	top: 158px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+}
+.mod-banner .overlay {
+	top: 75px;
+}
+
+.mod-download {
+	width: 1001px;
+	margin: 30px auto 100px auto;
+}
+.mod-download h4 {
+	margin-left: 2.2em;
+	color: #888;
+}
+.mod-download a {
+	color: #5db1ff;
+}
+.mod-download ul {
+	margin-top: 40px;
+}
+.mod-download li {
+	position: relative;
+	float: left;
+	display: inline;
+	width: 319px;
+	height: 246px;
+	margin-left: 19px;
+	border: 1px solid #e3e3e1;
+}
+.mod-download .first {
+	margin-left: 0;
+}
+.mod-download li h3 {
+	font-size: 30px;
+	margin: 24px 0 0 24px;
+}
+.mod-download li p {
+	width: 272px;
+	margin: 5px 0 0 24px;
+	font-size: 14px;
+}
+.mod-download ul div {
+	position: absolute;
+	left: 24px;
+	bottom: 33px;
+	width: 100%;
+}
+.mod-download li a {
+	font-size: 16px;
+}

@@ -1,0 +1,144 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+.mod-apps .content {
+	position: relative;
+    height: 566px;
+    width: 1000px;
+    margin: 0 auto; 
+    padding-top: 1px;
+}
+.mod-apps .bg {
+	margin-top: 107px;
+}
+.mod-apps .text {
+	position: absolute;
+	top: 162px;
+	right: 0;
+}
+.mod-apps h3 {
+	font-size: 32px;
+	color: #5db1ff;
+	margin-bottom: 10px;
+}
+.mod-apps h3 span {
+	margin-right: 10px;
+}
+.mod-apps p {
+	font-size: 16px;
+	width: 310px;
+}
+
+.mod-help .content {
+	position: relative;
+    height: 567px;
+    width: 100%;
+}
+.mod-help .bg {
+	width: 100%;
+    height: 100%;
+}
+.mod-help .bg img {
+	width: 100%;
+    height: 100%;
+}
+.mod-help .text {
+	position: absolute;
+	top: 176px;
+	width: 100%;
+	text-align: center;
+}
+.mod-help h3 {
+	color: #5db1ff;
+	font-size: 32px;
+}
+.mod-help h3 span {
+	margin: 0 20px;
+}
+.mod-help p {
+	color: #fff;
+	font-size: 16px;
+	width: 737px;
+	margin: 5px auto 30px auto;
+}
+.mod-help .button {
+	width: 164px;
+	border: 1px solid #fff;
+	background-color: transparent;
+	box-shadow: 0 0 2px #fff;
+}
+
+.mod-platform .content {
+	position: relative;
+	height: 664px;
+	width: 100%;
+}
+.mod-platform .bg1 {
+	width: 100%;
+	height: 100%;
+}
+.mod-platform .bg1 img {
+    width: 100%;
+    height: 100%;
+}
+.mod-platform .text,
+.mod-platform .bg2 {
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	text-align: center;
+}
+.mod-platform .bg2 {
+	top: 210px;
+}
+.mod-platform h3 {
+	color: #5db1ff;
+	font-size: 48px;
+}
+.mod-platform p {
+	width: 755px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: left;
+}
+
+.mod-download {
+	padding: 60px 0;
+	color: #fff;
+	text-align: center;
+	background-color: #5db1ff;
+}
+.mod-download h3 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+.mod-download .button {
+	margin-bottom: 10px;
+	color: #5db1ff;
+	background-color: #fff;
+	box-shadow: 0 0 2px #fff;
+}
+.mod-download .button:hover {
+	color: #5db1ff;
+    background-color: #fafafa;
+}
+
+.mod-qrcode {
+	padding: 62px 0;
+	text-align: center;
+}
+.mod-qrcode .sp-line,
+.mod-qrcode img {
+	vertical-align: middle;
+}
+.mod-qrcode .sp-line {
+	display: inline-block;
+	overflow: hidden;
+	width: 1px;
+	height: 45px;
+	margin: 0 128px;
+	margin-top: -20px;
+	background-color: #b3daff;
+}
