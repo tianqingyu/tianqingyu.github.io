@@ -1,0 +1,90 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    position: relative;
+    color: #555;
+    font: 12px/1.5 "Microsoft YaHei",Tahoma,Arial,\5b8b\4f53,sans-serif;
+}
+
+ul,
+ol,
+dl,
+dd {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,
+p {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+	color: #302d20;
+    text-decoration: none;
+}
+a:hover {
+	color: #5db1ff;
+    text-decoration: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.justify {
+    text-align: justify;
+}
+.justify:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 0;
+}
+
+.hide {
+    display: none!important;
+}
+
+.fn-fl {
+    float: left;
+    display: inline;
+}
+.fn-fr {
+    float: right;
+    display: inline;
+}
+
+.nonselect {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+.layout-full {
+    width: 100%;
+    min-width: 1200px;
+    _width: 1200px;
+}

@@ -1,0 +1,61 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+.form .items {
+	text-align: center;
+}
+.form .item {
+	position: relative;
+	width: 256px;
+	height: 33px;
+	margin: 10px auto;
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+}
+.form .item:hover {
+	border-color: #5db1ff;
+	box-shadow: 0 0 3px #5db1ff;
+}
+.form .item input,
+.form .submit input {
+	border: 0;
+	height: 33px;
+	line-height: 33px;
+	margin: 0;
+	padding: 0 1em;
+	outline: none;
+}
+.form .item label {
+	display: block;
+}
+.form .item .require {
+	position: absolute;
+	top: 7px;
+	right: -20px;
+	color: #5db1ff;
+	font-size: 16px;
+}
+.form .item label span {
+	display: inline-block;
+	width: 65px;
+	text-align: left;
+	color: #888;
+}
+.form .item .arrow-down {
+	position: absolute;
+	top: 13px;
+	right: 16px;
+	width: 13px;
+	height: 8px;
+	background: transparent url(../../imgs/sprites.png) no-repeat scroll -159px -26px;
+}
+.form .button-submit {
+	width: 120px;
+	height: 33px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: #fff;
+	background: transparent url(../../imgs/sprites.png) no-repeat scroll 0 -50px;
+}

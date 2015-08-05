@@ -1,0 +1,36 @@
+/**
+ * @author jun.yj
+ * @since 2015/6/5
+ */
+
+.mod-copyright {
+	padding: 20px 0;
+	text-align: center;
+	color: #e0e0e0;
+	background-color: #7f7f7f;
+}
+.mod-copyright span {
+	margin: 0 10px;
+}
+.mod-copyright a {
+	color: #e0e0e0;
+}
+.mod-copyright a:hover {
+	color: #5db1ff;
+}
+.mod-copyright ul {
+	width: 600px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.mod-copyright li {
+	float: left;
+	display: inline;
+	margin: 0 60px;
+}
+
+.page-index .mod-copyright .index,
+.page-download .mod-copyright .download,
+.page-help .mod-copyright .help {
+	border-bottom: 1px solid #e0e0e0;
+}
