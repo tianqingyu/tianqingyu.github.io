@@ -8,3 +8,36 @@
 	color: #fff;
 	background-color: #4471bc;
 }
+.doc > header h3 {
+	line-height: 50px;
+	text-align: center;
+}
+.doc > header .left {
+	margin-left: 15px;
+}
+.doc > header .right {
+	margin-right: 15px;
+}
+.doc > header .left,
+.doc > header .right {
+	color: #fff;
+	margin-top: -35px;
+}
+.doc > header a {
+	color: #fff;
+}
+
+.doc > header .unread {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	background-color: red;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 100%;
+	position: relative;
+	left: 2px;
+	top: -2px;
+}
