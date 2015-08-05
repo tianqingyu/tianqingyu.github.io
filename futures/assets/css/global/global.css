@@ -3,6 +3,32 @@
  * @since 2015/8/4
  */
 
+*, *:before, *:after {
+    /* 设置元素的盒模型为border-box */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    /* 使Chrome使用小于12px的字体 */
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /* 去除点击元素后的高亮效果 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**
+ * 去除元素周围的虚线
+ */
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 100%;
+    color: #555;
+    background-color: #fff;
+}
+
 html,
 body {
     width: 100%;
@@ -10,9 +36,7 @@ body {
 
 body {
     position: relative;
-    color: #555;
-    background-color: #fff;
-    font: 12px/1.5 "Microsoft YaHei",Tahoma,Arial,\5b8b\4f53,sans-serif;
+    font: 0.75rem/1.5 "Microsoft YaHei",Tahoma,Arial,\5b8b\4f53,sans-serif;
 }
 
 ul,ol,dl,dd {
@@ -25,6 +49,23 @@ h1,h2,h3,h4,h5,h6,
 p {
     margin: 0;
     font-weight: normal;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input::-ms-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea::-ms-input-placeholder {
+    color: #ccc;
 }
 
 a {
@@ -47,6 +88,9 @@ a:hover {
     visibility: hidden;
 }
 
+/**
+ * 设置一行文本内容，两端对齐
+ */
 .justify {
     text-align: justify;
 }
@@ -73,4 +117,11 @@ a:hover {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+}
+
+/**
+ * <span class="cny">&yen;</span>
+ */
+.cny{
+    font-family: Arial, Helvetica;
 }

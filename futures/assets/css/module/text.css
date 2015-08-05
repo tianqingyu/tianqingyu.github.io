@@ -3,9 +3,48 @@
  * @since 2015/8/4
  */
 
+.text-lesser {
+    color: #999;
+}
+
 .text-stress {
     color: #ff7300;
 }
-.text-lesser {
-    color: #888;
+
+.text-warning {
+    color: #e31000;
+}
+
+.text-huge {
+    font-size: 1.125rem;/*36px*/
+}
+
+.text-large {
+    font-size: 1rem;/*32px*/
+}
+
+.text-medium {
+    font-size: 0.9375rem;/*30px*/
+}
+
+.text-small {
+    font-size: 0.5625rem;/*18px*/
+}
+
+@media ( max-width: 320px ) {
+    .text-huge {
+        font-size: 1.0625rem;/*34px*/
+    }
+
+    .text-large {
+        font-size: 0.9375rem;/*30px*/
+    }
+
+    .text-medium {
+        font-size: 0.875rem;/*28px*/
+    }
+
+    .text-small {
+        font-size: 0.5rem;/*16px*/
+    }
 }
