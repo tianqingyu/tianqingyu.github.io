@@ -4,24 +4,24 @@
  */
 
 .doc > header {
-	height: 50px;
+	height: 3.125rem;
 	color: #fff;
 	background-color: #4471bc;
 }
 .doc > header h3 {
-	line-height: 50px;
+	line-height: 3.125rem;
 	text-align: center;
 }
 .doc > header .left {
-	margin-left: 15px;
+	margin-left: 0.9375rem;
 }
 .doc > header .right {
-	margin-right: 15px;
+	margin-right: 0.9375rem;
 }
 .doc > header .left,
 .doc > header .right {
 	color: #fff;
-	margin-top: -35px;
+	margin-top: -2.1875rem;
 }
 .doc > header a {
 	color: #fff;
@@ -29,15 +29,15 @@
 
 .doc > header .unread {
 	display: inline-block;
-	height: 16px;
-	width: 16px;
+	height: 1rem;
+	width: 1rem;
 	overflow: hidden;
 	background-color: red;
 	color: #fff;
 	text-align: center;
-	line-height: 15px;
+	line-height: 0.9375rem;
 	border-radius: 100%;
 	position: relative;
-	left: 2px;
-	top: -2px;
+	left: 0.125rem;
+	top: -0.125rem;
 }

@@ -8,9 +8,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-	height: 60px;
-    padding: 1px;
-    border-top: 1px solid #ccc;
+	height: 3.75rem;
+    padding: 0.0625rem;
+    border-top: 0.0625rem solid #ccc;
 }
 .doc > footer .content {
     height: 100%;
@@ -30,8 +30,8 @@
     text-align: center;
 }
 .doc > footer img {
-    height: 30px;
-    width: 30px;
+    height: 1.875rem;
+    width: 1.875rem;
     border: 0;
     background-color: #ccc;
 }
