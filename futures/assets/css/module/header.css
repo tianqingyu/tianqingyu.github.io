@@ -1,0 +1,10 @@
+/**
+ * @author jun.yj
+ * @since 2015/8/4
+ */
+
+.doc > header {
+	height: 50px;
+	color: #fff;
+	background-color: #4471bc;
+}
