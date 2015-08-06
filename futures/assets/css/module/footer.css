@@ -49,4 +49,5 @@
 }
 .doc > footer a span {
     display: block;
+    line-height: 1;
 }
