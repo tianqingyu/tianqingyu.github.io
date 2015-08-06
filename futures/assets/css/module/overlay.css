@@ -3,9 +3,7 @@
  * @since 2015/8/4
  */
 
-.overlay,
-.overlay-30,
-.overlay-white {
+.overlay {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -17,16 +15,4 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 	filter: alpha(opacity=40);
 	opacity: 0.4;
-}
-.overlay-30 {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-    opacity: 0.3;
-}
-
-.overlay-white {
-	background-color: #ececec;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=26)";
-    filter: alpha(opacity=26);
-    opacity: 0.26;
 }

@@ -5,15 +5,15 @@
 
 .button {
     display: inline-block;
-    width: 202px;
-    height: 54px;
-    line-height: 54px;
+    width: 2.02rem;
+    height: 0.54rem;
+    line-height: 0.54rem;
     color: #fff;
-    font-size: 16px;
+    font-size: 0.16rem;
     text-align: center;
     background-color: #5db1ff;
-    border-radius: 5px;
-    box-shadow: 0 0 2px #5db1ff;
+    border-radius: 0.05rem;
+    box-shadow: 0 0 0.02rem #5db1ff;
 }
 .button:hover {
 	color: #fff;

@@ -16,35 +16,35 @@
 }
 
 .text-huge {
-    font-size: 1.125rem;/*36px*/
+    font-size: 0.36rem;/*36px*/
 }
 
 .text-large {
-    font-size: 1rem;/*32px*/
+    font-size: 0.32rem;/*32px*/
 }
 
 .text-medium {
-    font-size: 0.9375rem;/*30px*/
+    font-size: 0.3rem;/*30px*/
 }
 
 .text-small {
-    font-size: 0.5625rem;/*18px*/
+    font-size: 0.18rem;/*18px*/
 }
 
 @media ( max-width: 320px ) {
     .text-huge {
-        font-size: 1.0625rem;/*34px*/
+        font-size: 0.34rem;/*34px*/
     }
 
     .text-large {
-        font-size: 0.9375rem;/*30px*/
+        font-size: 0.3rem;/*30px*/
     }
 
     .text-medium {
-        font-size: 0.875rem;/*28px*/
+        font-size: 0.28rem;/*28px*/
     }
 
     .text-small {
-        font-size: 0.5rem;/*16px*/
+        font-size: 0.16rem;/*16px*/
     }
 }

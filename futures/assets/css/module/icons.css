@@ -3,18 +3,18 @@
  * @since 2015/8/4
  */
 
-.arrow-left {
+.icon-arrow-left {
 
 }
 
-.unread {
+.icon-unread {
     position: relative;
-    left: 0.125rem;
-    top: -0.125rem;
+    left: 0.02rem;
+    top: -0.02rem;
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    line-height: 1rem;
+    width: 0.16rem;
+    height: 0.16rem;
+    line-height: 0.16rem;
     overflow: hidden;
     color: #fff;
     text-align: center;

@@ -24,7 +24,7 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 625%; /* 相当于100px，方便计算，浏览器默认字体为16px */
     color: #555;
     background-color: #fff;
 }
@@ -36,7 +36,8 @@ body {
 
 body {
     position: relative;
-    font: 0.875rem/1.5 tahoma,arial,"\5B8B\4F53",sans-serif;
+    font-size: 12px; /* 对不支持rem单位的浏览器，重置为12px */
+    font: 0.14rem/1.5 tahoma,arial,"\5B8B\4F53",sans-serif;
     -webkit-user-select: none;
             user-select: none;
 }

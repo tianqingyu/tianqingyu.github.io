@@ -8,9 +8,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-	height: 3.75rem;
-    padding: 0.0625rem;
-    border-top: 0.0625rem solid #ccc;
+	height: 0.6rem;
+    padding: 0.01rem;
+    border-top: 0.01rem solid #ccc;
 }
 .doc > footer .content {
     height: 100%;
@@ -39,8 +39,8 @@
                 flex: 1;
 }
 .doc > footer img {
-    height: 1.875rem;
-    width: 1.875rem;
+    height: 0.3rem;
+    width: 0.3rem;
     border: 0;
     background-color: #ccc;
 }
