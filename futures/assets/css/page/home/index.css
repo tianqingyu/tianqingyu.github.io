@@ -84,22 +84,6 @@
     bottom: -0.15rem;
     margin-top: 0.1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-home .mod-tab-switcher + .mod-list {
+    padding-top: 0.1rem;
+}
