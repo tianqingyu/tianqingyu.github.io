@@ -36,7 +36,7 @@ body {
 
 body {
     position: relative;
-    font: 0.14rem/1.5 tahoma,arial,"\5B8B\4F53",sans-serif;
+    font: 14px/1.5 tahoma,arial,"\5B8B\4F53",sans-serif;
     -webkit-user-select: none;
             user-select: none;
 }
