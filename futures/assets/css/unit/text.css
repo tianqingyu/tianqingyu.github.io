@@ -15,6 +15,14 @@
     color: #e31000;
 }
 
+.text-highs {
+    color: #d0402d;
+}
+
+.text-lows {
+    color: #17b03e;
+}
+
 .text-huge {
     font-size: 0.36rem;/*36px*/
 }

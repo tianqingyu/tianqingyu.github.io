@@ -1,0 +1,50 @@
+/**
+ * @author jun.yj
+ * @since 2015/8/5
+ */
+
+.mod-list {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0 0 0 0.2rem;
+    background-color: #fff;
+}
+.mod-list > li {
+    padding: 0.15rem 0;
+    border-top: 1px solid #d8d8d8;
+}
+.mod-list > li:first-child {
+    border-top: 0;
+}
+.mod-list > li > div {
+    float: left;
+}
+.mod-list .img {
+    width: 0.52rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+    text-align: center;
+    margin-right: 0.2rem;
+    background-color: #ccc;
+    border-radius: 100%;
+}
+.mod-list .detail {
+    margin-top: 0.04rem;
+}
+.mod-list .detail span {
+    display: inline-block;
+}
+.mod-list .detail .name {
+    width: 0.8rem;
+}
+.mod-list .detail .code {
+    width: 0.8rem;
+}
+.mod-list .detail .uname {
+    margin-right: 0.2rem;
+}
+.mod-list .icon-arrow-right {
+    float: right;
+    margin-right: 0.1rem;
+    margin-top: 0.2rem;
+}

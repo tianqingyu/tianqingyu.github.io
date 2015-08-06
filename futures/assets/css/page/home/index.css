@@ -3,7 +3,103 @@
  * @since 2015/8/5
  */
 
-.mod-home {
-    margin-top: 0.6rem;
-    height: 1000px;
+.main-home {
+    padding-bottom: 0.01rem;
+    background-color: #edf0f5;
 }
+
+.main-home .pk-game {
+    position: relative;
+    margin: 0.2rem;
+}
+.main-home .pk-game ul {
+    height: 0.56rem;
+}
+.main-home .pk-game li {
+    float: left;
+    color: #fff;
+    height: 100%;
+    line-height: 0.56rem;
+}
+.main-home .pk-game .highs {
+    width: 60%;
+    background-color: #d0402d;
+    border-top-left-radius: 0.06rem;
+    border-bottom-left-radius: 0.06rem;
+}
+.main-home .pk-game .highs .percent {
+    margin-left: 0.1rem;
+}
+.main-home .pk-game .lows {
+    width: 40%;
+    text-align: right;
+    background-color: #17b03e;
+    border-top-right-radius: 0.06rem;
+    border-bottom-right-radius: 0.06rem;
+}
+.main-home .pk-game .lows .percent {
+    margin-right: 0.1rem;
+}
+.main-home .pk-game .percent {
+    font-size: 0.24rem;
+}
+.main-home .pk-game div {
+    position: absolute;
+    top: 0;
+    left: 51.5%;
+    width: 0.56rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.main-home .novice {
+    margin: 0.2rem;
+}
+.main-home .novice a {
+    display: block;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    border: 0.01rem solid #d8d8d8;
+    font-size: 0.18rem;
+    background-color: #fff;
+    border-radius: 0.06rem;
+}
+
+.main-home > .content > p {
+    text-align: center;
+    margin: 0.2rem 0;
+}
+.main-home > .content > p em {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.18rem;
+}
+
+.main-home .mod-tab-switcher {
+    position: relative;
+    bottom: -0.15rem;
+    margin-top: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

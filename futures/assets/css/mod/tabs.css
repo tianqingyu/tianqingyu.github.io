@@ -1,0 +1,31 @@
+/**
+ * @author jun.yj
+ * @since 2015/8/5
+ */
+
+.mod-tab-switcher {
+    text-align: center;
+}
+.mod-tab-switcher span {
+    display: inline-block;
+    width: 1rem;
+    height: 0.3rem;
+    line-height: 0.28rem;
+    text-align: center;
+    border: 1px solid #4471bc;
+    background-color: #fff;
+}
+.mod-tab-switcher span:first-child {
+    border-right: 0;
+    border-top-left-radius: 0.06rem;
+    border-bottom-left-radius: 0.06rem;
+}
+.mod-tab-switcher span:last-child {
+    border-left: 0;
+    border-top-right-radius: 0.06rem;
+    border-bottom-right-radius: 0.06rem;
+}
+.mod-tab-switcher .curr {
+    color: #fff;
+    background-color: #4471bc;
+}
