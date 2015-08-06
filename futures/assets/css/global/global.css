@@ -8,7 +8,7 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    /* 使Chrome使用小于12px的字体 */
+    /* chrome不再支持下面的属性。移动端Safari横屏时禁止字体放大 */
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
             text-size-adjust: 100%;
