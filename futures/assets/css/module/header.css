@@ -24,8 +24,9 @@
 }
 .doc > header .left,
 .doc > header .right {
-	color: #fff;
 	margin-top: -0.35rem;
+	color: #fff;
+	font-size: 0.14rem;
 }
 .doc > header a {
 	color: #fff;
