@@ -47,6 +47,7 @@
 .doc > footer a {
     display: inline-block;
     line-height: 1;
+    vertical-align: middle;
 }
 .doc > footer a span {
     display: block;
