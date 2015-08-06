@@ -33,6 +33,10 @@
 }
 .doc > footer li {
     text-align: center;
+    -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
 }
 .doc > footer img {
     height: 1.875rem;
