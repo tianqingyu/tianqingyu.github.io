@@ -36,7 +36,9 @@ body {
 
 body {
     position: relative;
-    font: 0.875rem/1.5 "Microsoft YaHei",Tahoma,Arial,\5b8b\4f53,sans-serif;
+    font: 0.875rem/1.5 tahoma,arial,"\5B8B\4F53",sans-serif;
+    -webkit-user-select: none;
+            user-select: none;
 }
 
 ul,ol,dl,dd {
@@ -123,5 +125,5 @@ a:hover {
  * <span class="cny">&yen;</span>
  */
 .cny{
-    font-family: Arial, Helvetica;
+    font-family: arial, Helvetica;
 }
