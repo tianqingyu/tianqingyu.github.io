@@ -46,8 +46,8 @@
 }
 .doc > footer a {
     display: inline-block;
+    line-height: 1;
 }
 .doc > footer a span {
     display: block;
-    line-height: 1;
 }
