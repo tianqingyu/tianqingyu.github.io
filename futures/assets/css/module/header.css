@@ -31,16 +31,16 @@
 }
 
 .doc > header .unread {
-	display: inline-block;
-	height: 1rem;
-	width: 1rem;
-	overflow: hidden;
-	background-color: red;
-	color: #fff;
-	text-align: center;
-	line-height: 0.9375rem;
-	border-radius: 100%;
 	position: relative;
 	left: 0.125rem;
 	top: -0.125rem;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	background-color: red;
+	border-radius: 100%;
 }
