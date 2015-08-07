@@ -48,7 +48,7 @@ define(function (require, exports, module) {
                 pc = newPC;
             });
 
-            pk.on('transitionend', function(){
+            pk.on('transitionend webkitTransitionEnd', function(){
                 locked = false;
                 pk.removeClass('rotate360 rotate-360');
             });
