@@ -11,33 +11,36 @@
 /* pk game
  * ======================*/
 .main-home .pk-game {
-    position: relative;
     margin: 0.2rem;
 }
 .main-home .pk-game ul {
+    position: relative;
     height: 0.56rem;
 }
 .main-home .pk-game li {
-    float: left;
-    color: #fff;
+    position: absolute;
     height: 100%;
+    width: 100%;
+    color: #fff;
     line-height: 0.56rem;
+    border-radius: 0.06rem;
 }
 .main-home .pk-game .highs {
-    width: 60%;
+    z-index: 1;
+    width: 50%;
     background-color: #d0402d;
-    border-top-left-radius: 0.06rem;
-    border-bottom-left-radius: 0.06rem;
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
 }
 .main-home .pk-game .highs .percent {
     margin-left: 0.1rem;
 }
 .main-home .pk-game .lows {
-    width: 40%;
     text-align: right;
     background-color: #17b03e;
-    border-top-right-radius: 0.06rem;
-    border-bottom-right-radius: 0.06rem;
 }
 .main-home .pk-game .lows .percent {
     margin-right: 0.1rem;
@@ -45,17 +48,43 @@
 .main-home .pk-game .percent {
     font-size: 0.24rem;
 }
-.main-home .pk-game div {
+.main-home .pk-game .pk {
     position: absolute;
     top: 0;
-    left: 51.5%;
+    right: -0.28rem;
     width: 0.56rem;
     height: 0.56rem;
     line-height: 0.56rem;
     text-align: center;
     font-size: 0.18rem;
+    color: #555;
     background-color: #fff;
     border-radius: 100%;
+
+}
+.main-home .pk-game .rotate360 {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.main-home .pk-game .rotate-360 {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
 }
 
 .main-home .novice {
