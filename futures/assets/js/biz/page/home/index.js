@@ -1,9 +1,13 @@
 /**
+ *
  * @author jun.yj
- * @since 2015/8/6
+ * @since 15/8/7
  */
 
-jQuery(function( $ ){
+define(function (require, exports, module) {
+    'use strict';
+
+    var $ = require('$');
 
     var $p = $('div.mod-carousel'),
         $ul = $p.children('ul');
