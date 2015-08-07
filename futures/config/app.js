@@ -27,9 +27,11 @@ seajs.config({
         'dataStore' : 'lang/data-store',
 
         // util
+        'util/lazyload' : 'util/lazyload/1.0/lazyload',
 
         // ui
-        'ui/msgbox' : 'ui/msgbox/1.0/main'
+        'ui/msgbox'  : 'ui/msgbox/1.0/main',
+        'ui/overlay' : 'ui/overlay/1.0/main'
 
         // extra
     },
