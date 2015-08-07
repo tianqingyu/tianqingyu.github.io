@@ -17,8 +17,8 @@ seajs.config({
 
     alias: {
         // lib
-        '$'		 : 'assets/lib/jquery/1.11.2/jquery',
-        '_'		 : 'assets/lib/underscore/1.8.2/underscore',
+        '$'		 : 'assets/lib/jquery/main',
+        '_'		 : 'assets/lib/lodash/3.10.1/lodash',
         'moment' : 'assets/lib/moment/2.10.3/moment',
         'json'	 : 'assets/lib/json/1.0/json',
 
