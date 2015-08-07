@@ -16,7 +16,7 @@ define(function (require, exports, module) {
 
         wait: function(){
 
-            var self = this;
+            var that = this;
 
             var el = P.find('div.pk-game');
 
@@ -27,44 +27,47 @@ define(function (require, exports, module) {
 
             var pc = 65;
 
-            self.locked = false;
+            that.locked = false;
 
             el.on('tap', function(){
 
-                if ( self.locked ) {
+                if ( that.locked ) {
                     return;
                 }
-                self.locked = true;
+                that.locked = true;
 
-                var newPC = self.getPercent();
+                var newPC = that.getPercent();
 
                 if ( newPC > pc ) {
-                    self.highs( li, pk, hp, lp, newPC );
+                    that.highs( li, pk, hp, lp, newPC );
                 }
                 else if ( newPC < pc ) {
-                    self.lows( li, pk, hp, lp, newPC );
+                    that.lows( li, pk, hp, lp, newPC );
                 }
 
                 pc = newPC;
 
-                self.waitUnlock( pk );
+                that.waitUnlock( pk );
             });
 
             pk.on('transitionend webkitTransitionEnd', function(){
-                window.clearTimeout(self.timerId);
-                self.unlock( pk );
+                window.clearTimeout(that.timerId);
+                that.unlock( pk );
             });
 
             // demo
             window.setTimeout(function(){
-                self.highs( li, pk, hp, lp, pc );
+                that.highs( li, pk, hp, lp, pc );
             }, 500);
         },
 
         waitUnlock: function( pk ){
-            self.timerId = window.setTimeout(function(){
-                self.unlock( pk );
-            }, 550);
+
+            var that = this;
+
+            that.timerId = window.setTimeout(function(){
+                that.unlock( pk );
+            }, 600);
         },
 
         unlock: function( pk ){
