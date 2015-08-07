@@ -47,12 +47,12 @@ define(function (require, exports, module) {
 
                 pc = newPC;
 
-                self.waitUnlock();
+                self.waitUnlock( pk );
             });
 
             pk.on('transitionend webkitTransitionEnd', function(){
                 window.clearTimeout(self.timerId);
-                self.unlock();
+                self.unlock( pk );
             });
 
             // demo
@@ -61,13 +61,13 @@ define(function (require, exports, module) {
             }, 500);
         },
 
-        waitUnlock: function(){
+        waitUnlock: function( pk ){
             self.timerId = window.setTimeout(function(){
-                self.unlock();
+                self.unlock( pk );
             }, 550);
         },
 
-        unlock: function(){
+        unlock: function( pk ){
             this.locked = false;
             pk.removeClass('rotate360 rotate-360');
         },
