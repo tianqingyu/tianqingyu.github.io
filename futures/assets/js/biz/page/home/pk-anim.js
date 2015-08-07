@@ -3,8 +3,14 @@
  * @since 2015/8/6
  */
 
-jQuery(function( $ ){
+define(function (require, exports, module) {
+    'use strict';
 
+    var $ = require('$');
 
+    return {
+        init: function(){
 
+        }
+    };
 });

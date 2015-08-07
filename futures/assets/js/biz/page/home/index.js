@@ -15,37 +15,48 @@ define(function (require, exports, module) {
     var $li = $ul.find('li:eq(0)'),
         $dot = $p.find('span.dot:eq(0)');
 
-    $ul.on('swipeleft', function( evt ){
+    return {
+        init: function(){
+            this.wait();
+        },
 
-        var $next = $li.next();
+        wait: function(){
 
-        if ( $next[0] ) {
+            var self = this;
 
-            $next.css({left: 0});
+            $ul.on('swipeleft', function( evt ){
 
-            $li = $next;
+                var $next = $li.next();
 
-            setCurrDot( $dot, $dot = $dot.next() );
+                if ( $next[0] ) {
+
+                    $next.css({left: 0});
+
+                    $li = $next;
+
+                    self.setCurrDot( $dot, $dot = $dot.next() );
+                }
+
+            }).on('swiperight', function( evt ){
+
+                var $prev = $li.prev();
+
+                if ( $prev[0] ) {
+
+                    $li.css({left: '100%'});
+
+                    $li = $prev;
+
+                    self.setCurrDot( $dot, $dot = $dot.prev() );
+                }
+            });
+        },
+
+        setCurrDot: function( $sibling, $curr ){
+
+            $sibling.removeClass('curr');
+
+            $curr.addClass('curr');
         }
-
-    }).on('swiperight', function( evt ){
-
-        var $prev = $li.prev();
-
-        if ( $prev[0] ) {
-
-            $li.css({left: '100%'});
-
-            $li = $prev;
-
-            setCurrDot( $dot, $dot = $dot.prev() );
-        }
-    });
-
-    function setCurrDot( $sibling, $curr ) {
-
-        $sibling.removeClass('curr');
-
-        $curr.addClass('curr');
-    }
+    };
 });

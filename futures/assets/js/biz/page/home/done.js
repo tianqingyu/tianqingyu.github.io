@@ -9,5 +9,8 @@ define(function (require, exports, module) {
 
     var loader = require('modLoader');
 
-    loader(['./index', './pk-anim']);
+    loader([
+        'page/home/index',
+        'page/home/pk-anim'
+    ]);
 });
