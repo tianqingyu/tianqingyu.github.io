@@ -27,14 +27,14 @@ define(function (require, exports, module) {
 
             var pc = 65;
 
-            var locked = false;
+            self.locked = false;
 
             el.on('tap', function(){
 
-                if ( locked ) {
+                if ( self.locked ) {
                     return;
                 }
-                locked = true;
+                self.locked = true;
 
                 var newPC = self.getPercent();
 
@@ -46,16 +46,30 @@ define(function (require, exports, module) {
                 }
 
                 pc = newPC;
+
+                self.waitUnlock();
             });
 
             pk.on('transitionend webkitTransitionEnd', function(){
-                locked = false;
-                pk.removeClass('rotate360 rotate-360');
+                window.clearTimeout(self.timerId);
+                self.unlock();
             });
 
+            // demo
             window.setTimeout(function(){
                 self.highs( li, pk, hp, lp, pc );
             }, 500);
+        },
+
+        waitUnlock: function(){
+            self.timerId = window.setTimeout(function(){
+                self.unlock();
+            }, 550);
+        },
+
+        unlock: function(){
+            this.locked = false;
+            pk.removeClass('rotate360 rotate-360');
         },
 
         // 15% ~ 85%
