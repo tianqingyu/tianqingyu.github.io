@@ -9,7 +9,7 @@ define(function (require, exports, module) {
 
     var $ = require('./base/1.11.2/jquery');
 
-    require('./mobile/1.4.5/jquery.mobile.custom.min');
+    require('./mobile/1.4.5/jquery');
 
     return $;
 });
