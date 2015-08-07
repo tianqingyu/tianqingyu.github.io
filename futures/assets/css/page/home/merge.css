@@ -4,10 +4,10 @@
  */
 
 /* lib */
-@import url(../../../lib/normalize.css);
+@import url(../../../../assets/lib/normalize/3.0.2/normalize.css);
 
 /* site */
-@import url(../../global/global.css);
+@import url(../../site/global.css);
 
 /* unit */
 @import url(../../unit/header.css);
