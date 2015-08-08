@@ -4,11 +4,5 @@
  */
 
 .input {
-	min-width: 120px;
-	_width: 120px;
-	height: 30px;
-	line-height: 30px;
-	padding: 0 1em;
-	border: 1px solid #bcbcbc;
-	box-shadow: 0 1px 1px #ccc inset;
+
 }

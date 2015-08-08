@@ -27,3 +27,7 @@
     color: #888;
     border-color: #d8d8d8;
 }
+.button-disabled {
+    color: #ccc;
+    border-color: #d8d8d8;
+}
