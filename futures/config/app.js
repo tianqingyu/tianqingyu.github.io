@@ -15,6 +15,7 @@ seajs.config({
         'assets/js/global/pre-mods'
     ],
 
+    // 别名（缩写）
     alias: {
         // lib
         '$'		 : 'assets/lib/jquery/main',
@@ -25,6 +26,10 @@ seajs.config({
         // lang
         'modLoader'	: 'lang/mod-loader',
         'dataStore' : 'lang/data-store',
+        'class'     : 'lang/class',
+        'delayer'   : 'lang/delayer',
+        'net'       : 'lang/net',
+        'observer'  : 'lang/observer',
 
         // util
         'util/lazyload' : 'util/lazyload/1.0/lazyload',
@@ -33,17 +38,18 @@ seajs.config({
         'ui/msgbox'  : 'ui/msgbox/1.0/main',
         'ui/overlay' : 'ui/overlay/1.0/main'
 
-        // extra
+        // external
     },
 
+    // 路径（缩写）
     paths: {
-        'lang'	: 'assets/js/lang',
-        'util'  : 'assets/js/util',
-        'ui'    : 'assets/js/ui',
-        'extra' : 'assets/js/extra',
-        'mod'   : 'assets/js/biz/mod',
-        'page'	: 'assets/js/biz/page',
-        'site'  : 'assets/js/biz/site'
+        'lang' : 'assets/js/lang',
+        'util' : 'assets/js/util',
+        'ui'   : 'assets/js/ui',
+        'ext'  : 'assets/js/ext',
+        'mod'  : 'assets/js/biz/mod',
+        'page' : 'assets/js/biz/page',
+        'site' : 'assets/js/biz/site'
     },
 
     charset: 'UTF-8'
