@@ -5,17 +5,20 @@
 
 .button {
     display: inline-block;
-    width: 2.02rem;
-    height: 0.54rem;
-    line-height: 0.54rem;
-    color: #fff;
-    font-size: 0.16rem;
+    width: 1.3rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    color: #4471bc;
     text-align: center;
-    background-color: #5db1ff;
+    border: 0.01rem solid #4471bc;
+    background-color: #fff;
     border-radius: 0.05rem;
-    box-shadow: 0 0 0.02rem #5db1ff;
 }
-.button:hover {
-	color: #fff;
-    background-color: #5badf9;
+.button-stress {
+    color: #fff;
+    background-color: #4471bc;
+}
+.button-important {
+    color: #fff;
+    background-color: #ff7300;
 }

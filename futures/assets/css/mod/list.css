@@ -48,3 +48,24 @@
     margin-right: 0.1rem;
     margin-top: 0.2rem;
 }
+
+/* sample
+ * ======================= */
+.mod-list-sample {
+    margin: 0.1rem 0;
+}
+.mod-list-sample li {
+    margin-left: 0.4rem;
+}
+.mod-list-sample a {
+    display: block;
+}
+.mod-list-sample img {
+    float: left;
+    margin-left: -0.4rem;
+}
+.mod-list-sample .iconfont {
+    float: right;
+    margin-right: 0.1rem;
+    color: #ccc;
+}

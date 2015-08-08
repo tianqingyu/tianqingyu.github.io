@@ -23,3 +23,36 @@
     margin-right: 0.1rem;
     color: #ccc;
 }
+.main-mine .accounts .summary {
+    margin-top: 0.15rem;
+}
+.main-mine .accounts dl:first-child {
+    float: left;
+    margin-left: 0.2rem;
+}
+.main-mine .accounts dl:last-child {
+    float: right;
+    margin-right: 0.2rem;
+    text-align: right;
+}
+.main-mine .accounts .summary strong {
+    font-size: 0.18rem;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.main-mine .accounts .action {
+    margin: 0.2rem 0;
+    text-align: center;
+}
+.main-mine .accounts .action .button {
+    width: 40%;
+}
+.main-mine .accounts .action .button:first-child {
+    float: left;
+    margin-left: 0.2rem;
+}
+.main-mine .accounts .action .button:last-child {
+    float: right;
+    margin-right: 0.2rem;
+}

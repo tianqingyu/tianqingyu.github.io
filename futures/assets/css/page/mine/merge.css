@@ -17,6 +17,8 @@
 @import url(../../unit/footer.css);
 @import url(../../unit/text.css);
 @import url(../../unit/icons.css);
+@import url(../../unit/button.css);
+@import url(../../unit/icons.css);
 
 /* mod */
 @import url(../../mod/carousel.css);
