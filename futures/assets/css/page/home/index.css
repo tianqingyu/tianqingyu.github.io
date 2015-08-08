@@ -28,8 +28,6 @@
     z-index: 1;
     width: 50%;
     background-color: #d0402d;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
     -webkit-transition: all .5s;
             transition: all .5s;
 }
@@ -58,7 +56,6 @@
     color: #555;
     background-color: #fff;
     border-radius: 100%;
-    transform: translateZ(0);
 }
 .main-home .pk-game .rotate360 {
     -webkit-transition: -webkit-transform .5s;
