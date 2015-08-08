@@ -18,6 +18,7 @@ define(function (require, exports, module) {
     return {
         init: function(){
             this.wait();
+            this.loadImage();
         },
 
         wait: function(){
@@ -50,6 +51,16 @@ define(function (require, exports, module) {
                     self.setCurrDot( $dot, $dot = $dot.prev() );
                 }
             });
+        },
+
+        loadImage: function(){
+
+            $p.find('img[data-src]').each(function(){
+
+                var img = $(this);
+
+                img.attr('src', img.data('src'));
+            })
         },
 
         setCurrDot: function( $sibling, $curr ){
