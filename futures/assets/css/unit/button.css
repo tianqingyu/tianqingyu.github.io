@@ -5,9 +5,10 @@
 
 .button {
     display: inline-block;
-    width: 1.3rem;
+    min-width: 0.5rem;
     height: 0.32rem;
     line-height: 0.32rem;
+    padding: 0 0.1rem;
     color: #4471bc;
     text-align: center;
     border: 0.01rem solid #4471bc;
@@ -21,4 +22,8 @@
 .button-important {
     color: #fff;
     background-color: #ff7300;
+}
+.button-lesser {
+    color: #888;
+    border-color: #d8d8d8;
 }

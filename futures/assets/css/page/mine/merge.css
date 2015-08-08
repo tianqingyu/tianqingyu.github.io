@@ -21,9 +21,7 @@
 @import url(../../unit/icons.css);
 
 /* mod */
-@import url(../../mod/carousel.css);
 @import url(../../mod/list.css);
-@import url(../../mod/tabs.css);
 
 /* page */
 @import url(mine.css);

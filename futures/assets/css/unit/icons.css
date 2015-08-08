@@ -7,12 +7,7 @@
 
 }
 .icon-arrow-right {
-    display: inline-block;
-    width: 0.08rem;
-    height: 0.14rem;
-    color: #ccc;
-    background: transparent url(../../imgs/icon/arrow-right.png) no-repeat scroll 0 0;
-    background-size: contain;
+
 }
 
 .icon-unread {

@@ -25,10 +25,15 @@
 }
 .doc > header .left,
 .doc > header .right {
-	margin-top: -0.35rem;
+	margin-top: -0.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
 	color: #fff;
 	font-size: 0.14rem;
 }
 .doc > header a {
 	color: #fff;
+}
+.doc > header .iconfont {
+	font-size: 0.28rem;
 }

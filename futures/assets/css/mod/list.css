@@ -46,7 +46,8 @@
 .mod-list .icon-arrow-right {
     float: right;
     margin-right: 0.1rem;
-    margin-top: 0.2rem;
+    margin-top: 0.15rem;
+    color: #ccc;
 }
 
 /* sample
@@ -69,4 +70,57 @@
     float: right;
     margin-right: 0.1rem;
     color: #ccc;
+}
+
+/* sample
+ * ======================= */
+.mod-list-std {
+    margin: 0.1rem 0;
+    padding-right: 0.2rem;
+}
+.mod-list-std > li > .right {
+    float: right;
+}
+.mod-list-std .title h3 {
+    display: inline-block;
+}
+.mod-list-std .title h3:first-child {
+    min-width: 1.2rem;
+}
+.mod-list-std p span {
+    display: inline-block;
+}
+.mod-list-std p span:first-child {
+    width: 1.2rem;
+}
+.mod-list-std .status {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.1rem;
+    line-height: 0.5rem;
+    text-align: center;
+    background-color: #eaebed;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+}
+.mod-list-std .normal span {
+    display: inline-block;
+    width: 0.3rem;
+    line-height: 1;
+    word-break: break-all;
+    font-size: 0.12rem;
+    vertical-align: middle;
+}
+.mod-list-std .revoke {
+    color: #fff;
+    background-color: #6b8a6b;
+}
+.mod-list-std .sold {
+    color: #fff;
+    background-color: #4471bc;
+}
+.mod-list-std .action {
+    text-align: center;
 }
