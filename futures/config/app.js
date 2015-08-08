@@ -2,7 +2,7 @@
  * seajs配置
  *
  * @author jun.yj
- * @since 2015/5/17
+ * @since 2015/8/7
  */
 
 seajs.config({
