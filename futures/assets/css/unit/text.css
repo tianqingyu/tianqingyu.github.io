@@ -6,19 +6,15 @@
 .text-lesser {
     color: #999;
 }
-
 .text-stress {
     color: #ff7300;
 }
-
 .text-warning {
     color: #e31000;
 }
-
 .text-highs {
     color: #d0402d;
 }
-
 .text-lows {
     color: #17b03e;
 }
@@ -26,32 +22,26 @@
 .text-huge {
     font-size: 0.36rem;/*36px*/
 }
-
 .text-large {
     font-size: 0.32rem;/*32px*/
 }
-
 .text-medium {
     font-size: 0.3rem;/*30px*/
 }
-
 .text-small {
     font-size: 0.18rem;/*18px*/
 }
 
-@media ( max-width: 320px ) {
+@media (max-width: 320px) {
     .text-huge {
         font-size: 0.34rem;/*34px*/
     }
-
     .text-large {
         font-size: 0.3rem;/*30px*/
     }
-
     .text-medium {
         font-size: 0.28rem;/*28px*/
     }
-
     .text-small {
         font-size: 0.16rem;/*16px*/
     }

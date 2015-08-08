@@ -27,8 +27,6 @@
     left: 0;
     -webkit-transition: left .5s;
        -moz-transition: left .5s;
-        -ms-transition: left .5s;
-         -o-transition: left .5s;
             transition: left .5s;
 }
 .mod-carousel li:nth-child(n+2) {

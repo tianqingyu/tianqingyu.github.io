@@ -102,8 +102,8 @@
     text-align: center;
     background-color: #eaebed;
     -webkit-border-radius: 0.05rem;
-    -moz-border-radius: 0.05rem;
-    border-radius: 0.05rem;
+       -moz-border-radius: 0.05rem;
+            border-radius: 0.05rem;
 }
 .mod-list-std .normal span {
     display: inline-block;
