@@ -45,6 +45,14 @@
     float: right;
     margin: 0.05rem -0.22rem 0 0;
 }
+.main-home-kefu ul .icon-arrow-left:nth-of-type(2) {
+    border-top-color: #fff;
+    margin-left: -0.2rem;
+}
+.main-home-kefu ul .icon-arrow-right:nth-of-type(2) {
+    border-top-color: #fff;
+    margin-right: -0.2rem;
+}
 
 .main-home-kefu .user-input {
     position: fixed;
