@@ -25,7 +25,8 @@
     margin-left: 2em;
 }
 .main-home-guide .segment figure {
-    margin: 0.2rem;
+    margin: 0.2rem 0;
+    padding: 0;
 }
 .main-home-guide .segment figure img {
     width: 100%;
