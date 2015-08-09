@@ -6,3 +6,27 @@
 .main-home-guide {
 
 }
+
+.main-home-guide .intro {
+    margin: 0.2rem 0.2rem 0.4rem 0.2rem;
+    text-indent: 2em;
+}
+.main-home-guide .segment {
+    margin: 0.2rem;
+}
+.main-home-guide .segment h3 {
+    margin-bottom: 0.1rem;
+    color: #333;
+}
+.main-home-guide .segment p {
+    text-indent: 2em;
+}
+.main-home-guide .segment ol {
+    margin-left: 2em;
+}
+.main-home-guide .segment figure {
+    margin: 0.2rem;
+}
+.main-home-guide .segment figure img {
+    width: 100%;
+}
