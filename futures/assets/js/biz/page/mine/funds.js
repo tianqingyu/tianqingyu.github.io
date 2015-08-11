@@ -41,7 +41,7 @@ define(function(require, exports, module){
             });
 
             $list.on('tap', 'li', function( evt ){
-                alert(1);
+
             });
         }
     };

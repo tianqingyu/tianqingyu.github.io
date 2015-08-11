@@ -3,23 +3,77 @@
  * @since 2015/8/5
  */
 
-.main-mine-trade {
+.main-mine-profile {
 
 }
-.main-mine-trade .summary {
+.main-mine-profile .summary {
     height: 0.5rem;
     line-height: 0.5rem;
     text-align: center;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 0.01rem solid #d8d8d8;
     background-color: #f8f8f8;
 }
-.main-mine-trade .more {
-    margin: 0.1rem 0.2rem;
-}
-.main-mine-trade .more .button {
-    width: 100%;
+.main-mine-profile .summary meter {
+    width: 1rem;
+    height: 0.18rem;
+    border: 0.01rem solid #e0e0e0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.06rem;
 }
 
-.mod-list-std .button-lesser {
-    color: #4471bc;
+.main-mine-profile .empty {
+    margin: 0.3rem 0;
+    text-align: center;
+}
+.main-mine-profile .empty img {
+    width: 0.86rem;
+    height: 0.86rem;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.main-mine-profile .tips {
+    margin: 0.2rem;
+    text-align: center;
+}
+
+.main-mine-profile .mod-list {
+    margin: 0.1rem 0;
+}
+.main-mine-profile .mod-list li > a {
+    display: block;
+}
+.main-mine-profile .mod-list label > span {
+    display: inline-block;
+    width: 0.9rem;
+}
+.main-mine-profile .mod-list label > .input {
+    height: 0.26rem;
+    line-height: 0.26rem;
+    border: 0;
+}
+.main-mine-profile .mod-list .smscode {
+    width: 1.2rem;
+}
+
+.main-mine-profile .action {
+    margin: 0.2rem;
+}
+.main-mine-profile .action .button {
+    width: 100%;
+}
+.main-mine-profile .action .opr {
+    margin-top: 0.2rem;
+}
+.main-mine-profile .action .opr a {
+    color: #5badf9;
+}
+
+.main-mine-profile .ps {
+    text-align: center;
+}
+.main-mine-profile .ps a {
+    color: #5badf9;
 }
