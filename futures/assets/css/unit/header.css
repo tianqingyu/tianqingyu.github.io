@@ -37,3 +37,9 @@
 .doc > header .iconfont {
 	font-size: 0.28rem;
 }
+.doc > header .dropdown {
+	margin-left: 0.05rem;
+	font-size: 0.16rem;
+	font-weight: bold;
+	vertical-align: top;
+}

@@ -19,30 +19,18 @@
     color: #17b03e;
 }
 
-.text-huge {
-    font-size: 0.36rem;/*36px*/
+.text-s {
+    font-size: 0.12rem;
 }
-.text-large {
-    font-size: 0.32rem;/*32px*/
+.text-m {
+    font-size: 0.16rem;
 }
-.text-medium {
-    font-size: 0.3rem;/*30px*/
+.text-l {
+    font-size: 0.2rem;
 }
-.text-small {
-    font-size: 0.18rem;/*18px*/
+.text-xl {
+    font-size: 0.26rem;
 }
-
-@media (max-width: 320px) {
-    .text-huge {
-        font-size: 0.34rem;/*34px*/
-    }
-    .text-large {
-        font-size: 0.3rem;/*30px*/
-    }
-    .text-medium {
-        font-size: 0.28rem;/*28px*/
-    }
-    .text-small {
-        font-size: 0.16rem;/*16px*/
-    }
+.text-xxl {
+    font-size: 0.32rem;
 }
