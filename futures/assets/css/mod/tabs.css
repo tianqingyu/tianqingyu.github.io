@@ -36,7 +36,7 @@
     display: flex;
     height: 0.5rem;
     border-bottom: 1px solid #d8d8d8;
-    background-color: #f8f8f8;
+    background-color: #eee;
 }
 .mod-tab-sample li {
     -webkit-box-flex: 1;
@@ -48,7 +48,7 @@
     display: inline-block;
     height: 0.49rem;
     line-height: 0.49rem;
-    border-bottom: 0.03rem solid #f8f8f8;
+    border-bottom: 0.03rem solid #eee;
 }
 .mod-tab-sample li .curr {
     border-bottom-color: #4471bc;
