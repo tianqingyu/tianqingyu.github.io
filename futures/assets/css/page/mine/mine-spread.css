@@ -61,6 +61,12 @@
 .main-mine-spread .users li {
     padding-right: 0.2rem;
 }
+.main-mine-spread .users .action {
+    margin: 0.2rem;
+}
+.main-mine-spread .users .action .button {
+    width: 100%;
+}
 
 .main-mine-spread .tab-spread .mod-tab-sample .spread,
 .main-mine-spread .tab-history .mod-tab-sample .history,
