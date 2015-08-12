@@ -8,9 +8,14 @@
 }
 
 .mod-tab-switcher span {
-    color: #555;
+    color: #fff;
     border-color: #fff;
+    background-color: #4471bc;
     font-size: 0.14rem;
+}
+.mod-tab-switcher .curr {
+    color: #4471bc;
+    background-color: #fff;
 }
 
 .mod-tab-sample {
