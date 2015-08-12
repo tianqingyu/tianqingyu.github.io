@@ -11,6 +11,9 @@ define(function(require, exports, module){
 
     loader({
         // 资金明细
-        'section.main-mine-funds': ['page/mine/funds']
+        'section.main-mine-funds': ['page/mine/funds'],
+
+        // 我的账号 - 推广挣钱
+        'section.main-mine-spread': ['page/mine/spread']
     });
 });

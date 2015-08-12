@@ -3,6 +3,12 @@
  * @since 2015/8/5
  */
 
+.main-mine-spread article.spread,
+.main-mine-spread article.history,
+.main-mine-spread article.users {
+    display: none;
+}
+
 .main-mine-spread .summary .right {
     text-align: right;
 }
@@ -38,4 +44,31 @@
 
 .main-mine-spread .level h3 {
     margin-bottom: 0.1rem;
+}
+
+.main-mine-spread .users .th {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0.2rem;
+    background-color: #fff;
+}
+.main-mine-spread .users .th .left:first-child {
+    width: 1.5rem;
+}
+.main-mine-spread .users .mod-list .left:first-child {
+    width: 1.5rem;
+}
+.main-mine-spread .users li {
+    padding-right: 0.2rem;
+}
+
+.main-mine-spread .tab-spread .mod-tab-sample .spread,
+.main-mine-spread .tab-history .mod-tab-sample .history,
+.main-mine-spread .tab-users .mod-tab-sample .users {
+    border-bottom-color: #4471bc;
+}
+.main-mine-spread .tab-spread article.spread,
+.main-mine-spread .tab-history article.history,
+.main-mine-spread .tab-users article.users {
+    display: block;
 }
