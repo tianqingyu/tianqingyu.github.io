@@ -29,3 +29,27 @@
     color: #fff;
     background-color: #4471bc;
 }
+
+.mod-tab-sample {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #e8e8e8;
+}
+.mod-tab-sample li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.mod-tab-sample li span {
+    display: inline-block;
+    height: 0.49rem;
+    line-height: 0.49rem;
+    border-bottom: 0.03rem solid #e8e8e8;
+}
+.mod-tab-sample li .curr {
+    border-bottom-color: #4471bc;
+}

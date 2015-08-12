@@ -12,14 +12,11 @@
 
 /* unit */
 @import url(../../unit/header.css);
-@import url(../../unit/footer.css);
 @import url(../../unit/text.css);
-@import url(../../unit/icons.css);
 @import url(../../unit/button.css);
-@import url(../../unit/icons.css);
+@import url(../../unit/panel.css);
 
 /* mod */
-@import url(../../mod/carousel.css);
 @import url(../../mod/list.css);
 @import url(../../mod/tabs.css);
 
