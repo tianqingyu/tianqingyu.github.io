@@ -34,3 +34,20 @@
     background-color: red;
     border-radius: 100%;
 }
+
+.icon-top1,
+.icon-top2,
+.icon-top3 {
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    vertical-align: middle;
+    background: transparent url(../../imgs/icon/top1.png) no-repeat scroll 0 0;
+    background-size: contain;
+}
+.icon-top2 {
+    background-image: url(../../imgs/icon/top2.png);
+}
+.icon-top3 {
+    background-image: url(../../imgs/icon/top3.png);
+}

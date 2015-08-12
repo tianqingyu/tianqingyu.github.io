@@ -3,108 +3,79 @@
  * @since 2015/8/5
  */
 
-.main-home {
-    background-color: #edf0f5;
+.main-hero {
+
 }
 
-/* pk game
- * ======================*/
-.main-home .pk-game {
-    margin: 0.2rem;
-}
-.main-home .pk-game ul {
-    position: relative;
-    height: 0.56rem;
-}
-.main-home .pk-game li {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    line-height: 0.56rem;
-    border-radius: 0.06rem;
-}
-.main-home .pk-game .highs {
-    z-index: 1;
-    width: 50%;
-    background-color: #d0402d;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-transition: all .5s;
-            transition: all .5s;
-}
-.main-home .pk-game .highs .percent {
-    margin-left: 0.1rem;
-}
-.main-home .pk-game .lows {
-    text-align: right;
-    background-color: #17b03e;
-}
-.main-home .pk-game .lows .percent {
-    margin-right: 0.1rem;
-}
-.main-home .pk-game .percent {
-    font-size: 0.24rem;
-}
-.main-home .pk-game .pk {
-    position: absolute;
-    top: 0;
-    right: -0.28rem;
-    width: 0.56rem;
-    height: 0.56rem;
-    line-height: 0.56rem;
-    text-align: center;
-    font-size: 0.18rem;
+.mod-tab-switcher span {
     color: #555;
-    background-color: #fff;
-    border-radius: 100%;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-}
-.main-home .pk-game .rotate360 {
-    -webkit-transition: all .5s;
-            transition: all .5s;
-    -webkit-transition: -webkit-transform .5s;
-            transition: transform .5s;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-}
-.main-home .pk-game .rotate-360 {
-    -webkit-transition: -webkit-transform .5s;
-            transition: transform .5s;
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    border-color: #fff;
+    font-size: 0.14rem;
 }
 
-.main-home .novice {
+.mod-tab-sample {
+    border-bottom: 0;
+}
+.main-hero article.day,
+.main-hero article.week,
+.main-hero article.month {
+    display: none;
+}
+.main-hero .tab-day .mod-tab-sample .day,
+.main-hero .tab-week .mod-tab-sample .week,
+.main-hero .tab-month .mod-tab-sample .month {
+    border-bottom-color: #4471bc;
+}
+.main-hero .tab-day article.day,
+.main-hero .tab-week article.week,
+.main-hero .tab-month article.month {
+    display: block;
+}
+
+.main-hero .mod-list li {
+    padding-right: 0.1rem;
+}
+.main-hero .mod-list li > a {
+    display: block;
+}
+.main-hero .mod-list li .left:first-child {
+    width: 0.3rem;
+    color: #888;
+}
+.main-hero .mod-list .nums {
+    margin-right: 0.2rem;
+}
+
+.main-hero-user .details {
+    color: #fff;
+    padding-bottom: 0.2rem;
+    background-color: #4471bc;
+}
+.main-hero-user .details .amount {
+    color: #fff;
+    text-align: center;
+}
+.main-hero-user .details .text-lesser {
+    color: #9eb6dc;
+}
+.main-hero-user .details ul {
+    margin-top: 0.15rem;
+}
+.main-hero-user .details li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.main-hero-user > .content > p {
+    margin: 0.15rem 0 0.15rem 0.2rem;
+}
+.main-hero-user .mod-list-std .status {
+    margin-top: 0;
+}
+
+.main-hero-user .action {
     margin: 0.2rem;
 }
-.main-home .novice a {
-    display: block;
-    height: 0.4rem;
-    line-height: 0.4rem;
-    text-align: center;
-    border: 0.01rem solid #d8d8d8;
-    font-size: 0.18rem;
-    background-color: #fff;
-    border-radius: 0.06rem;
-}
-
-.main-home > .content > p {
-    text-align: center;
-    margin: 0.2rem 0;
-}
-.main-home > .content > p em {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.18rem;
-}
-
-.main-home .mod-tab-switcher {
-    position: relative;
-    bottom: -0.15rem;
-    margin-top: 0.1rem;
-}
-.main-home .mod-tab-switcher + .mod-list {
-    padding-top: 0.1rem;
+.main-hero-user .action .button {
+    width: 100%;
 }
