@@ -1,0 +1,15 @@
+/**
+ * @author jun.yj
+ * @since 2015/8/5
+ */
+
+.mod-table {
+    border: 0.01rem solid #d8d8d8;
+    width: 100%;
+}
+.mod-table th,
+.mod-table td {
+    padding: 0.03rem;
+    border: 0.01rem solid #d8d8d8;
+    text-align: center;
+}

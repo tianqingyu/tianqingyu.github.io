@@ -19,6 +19,7 @@
 /* mod */
 @import url(../../mod/list.css);
 @import url(../../mod/tabs.css);
+@import url(../../mod/table.css);
 
 /* page */
-@import url(mine.css);
+@import url(mine-spread.css);

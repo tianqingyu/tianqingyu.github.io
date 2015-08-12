@@ -3,23 +3,39 @@
  * @since 2015/8/5
  */
 
-.main-mine-trade {
-
+.main-mine-spread .summary .right {
+    text-align: right;
 }
-.main-mine-trade .summary {
-    height: 0.5rem;
-    line-height: 0.5rem;
+.main-mine-spread .summary p {
     text-align: center;
-    border-bottom: 1px solid #d8d8d8;
-    background-color: #f8f8f8;
 }
-.main-mine-trade .more {
-    margin: 0.1rem 0.2rem;
+.main-mine-spread .summary .button {
+    width: 0.8rem;
+    margin-top: 0.1rem;
 }
-.main-mine-trade .more .button {
+.main-mine-spread .summary img {
+    height: 0.32rem;
+    margin-top: 0.14rem;
+}
+
+.main-mine-spread .share h3,
+.main-mine-spread .share p {
+    margin-bottom: 0.1rem;
+}
+
+.main-mine-spread .make-money h3 {
+    margin-bottom: 0.1rem;
+}
+.main-mine-spread .make-money p {
+    margin-bottom: 0.3rem;
+}
+.main-mine-spread .make-money figure {
+    text-align: center;
+}
+.main-mine-spread .make-money img {
     width: 100%;
 }
 
-.mod-list-std .button-lesser {
-    color: #4471bc;
+.main-mine-spread .level h3 {
+    margin-bottom: 0.1rem;
 }

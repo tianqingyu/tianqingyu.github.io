@@ -10,3 +10,12 @@
     border-bottom: 0.01rem solid #d8d8d8;
     background-color: #fff;
 }
+
+hr,
+.line {
+    border: 0;
+    padding: 0;
+    height: 0.01rem;
+    overflow: hidden;
+    background-color: #d8d8d8;
+}

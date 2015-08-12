@@ -21,16 +21,25 @@
 
 .text-s {
     font-size: 0.12rem;
+    font-style: normal;
 }
 .text-m {
     font-size: 0.16rem;
+    font-style: normal;
+}
+.text-xm {
+    font-size: 0.18rem;
+    font-style: normal;
 }
 .text-l {
     font-size: 0.2rem;
+    font-style: normal;
 }
 .text-xl {
     font-size: 0.26rem;
+    font-style: normal;
 }
 .text-xxl {
     font-size: 0.32rem;
+    font-style: normal;
 }
