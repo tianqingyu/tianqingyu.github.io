@@ -50,6 +50,11 @@
 .main-hero .mod-list .nums {
     margin-right: 0.2rem;
 }
+.main-hero .mod-list .arrow-right {
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+}
 
 .main-hero-user .details {
     color: #fff;
