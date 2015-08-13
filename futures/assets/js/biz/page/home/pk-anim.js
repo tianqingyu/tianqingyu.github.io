@@ -23,8 +23,8 @@ define(function(require, exports, module){
 
             var li = el.find('div.bar'),
                 pk = el.find('span.pk'),
-                hp = el.find('span.highs span.percent'),
-                lp = el.find('span.lows span.percent');
+                hp = el.find('span.highs em.percent'),
+                lp = el.find('span.lows em.percent');
 
             var pc = 65;
 
