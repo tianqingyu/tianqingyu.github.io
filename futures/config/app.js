@@ -11,6 +11,7 @@ seajs.config({
 
     // 预加载的模块
     preload: [
+        '$',
         'lang/data-store',
         'assets/js/global/pre-mods'
     ],
