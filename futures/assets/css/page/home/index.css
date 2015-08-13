@@ -17,9 +17,6 @@
     color: #fff;
     border-radius: 0.06rem;
     background-color: #17b03e;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 .main-home .pk-game .bar  {
     position: absolute;
@@ -27,6 +24,8 @@
     height: 100%;
     border-radius: 0.06rem;
     background-color: #d0402d;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     -webkit-transition: all .5s;
             transition: all .5s;
 }
@@ -53,6 +52,8 @@
     color: #555;
     background-color: #fff;
     border-radius: 100%;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 }
 .main-home .pk-game .rotate360 {
     -webkit-transition: -webkit-transform .5s;
