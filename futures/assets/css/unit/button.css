@@ -31,3 +31,14 @@
     color: #ccc;
     border-color: #d8d8d8;
 }
+
+.button-buy-highs {
+    color: #fff;
+    background-color: #d0402d;
+    border-color: #d0402d;
+}
+.button-buy-lows {
+    color: #fff;
+    background-color: #17b03e;
+    border-color: #17b03e;
+}

@@ -3,108 +3,151 @@
  * @since 2015/8/5
  */
 
-.main-home {
-    background-color: #edf0f5;
+.page-buy-highs,
+.page-buy-lows {
+    display: none;
 }
 
-/* pk game
- * ======================*/
-.main-home .pk-game {
-    margin: 0.2rem;
+/* PAGE: 交易页面
+ ========================================*/
+.main-trade {
+
 }
-.main-home .pk-game ul {
-    position: relative;
-    height: 0.56rem;
-}
-.main-home .pk-game li {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    line-height: 0.56rem;
-    border-radius: 0.06rem;
-}
-.main-home .pk-game .highs {
-    z-index: 1;
-    width: 50%;
-    background-color: #d0402d;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-transition: all .5s;
-            transition: all .5s;
-}
-.main-home .pk-game .highs .percent {
-    margin-left: 0.1rem;
-}
-.main-home .pk-game .lows {
-    text-align: right;
-    background-color: #17b03e;
-}
-.main-home .pk-game .lows .percent {
-    margin-right: 0.1rem;
-}
-.main-home .pk-game .percent {
-    font-size: 0.24rem;
-}
-.main-home .pk-game .pk {
-    position: absolute;
-    top: 0;
-    right: -0.28rem;
-    width: 0.56rem;
-    height: 0.56rem;
-    line-height: 0.56rem;
+.main-trade .summary {
+    padding: 0.15rem 0 0.1rem 0;
     text-align: center;
-    font-size: 0.18rem;
-    color: #555;
-    background-color: #fff;
-    border-radius: 100%;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    background-color: #eee;
 }
-.main-home .pk-game .rotate360 {
-    -webkit-transition: all .5s;
-            transition: all .5s;
-    -webkit-transition: -webkit-transform .5s;
-            transition: transform .5s;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+.main-trade article.make,
+.main-trade article.open-interest,
+.main-trade article.settle {
+    display: none;
 }
-.main-home .pk-game .rotate-360 {
-    -webkit-transition: -webkit-transform .5s;
-            transition: transform .5s;
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+.main-trade .tab-make .mod-tab-sample .make,
+.main-trade .tab-open-interest .mod-tab-sample .open-interest,
+.main-trade .tab-settle .mod-tab-sample .settle {
+    border-bottom-color: #4471bc;
 }
-
-.main-home .novice {
-    margin: 0.2rem;
-}
-.main-home .novice a {
+.main-trade .tab-make article.make,
+.main-trade .tab-open-interest article.open-interest,
+.main-trade .tab-settle article.settle {
     display: block;
+}
+
+/* 股票详情（当前价格，卖出、买入价格，涨幅等）
+ ---------------------------------------*/
+.main-trade .stock-detail {
+    padding: 0;
+}
+.main-trade .stock-detail li {
+    float: left;
+}
+.main-trade .stock-detail .symbol,
+.main-trade .stock-detail .change {
+    width: 20%;
+}
+.main-trade .stock-detail .price {
+    width: 60%;
+    text-align: center;
+}
+.main-trade .stock-detail ul:first-child {
+    padding: 0.2rem;
+}
+.main-trade .stock-detail .change {
+    text-align: right;
+}
+.main-trade .stock-detail ul:last-child {
+    border-top: 0.01rem solid #d8d8d8;
+}
+.main-trade .stock-detail .sale,
+.main-trade .stock-detail .buy {
+    width: 50%;
+}
+.main-trade .stock-detail .sale div {
+    border-right: 0.01rem solid #d8d8d8;
+}
+.main-trade .stock-detail .sale div,
+.main-trade .stock-detail .buy div {
+    padding: 0.1rem 0.2rem;
+}
+
+/* 股票大盘，走势图
+ ---------------------------------------*/
+.main-trade .stock-chart {
+    padding: 0;
+    border-bottom: 0;
+}
+.main-trade .stock-chart .mod-tab-min {
+    margin-top: 0.08rem;
+}
+.main-trade .stock-chart article.tick,
+.main-trade .stock-chart article.daily {
+    display: none;
+}
+.main-trade .stock-chart .mod-table td {
+    width: 50%;
+    padding: 0.05rem 0.2rem;
+}
+
+.main-trade .action {
+    margin: 0.2rem;
+}
+.main-trade .action .button {
+    width: 45%;
     height: 0.4rem;
-    line-height: 0.4rem;
-    text-align: center;
-    border: 0.01rem solid #d8d8d8;
+    line-height: 0.36rem;
     font-size: 0.18rem;
+}
+
+/* PAGE: 买入委托页面
+ ========================================*/
+.main-buy-highs .action {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-top: 0.01rem solid #d8d8d8;
     background-color: #fff;
-    border-radius: 0.06rem;
 }
-
-.main-home > .content > p {
-    text-align: center;
-    margin: 0.2rem 0;
-}
-.main-home > .content > p em {
-    font-style: normal;
-    font-weight: normal;
+.main-buy-highs .action .button {
+    width: 85%;
+    height: 0.4rem;
+    line-height: 0.36rem;
     font-size: 0.18rem;
 }
 
-.main-home .mod-tab-switcher {
-    position: relative;
-    bottom: -0.15rem;
-    margin-top: 0.1rem;
+/* PAGE: 买出委托页面
+ ========================================*/
+.main-buy-lows .action {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-top: 0.01rem solid #d8d8d8;
+    background-color: #fff;
 }
-.main-home .mod-tab-switcher + .mod-list {
-    padding-top: 0.1rem;
+.main-buy-lows .action .button {
+    width: 85%;
+    height: 0.4rem;
+    line-height: 0.36rem;
+    font-size: 0.18rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

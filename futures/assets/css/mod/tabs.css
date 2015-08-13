@@ -44,14 +44,14 @@
     flex: 1;
     text-align: center;
 }
-.mod-tab-sample li span {
+.mod-tab-sample li > span {
     display: inline-block;
     min-width: 0.6rem;
     height: 0.49rem;
     line-height: 0.49rem;
     border-bottom: 0.03rem solid #eee;
 }
-.mod-tab-sample li .curr {
+.mod-tab-sample li > .curr {
     border-bottom-color: #4471bc;
 }
 
@@ -79,4 +79,17 @@
 .mod-tab-calendar .curr {
     color: #4471bc;
     background-color: #fff;
+}
+
+.mod-tab-min {
+    margin: 0;
+}
+.mod-tab-min li {
+    float: left;
+    margin-left: 0.2rem;
+    padding: 0 0.05rem 0.07rem 0.05rem;
+    border-bottom: 0.03rem solid #fff;
+}
+.mod-tab-min .curr {
+    border-bottom-color: #4471bc;
 }

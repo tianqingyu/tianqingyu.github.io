@@ -52,6 +52,9 @@ p {
     margin: 0;
     font-weight: normal;
 }
+em {
+    font-style: normal;
+}
 
 button,
 input,
@@ -104,7 +107,8 @@ a {
     font-family: arial, Helvetica;
 }
 
-.doc > section {
+.doc > section,
+.doc > .page > section {
     padding-top: 0.5rem;
     padding-bottom: 0.6rem;
 }

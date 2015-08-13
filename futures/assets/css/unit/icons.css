@@ -31,7 +31,7 @@
     overflow: hidden;
     color: #fff;
     text-align: center;
-    background-color: red;
+    background-color: #ff7300;
     border-radius: 100%;
 }
 
@@ -51,4 +51,20 @@
 }
 .icon-top3 {
     background-image: url(../../imgs/icon/top3.png);
+}
+
+.icon-help {
+    display: inline-block;
+    width: 0.26rem;
+    height: 0.26rem;
+    padding: 0.01rem;
+    line-height: 1;
+    color: #4471bc;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.icon-help > span.iconfont {
+    font-size: 0.24rem;
 }

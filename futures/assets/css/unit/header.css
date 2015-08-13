@@ -3,7 +3,7 @@
  * @since 2015/8/4
  */
 
-.doc > header {
+.doc header {
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -12,32 +12,32 @@
 	color: #fff;
 	background-color: #4471bc;
 }
-.doc > header h3 {
+.doc header h3 {
 	font-size: 0.18rem;
 	line-height: 0.5rem;
 	text-align: center;
 }
-.doc > header .left {
+.doc header .left {
 	margin-left: 0.2rem;
 }
-.doc > header .right {
+.doc header .right {
 	margin-right: 0.2rem;
 }
-.doc > header .left,
-.doc > header .right {
+.doc header .left,
+.doc header .right {
 	margin-top: -0.5rem;
 	height: 0.5rem;
 	line-height: 0.5rem;
 	color: #fff;
 	font-size: 0.14rem;
 }
-.doc > header a {
+.doc header a {
 	color: #fff;
 }
-.doc > header .iconfont {
+.doc header .iconfont {
 	font-size: 0.28rem;
 }
-.doc > header .dropdown {
+.doc header .dropdown {
 	margin-left: 0.05rem;
 	font-size: 0.16rem;
 	font-weight: bold;

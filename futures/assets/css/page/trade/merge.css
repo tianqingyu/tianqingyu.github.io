@@ -15,11 +15,15 @@
 @import url(../../unit/footer.css);
 @import url(../../unit/text.css);
 @import url(../../unit/icons.css);
+@import url(../../unit/overlay.css);
+@import url(../../unit/panel.css);
+@import url(../../unit/button.css);
 
 /* mod */
 @import url(../../mod/carousel.css);
 @import url(../../mod/list.css);
 @import url(../../mod/tabs.css);
+@import url(../../mod/table.css);
 
 /* page */
 @import url(trade.css);

@@ -3,7 +3,7 @@
  * @since 2015/8/4
  */
 
-.doc > footer {
+.doc footer {
     position: fixed;
     left: 0;
     right: 0;
@@ -12,11 +12,11 @@
 	height: 0.6rem;
     border-top: 0.01rem solid #ccc;
 }
-.doc > footer .content {
+.doc footer .content {
     height: 100%;
     background-color: #f5f6f8;
 }
-.doc > footer ul {
+.doc footer ul {
     height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -29,30 +29,30 @@
     -webkit-justify-content: center;
             justify-content: center;
 }
-.doc > footer li {
+.doc footer li {
     text-align: center;
     -webkit-box-flex: 1;
         -webkit-flex: 1;
                 flex: 1;
 }
-.doc > footer .img {
+.doc footer .img {
     height: 0.3rem;
     width: 0.3rem;
     color: #ccc;
     font-size: 0.24rem;
 }
-.doc > footer a {
+.doc footer a {
     display: inline-block;
     line-height: 1;
     vertical-align: middle;
 }
-.doc > footer a span {
+.doc footer a span {
     display: block;
 }
 
-.page-home > footer .home .img,
-.page-trade > footer .trade .img,
-.page-hero > footer .hero .img,
-.page-mine > footer .mine .img {
+.page-home footer .home .img,
+.page-trade footer .trade .img,
+.page-hero footer .hero .img,
+.page-mine footer .mine .img {
     color: #4471bc;
 }

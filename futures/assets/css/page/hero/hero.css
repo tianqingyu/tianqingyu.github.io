@@ -92,3 +92,8 @@
 .main-hero-user .action .button {
     width: 100%;
 }
+
+.main-hero .mod-tab-sample li span {
+    height: 0.5rem;
+    line-height: 0.5rem;
+}

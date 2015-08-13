@@ -3,7 +3,8 @@
  * @since 2015/8/4
  */
 
-.overlay {
+.overlay,
+.overlay-top {
 	display: none;
 	position: absolute;
 	top: 0;
@@ -12,4 +13,7 @@
 	left: 0;
 	z-index: 99;
 	background-color: rgba(0,0,0,.2);
+}
+.overlay-top {
+	z-index: 101;
 }
