@@ -41,6 +41,7 @@
     display: inline-block;
     width: 0.16rem;
     height: 0.16rem;
+    overflow: hidden;
     vertical-align: middle;
     background: transparent url(../../imgs/icon/top1.png) no-repeat scroll 0 0;
     background-size: contain;
