@@ -21,10 +21,10 @@ define(function(require, exports, module){
 
             var el = P.find('div.pk-game');
 
-            var li = el.find('li.highs'),
+            var li = el.find('div.bar'),
                 pk = el.find('span.pk'),
-                hp = el.find('li.highs span.percent'),
-                lp = el.find('li.lows span.percent');
+                hp = el.find('span.highs span.percent'),
+                lp = el.find('span.lows span.percent');
 
             var pc = 65;
 

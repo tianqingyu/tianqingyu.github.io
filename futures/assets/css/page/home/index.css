@@ -10,45 +10,41 @@
 /* pk game
  * ======================*/
 .main-home .pk-game {
-    margin: 0.2rem;
-}
-.main-home .pk-game ul {
     position: relative;
     height: 0.56rem;
-}
-.main-home .pk-game li {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    margin: 0.2rem;
+    overflow: hidden;
     color: #fff;
-    line-height: 0.56rem;
     border-radius: 0.06rem;
+    background-color: #17b03e;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
-.main-home .pk-game .highs {
-    z-index: 1;
+.main-home .pk-game .bar  {
+    position: absolute;
     width: 50%;
+    height: 100%;
+    border-radius: 0.06rem;
     background-color: #d0402d;
-    transform: translateZ(0);
     -webkit-transition: all .5s;
             transition: all .5s;
 }
-.main-home .pk-game .highs .percent {
-    margin-left: 0.1rem;
+.main-home .pk-game .highs {
+    display: block;
+    margin: 0.08rem 0 0 0.05rem;
+    white-space: nowrap;
 }
 .main-home .pk-game .lows {
+    display: block;
     text-align: right;
-    background-color: #17b03e;
-}
-.main-home .pk-game .lows .percent {
-    margin-right: 0.1rem;
-}
-.main-home .pk-game .percent {
-    font-size: 0.24rem;
+    margin: 0.08rem 0.05rem 0 0;
 }
 .main-home .pk-game .pk {
     position: absolute;
     top: 0;
     right: -0.28rem;
+    z-index: 1;
     width: 0.56rem;
     height: 0.56rem;
     line-height: 0.56rem;
@@ -57,7 +53,6 @@
     color: #555;
     background-color: #fff;
     border-radius: 100%;
-    transform: translateZ(0);
 }
 .main-home .pk-game .rotate360 {
     -webkit-transition: -webkit-transform .5s;
