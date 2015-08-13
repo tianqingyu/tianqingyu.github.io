@@ -43,6 +43,9 @@
 .main-hero .mod-list li > a {
     display: block;
 }
+.main-hero .mod-list li > a > .right {
+    height: 0.25rem;
+}
 .main-hero .mod-list li .left:first-child {
     width: 0.3rem;
     color: #888;
