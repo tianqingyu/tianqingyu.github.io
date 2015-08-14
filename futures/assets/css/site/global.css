@@ -15,9 +15,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/**
- * 去除元素周围的虚线
- */
+/* 去除元素周围的虚线 */
 *:focus {
     outline: none;
 }
@@ -36,7 +34,7 @@ body {
 
 body {
     position: relative;
-    font: 14px/1.5 tahoma,arial,"\5B8B\4F53",sans-serif;
+    font: 14px/1.5 arial,tahoma,sans-serif,"\5B8B\4F53";
     -webkit-user-select: none;
             user-select: none;
 }
@@ -103,7 +101,7 @@ a {
 /**
  * <span class="cny">&yen;</span>
  */
-.cny{
+.cny {
     font-family: arial, Helvetica;
 }
 
