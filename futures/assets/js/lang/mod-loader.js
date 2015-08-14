@@ -18,6 +18,10 @@ define(function(require, exports, module){
 
 			if ( urls.length ) {
 
+				if ( typeof urls === 'string' ) {
+					urls = [urls];
+				}
+
 				require.async( urls.shift(), function( mod ) {
 
 					mod && mod.init && mod.init();

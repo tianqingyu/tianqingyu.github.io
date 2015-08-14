@@ -21,21 +21,6 @@
 .mod-tab-sample {
     border-bottom: 0;
 }
-.main-hero article.day,
-.main-hero article.week,
-.main-hero article.month {
-    display: none;
-}
-.main-hero .tab-day .mod-tab-sample .day,
-.main-hero .tab-week .mod-tab-sample .week,
-.main-hero .tab-month .mod-tab-sample .month {
-    border-bottom-color: #4471bc;
-}
-.main-hero .tab-day article.day,
-.main-hero .tab-week article.week,
-.main-hero .tab-month article.month {
-    display: block;
-}
 
 .main-hero .mod-list li {
     padding-right: 0.1rem;
