@@ -7,8 +7,9 @@
 define(function(require, exports, module){
     'use strict';
 
-    var $ = require('$'),
-        P = $('#doc');
+    var $ = require('$');
+
+    var $d = $('#doc');
 
     return {
         init: function(){
@@ -19,7 +20,7 @@ define(function(require, exports, module){
 
             var cns = 'tab-spread tab-history tab-users';
 
-            var $tab = P.find('ul.mod-tab-sample');
+            var $tab = $d.find('ul.mod-tab-sample');
 
             $tab.on('tap', 'span', function( evt ){
 

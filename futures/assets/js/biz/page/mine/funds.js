@@ -7,8 +7,11 @@
 define(function(require, exports, module){
     'use strict';
 
-    var $ = require('$'),
-        P = $('#doc');
+    var $ = require('$');
+
+    var $d = $('#doc'),
+        $h = $d.find('header.page-header'),
+        $m = $d.find('section.page-main');
 
     return {
         init: function(){
@@ -17,9 +20,9 @@ define(function(require, exports, module){
 
         wait: function(){
 
-            var $list = $('#content').find('div.dropdown-list');
+            var $list = $m.find('div.dropdown-list');
 
-            $('#header').find('span.dropdown').on('tap', function(){
+            $h.find('span.dropdown').on('tap', function(){
 
                 if ( $list.data('isShow') ) {
                     $list.data('isShow', false);

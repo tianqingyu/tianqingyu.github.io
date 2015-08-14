@@ -7,8 +7,9 @@
 define(function(require, exports, module){
     'use strict';
 
-    var $ = require('$'),
-        P = $('#doc');
+    var $ = require('$');
+
+    var $d = $('#doc');
 
     return {
         init: function(){
@@ -19,7 +20,7 @@ define(function(require, exports, module){
 
             var that = this;
 
-            var el = P.find('div.pk-game');
+            var el = $d.find('div.pk-game');
 
             var li = el.find('div.bar'),
                 pk = el.find('span.pk'),
