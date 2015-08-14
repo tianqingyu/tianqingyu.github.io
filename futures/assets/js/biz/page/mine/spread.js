@@ -24,6 +24,8 @@ define(function(require, exports, module){
 
             $tab.on('tap', 'span', function( evt ){
 
+                evt.preventDefault();
+
                 var cn = 'tab-' + this.className;
 
                 $tab.parent().removeClass( cns ).addClass( cn );

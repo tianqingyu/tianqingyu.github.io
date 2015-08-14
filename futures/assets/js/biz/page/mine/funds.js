@@ -22,29 +22,32 @@ define(function(require, exports, module){
 
             var $list = $m.find('div.dropdown-list');
 
-            $h.find('span.dropdown').on('tap', function(){
+            $h.find('span.dropdown').on('tap', function( evt ){
+
+                evt.preventDefault();
 
                 if ( $list.data('isShow') ) {
-                    $list.data('isShow', false);
 
+                    $list.data('isShow', false);
                     $list.hide();
                 }
                 else {
                     $list.data('isShow', true);
-
                     $list.show();
                 }
             });
 
-            $list.on('tap', function(){
+            $list.on('tap', function( evt ){
+
+                evt.preventDefault();
 
                 $list.data('isShow', false);
-
                 $list.hide();
             });
 
             $list.on('tap', 'li', function( evt ){
 
+                evt.preventDefault();
             });
         }
     };
