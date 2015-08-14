@@ -107,8 +107,7 @@ a {
     font-family: arial, Helvetica;
 }
 
-.doc > section,
-.doc > .page > section {
+.page-main {
     padding-top: 0.5rem;
     padding-bottom: 0.6rem;
 }
