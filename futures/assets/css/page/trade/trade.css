@@ -18,6 +18,9 @@
     text-align: center;
     background-color: #eee;
 }
+.main-trade .summary > span:first-child {
+    margin-right: 0.2rem;
+}
 .main-trade article.make,
 .main-trade article.open-interest,
 .main-trade article.settle {
