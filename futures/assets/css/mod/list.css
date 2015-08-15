@@ -29,7 +29,10 @@
     border-radius: 100%;
 }
 .mod-list .detail {
-    margin-top: 0.03rem;
+    margin-top: 0.01rem;
+}
+.mod-list .detail > div {
+    margin-bottom: 0.02rem;
 }
 .mod-list .detail span {
     display: inline-block;
