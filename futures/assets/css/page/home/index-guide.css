@@ -10,9 +10,11 @@
 .main-home-guide .intro {
     margin: 0.2rem 0.2rem 0.4rem 0.2rem;
     text-indent: 2em;
+    color: #666;
 }
 .main-home-guide .segment {
     margin: 0.2rem;
+    color: #666;
 }
 .main-home-guide .segment h3 {
     margin-bottom: 0.1rem;
