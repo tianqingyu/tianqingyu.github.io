@@ -5,14 +5,14 @@
 
 .main-mine .accounts {
     margin: 0.1rem 0;
-    border: 0.01rem solid #d8d8d8;
+    border: 0.01rem solid #ddd;
     background-color: #fff;
 }
 .main-mine .accounts .user a {
     display: block;
     padding: 0.15rem 0;
     margin-left: 0.2rem;
-    border-bottom: 0.01rem solid #d8d8d8;
+    border-bottom: 0.01rem solid #ddd;
 }
 .main-mine .accounts .user img {
     margin-right: 0.15rem;
