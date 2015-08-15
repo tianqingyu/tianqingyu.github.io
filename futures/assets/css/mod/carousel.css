@@ -26,7 +26,6 @@
     top: 0;
     left: 0;
     -webkit-transition: left .5s;
-       -moz-transition: left .5s;
             transition: left .5s;
 }
 .mod-carousel li:nth-child(n+2) {
@@ -48,10 +47,8 @@
     vertical-align: middle;
     background-color: #e0e0e0;
     -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
             border-radius: 100%;
     -webkit-box-shadow: 0 0 0.08rem rgba(0,0,0,.4);
-       -moz-box-shadow: 0 0 0.08rem rgba(0,0,0,.4);
             box-shadow: 0 0 0.08rem rgba(0,0,0,.4);
 }
 .mod-carousel .curr {
