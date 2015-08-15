@@ -57,6 +57,6 @@
 .main-mine .accounts .action .button {
     width: 100%;
 }
-.main-mine .accounts .action .left .button:first-child {
+.main-mine .accounts .action .do-rechange {
     background-color: #4471bc;
 }
