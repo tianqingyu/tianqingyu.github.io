@@ -53,7 +53,7 @@
     border-bottom: 0.03rem solid #eee;
 }
 .mod-tab-sample li > .curr {
-    border-bottom-color: #4471bc;
+    border-bottom-color: #0077ee;
 }
 
 .mod-tab-calendar {
@@ -92,5 +92,5 @@
     border-bottom: 0.03rem solid #fff;
 }
 .mod-tab-min .curr {
-    border-bottom-color: #4471bc;
+    border-bottom-color: #0077ee;
 }

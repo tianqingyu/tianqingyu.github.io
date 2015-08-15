@@ -14,7 +14,7 @@
 
 }
 .main-trade .summary {
-    padding: 0.15rem 0 0.1rem 0;
+    padding: 0.2rem 0 0.05rem 0;
     text-align: center;
     background-color: #eee;
 }
@@ -26,7 +26,7 @@
 .main-trade .tab-make .mod-tab-sample .make,
 .main-trade .tab-open-interest .mod-tab-sample .open-interest,
 .main-trade .tab-settle .mod-tab-sample .settle {
-    border-bottom-color: #4471bc;
+    border-bottom-color: #0077ee;
 }
 .main-trade .tab-make article.make,
 .main-trade .tab-open-interest article.open-interest,
