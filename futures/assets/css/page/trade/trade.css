@@ -38,23 +38,34 @@
  ---------------------------------------*/
 .main-trade .stock-detail {
     padding: 0;
+    border-top-color: #f0f0f0;
+    border-bottom-color: #f0f0f0;
 }
 .main-trade .stock-detail li {
     float: left;
 }
 .main-trade .stock-detail .symbol,
 .main-trade .stock-detail .change {
-    width: 20%;
+    width: 29%;
 }
 .main-trade .stock-detail .price {
-    width: 60%;
+    width: 42%;
     text-align: center;
+}
+.main-trade .stock-detail .price > div {
+    line-height: 1;
 }
 .main-trade .stock-detail ul:first-child {
     padding: 0.2rem;
 }
 .main-trade .stock-detail .change {
     text-align: right;
+}
+.main-trade .stock-detail .arrow-right {
+    float: right;
+    color: #ccc;
+    margin-top: 0.08rem;
+    margin-left: 0.03rem;
 }
 .main-trade .stock-detail ul:last-child {
     border-top: 0.01rem solid #f0f0f0;
@@ -76,6 +87,7 @@
 .main-trade .stock-chart {
     padding: 0;
     border-bottom: 0;
+    border-top-color: #f0f0f0;
 }
 .main-trade .stock-chart .mod-tab-min {
     margin-top: 0.1rem;
@@ -90,10 +102,19 @@
 }
 
 .main-trade .action {
-    margin: 0.2rem;
+    margin: 0.2rem 0;
+}
+.main-trade .action > div {
+    width: 50%;
+}
+.main-trade .action > div:first-child {
+    padding: 0 0.1rem 0 0.2rem;
+}
+.main-trade .action > div:last-child {
+    padding: 0 0.2rem 0 0.1rem;
 }
 .main-trade .action .button {
-    width: 45%;
+    width: 100%;
     height: 0.4rem;
     line-height: 0.4rem;
     font-size: 0.18rem;
