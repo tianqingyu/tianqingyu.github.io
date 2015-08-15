@@ -9,6 +9,9 @@ define(function (require, exports, module) {
 
     var $ = require('$');
 
+    var $d = $('#doc'),
+        $m = $d.find('section.page-main');
+
     var $p = $('div.mod-carousel'),
         $ul = $p.children('ul');
 
@@ -50,6 +53,13 @@ define(function (require, exports, module) {
 
                     self.setCurrDot( $dot, $dot = $dot.prev() );
                 }
+            });
+
+            $m.find('div.mod-tab-switcher').on('tap', 'span', function( evt ){
+
+                $(this).siblings('.curr').removeClass('curr');
+
+                $(this).addClass('curr');
             });
         },
 
