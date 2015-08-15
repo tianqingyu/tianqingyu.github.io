@@ -16,7 +16,7 @@
 .main-trade .summary {
     padding: 0.2rem 0 0 0;
     text-align: center;
-    background-color: #eee;
+    background-color: #f8f8f8;
 }
 .main-trade .summary > span:first-child {
     margin-right: 0.3rem;
