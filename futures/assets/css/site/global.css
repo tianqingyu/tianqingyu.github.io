@@ -22,7 +22,7 @@
 
 html {
     font-size: 625%; /* 相当于100px，方便计算，浏览器默认字体为16px */
-    color: #555;
+    color: #333;
     background-color: #edf0f5;
 }
 
@@ -72,7 +72,7 @@ textarea::-ms-input-placeholder {
 }
 
 a {
-	color: #302d20;
+	color: #333;
     text-decoration: none;
 }
 

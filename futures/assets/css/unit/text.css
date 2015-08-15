@@ -4,7 +4,10 @@
  */
 
 .text-lesser {
-    color: #999;
+    color: #aaa;
+}
+.text-minor {
+    color: #666;
 }
 .text-stress {
     color: #ff7300;

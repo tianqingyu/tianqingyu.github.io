@@ -4,12 +4,12 @@
  */
 
 .mod-table {
-    border: 0.01rem solid #d8d8d8;
+    border: 0.01rem solid #f0f0f0;
     width: 100%;
 }
 .mod-table th,
 .mod-table td {
     padding: 0.03rem;
-    border: 0.01rem solid #d8d8d8;
+    border: 0.01rem solid #f0f0f0;
     text-align: center;
 }

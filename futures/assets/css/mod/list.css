@@ -4,14 +4,14 @@
  */
 
 .mod-list {
-    border-top: 1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     padding: 0 0 0 0.2rem;
     background-color: #fff;
 }
 .mod-list > li {
     padding: 0.15rem 0;
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #ddd;
 }
 .mod-list > li:first-child {
     border-top: 0;
@@ -29,7 +29,7 @@
     border-radius: 100%;
 }
 .mod-list .detail {
-    margin-top: 0.06rem;
+    margin-top: 0.03rem;
 }
 .mod-list .detail span {
     display: inline-block;
