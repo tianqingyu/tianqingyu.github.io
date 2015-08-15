@@ -57,14 +57,14 @@
     text-align: right;
 }
 .main-trade .stock-detail ul:last-child {
-    border-top: 0.01rem solid #d8d8d8;
+    border-top: 0.01rem solid #f0f0f0;
 }
 .main-trade .stock-detail .sale,
 .main-trade .stock-detail .buy {
     width: 50%;
 }
 .main-trade .stock-detail .sale div {
-    border-right: 0.01rem solid #d8d8d8;
+    border-right: 0.01rem solid #f0f0f0;
 }
 .main-trade .stock-detail .sale div,
 .main-trade .stock-detail .buy div {
