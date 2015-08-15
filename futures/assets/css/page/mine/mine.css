@@ -51,6 +51,7 @@
 .main-mine .accounts .action .button:first-child {
     float: left;
     margin-left: 0.2rem;
+    background-color: #4471bc;
 }
 .main-mine .accounts .action .button:last-child {
     float: right;

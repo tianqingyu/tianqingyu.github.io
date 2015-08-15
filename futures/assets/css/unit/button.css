@@ -17,10 +17,12 @@
 }
 .button-stress {
     color: #fff;
-    background-color: #4471bc;
+    border-color: #0077ee;
+    background-color: #0077ee;
 }
 .button-important {
     color: #fff;
+    border-color: #ff7300;
     background-color: #ff7300;
 }
 .button-lesser {
@@ -34,11 +36,11 @@
 
 .button-buy-highs {
     color: #fff;
-    background-color: #f05a3c;
     border-color: #d0402d;
+    background-color: #f05a3c;
 }
 .button-buy-lows {
     color: #fff;
-    background-color: #17b03e;
     border-color: #17b03e;
+    background-color: #17b03e;
 }

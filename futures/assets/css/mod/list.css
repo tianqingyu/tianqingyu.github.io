@@ -11,7 +11,7 @@
 }
 .mod-list > li {
     padding: 0.15rem 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #e5e5e5;
 }
 .mod-list > li:first-child {
     border-top: 0;
@@ -89,6 +89,8 @@
 }
 .mod-list-std .title h3:first-child {
     min-width: 1.2rem;
+    line-height: 1;
+    margin-bottom: 0.1rem;
 }
 .mod-list-std p span {
     display: inline-block;
@@ -114,6 +116,7 @@
     line-height: 1;
     word-break: break-all;
     font-size: 0.12rem;
+    color: #666;
     vertical-align: middle;
 }
 .mod-list-std .revoke {

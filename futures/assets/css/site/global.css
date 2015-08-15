@@ -50,8 +50,10 @@ p {
     margin: 0;
     font-weight: normal;
 }
-em {
+em,
+strong {
     font-style: normal;
+    font-weight: normal;
 }
 
 button,
