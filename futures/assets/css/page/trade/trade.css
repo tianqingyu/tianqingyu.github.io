@@ -191,7 +191,7 @@
 }
 .mod-list input[type=radio],
 .mod-list input[type=checkbox] {
-    vertical-align: middle;
+    vertical-align: text-top;
 }
 
 
