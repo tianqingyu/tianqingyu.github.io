@@ -159,6 +159,10 @@
     color: #fff;
     background-color: #0077ee;
 }
+.main-buy-highs .help {
+    margin-left: 0.02rem;
+    color: #5badf9;
+}
 
 /* PAGE: 买出委托页面
  ========================================*/
