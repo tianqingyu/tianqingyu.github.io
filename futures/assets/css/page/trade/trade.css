@@ -189,7 +189,10 @@
     float: right;
     padding-right: 0.2rem;
 }
-
+.mod-list input[type=radio],
+.mod-list input[type=checkbox] {
+    vertical-align: middle;
+}
 
 
 
