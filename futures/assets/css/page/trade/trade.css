@@ -3,7 +3,7 @@
  * @since 2015/8/5
  */
 
-.page-buy-highs,
+.page-trade,
 .page-buy-lows {
     display: none;
 }
@@ -141,6 +141,24 @@
     line-height: 0.4rem;
     font-size: 0.18rem;
 }
+.main-buy-highs .ps {
+    margin: 0.1rem 0.2rem 0.2rem 0.2rem;
+}
+.main-buy-highs .input {
+    width: 0.4rem;
+    text-align: center;
+}
+.main-buy-highs .hand,
+.main-buy-highs .more,
+.main-buy-highs .trigger {
+    padding: 0.04rem 0.04rem 0.03rem 0.04rem;
+    border: 0.01rem solid #0077ee;
+    color: #0077ee;
+}
+.main-buy-highs .selected {
+    color: #fff;
+    background-color: #0077ee;
+}
 
 /* PAGE: 买出委托页面
  ========================================*/
@@ -161,8 +179,16 @@
     font-size: 0.18rem;
 }
 
-
-
+/* common
+ ========================================*/
+.mod-list {
+    margin: 0.1rem 0;
+    color: #666;
+}
+.mod-list > li > .right {
+    float: right;
+    padding-right: 0.2rem;
+}
 
 
 

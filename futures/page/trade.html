@@ -16,7 +16,7 @@
 <body>
 
     <div id="doc" class="doc">
-      <!-- 交易页面 -->
+      <!-- PAGE: 交易 -->
       <div class="page page-trade">
         <!-- 头部 -->
         <header class="page-header">
@@ -226,7 +226,7 @@
         </footer>
       </div>
 
-      <!-- 买入委托页面 -->
+      <!-- PAGE: 买入委托 -->
       <div class="page page-buy-highs">
         <!-- 头部 -->
         <header class="page-header">
@@ -242,7 +242,76 @@
         <!-- 内容 -->
         <section class="page-main main-buy-highs">
           <div class="content">
-            <div>xx</div>
+            <ul class="mod-list">
+              <li class="clearfix">
+                <div class="left">交易品种</div>
+                <div class="right">沪深300 - IF1509 合约</div>
+              </li>
+              <li class="clearfix">
+                <div class="left">交易方向</div>
+                <div class="right"><span class="text-highs">买涨</span></div>
+              </li>
+              <li class="clearfix">
+                <div class="left">交易数量</div>
+                <div class="right">
+                  <span class="hand selected">1手</span>
+                  <span class="hand">2手</span>
+                  <span class="hand">3手</span>
+                  <span class="more iconfont">&#xe603;</span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="left">触发止盈<span class="iconfont">&#xe605;</span></div>
+                <div class="right">90000元</div>
+              </li>
+              <li class="clearfix">
+                <div class="left">触发止损</div>
+                <div class="right">
+                  <span class="trigger selected">-9000元</span>
+                  <span class="trigger">-18000元</span>
+                  <span class="more iconfont">&#xe603;</span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="left">持仓时间</div>
+                <div class="right">截至15:10:00，到期自动平仓</div>
+              </li>
+            </ul>
+
+            <ul class="mod-list">
+              <li class="clearfix">
+                <div class="left">支付>交易综合费</div>
+                <div class="right text-right">
+                  <span class="text-stress">168元</span><br />
+                  <label><input type="checkbox"/> 使用鹰币抵扣16元</label>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="left">冻结>履约保证金<span class="iconfont">&#xe605;</span></div>
+                <div class="right">
+                  <span class="text-stress">9000元</span>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="mod-list">
+              <li class="clearfix">
+                <label>
+                  <input type="radio" name="buy-condition" />
+                  <span>即时买入（最新价4166.7）</span>
+                </label>
+              </li>
+              <li class="clearfix">
+                <label>
+                  <input type="radio" name="buy-condition" />
+                  <span>价格触发</span>
+                  <input type="text" class="input" />
+                  <span>时，即时买入</span>
+                </label>
+              </li>
+            </ul>
+
+            <p class="ps text-lesser">投资高手(ID48652)为您本笔交易合作投资人，执行您的买卖指令，并与您共享收益共担风险</p>
 
             <div class="action">
               <a href="javascript:void(0)" class="button button-stress">确&nbsp;定</a>
@@ -251,7 +320,7 @@
         </section>
       </div>
 
-      <!-- 卖出委托页面 -->
+      <!-- PAGE: 卖出委托 -->
       <div class="page page-buy-lows">
         <!-- 头部 -->
         <header class="page-header">

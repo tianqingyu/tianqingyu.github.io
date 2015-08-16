@@ -18,6 +18,7 @@
 @import url(../../unit/overlay.css);
 @import url(../../unit/panel.css);
 @import url(../../unit/button.css);
+@import url(../../unit/input.css);
 
 /* mod */
 @import url(../../mod/list.css);

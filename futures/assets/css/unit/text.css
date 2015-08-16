@@ -50,3 +50,13 @@
     font-size: 0.36rem;
     font-style: normal;
 }
+
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
