@@ -48,24 +48,8 @@ define(function(require, exports, module){
 
                 $d.find('div.page-buy-highs').hide();
             });
-            $d.find('div.page-buy-highs div.action a.button').on('tap', function( evt ){
-
-                evt.preventDefault();
-
-                $d.find('div.page-trade').show();
-
-                $d.find('div.page-buy-highs').hide();
-            });
 
             $d.find('div.page-buy-lows a.go-back').on('tap', function( evt ){
-
-                evt.preventDefault();
-
-                $d.find('div.page-trade').show();
-
-                $d.find('div.page-buy-lows').hide();
-            });
-            $d.find('div.page-buy-lows div.action a.button').on('tap', function( evt ){
 
                 evt.preventDefault();
 

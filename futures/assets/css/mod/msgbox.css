@@ -1,0 +1,33 @@
+/**
+ * @author jun.yj
+ * @since 2015/8/5
+ */
+
+.mod-msgbox-info {
+    position: fixed;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.mod-msgbox-info > .content {
+    -webkit-flex: 0 0 80%;
+    flex: 0 0 80%;
+    background-color: #fff;
+    border-radius: 0.1rem;
+}
+.mod-msgbox-info .main {
+    padding: 0.25rem 0;
+    text-align: center;
+}
+.mod-msgbox-info .action {
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+.mod-msgbox-info .action .button {
+    border: 0;
+    width: 100%;
+    border-radius: 0.1rem;
+}

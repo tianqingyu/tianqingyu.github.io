@@ -24,6 +24,7 @@
 @import url(../../mod/list.css);
 @import url(../../mod/tabs.css);
 @import url(../../mod/table.css);
+@import url(../../mod/msgbox.css);
 
 /* page */
 @import url(trade.css);

@@ -10,6 +10,8 @@ define(function(require, exports, module){
     var loader = require('modLoader');
 
     loader([
-        'page/trade/trade'
+        'page/trade/trade',
+        'page/trade/buy-highs',
+        'page/trade/buy-lows'
     ]);
 });
