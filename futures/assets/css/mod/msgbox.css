@@ -3,7 +3,7 @@
  * @since 2015/8/5
  */
 
-.mod-msgbox-info {
+.msgbox {
     position: fixed;
     display: -webkit-flex;
     display: flex;
@@ -12,22 +12,39 @@
     -webkit-align-items: center;
     align-items: center;
 }
-.mod-msgbox-info > .content {
+.msgbox > .content {
     -webkit-flex: 0 0 80%;
     flex: 0 0 80%;
     background-color: #fff;
     border-radius: 0.1rem;
 }
-.mod-msgbox-info .main {
-    padding: 0.25rem 0;
+.msgbox .main {
+    padding: 0.25rem;
     text-align: center;
 }
-.mod-msgbox-info .action {
+.msgbox .action {
     border-top: 1px solid #e5e5e5;
     text-align: center;
 }
-.mod-msgbox-info .action .button {
+
+.msgbox-info .action .button {
     border: 0;
     width: 100%;
     border-radius: 0.1rem;
+}
+
+.msgbox-confirm .action > div {
+    width: 50%;
+}
+.msgbox-confirm .action .button {
+    width: 100%;
+    border: 0;
+    border-right: 0.01rem solid #e5e5e5;
+    border-radius: 0;
+}
+.msgbox-confirm .action .ok {
+    border-bottom-left-radius: 0.1rem;
+}
+.msgbox-confirm .action .no {
+    border-bottom-right-radius: 0.1rem;
 }

@@ -18,20 +18,38 @@ define(function(require, exports, module){
 
         wait: function(){
 
-            var $msgbox = $d.find('div.float div.mod-msgbox-info');
+            var $info = $d.find('div.float div.msgbox-info'),
+                $confirm = $d.find('div.float div.msgbox-confirm');
+
 
             $d.find('div.page-buy-highs div.action a.button').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $msgbox.removeClass('hide');
+                $confirm.removeClass('hide');
             });
 
-            $msgbox.find('a.ok').on('tap', function( evt ){
+            $confirm.find('a.ok').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $msgbox.addClass('hide');
+                $confirm.addClass('hide');
+
+                $info.removeClass('hide');
+            });
+
+            $confirm.find('a.no').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $confirm.addClass('hide');
+            });
+
+            $info.find('a.ok').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $info.addClass('hide');
             });
         }
     };
