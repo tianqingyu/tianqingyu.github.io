@@ -9,7 +9,8 @@ define(function(require, exports, module){
 
     var $ = require('$');
 
-    var $d = $('#doc');
+    var $d = $('#doc'),
+        $pbh = $d.find('div.page-buy-highs');
 
     return {
         init: function(){
@@ -20,7 +21,6 @@ define(function(require, exports, module){
 
             var $info = $d.find('div.float div.msgbox-info'),
                 $confirm = $d.find('div.float div.msgbox-confirm');
-
 
             $d.find('div.page-buy-highs div.action a.button').on('tap', function( evt ){
 
@@ -50,6 +50,21 @@ define(function(require, exports, module){
                 evt.preventDefault();
 
                 $info.addClass('hide');
+            });
+
+            $pbh.find('span.more').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $d.find('div.msgbox-options').removeClass('hide');
+            });
+
+            // overlay hide
+            $d.find('div.msgbox-options').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $(this).addClass('hide');
             });
         }
     };

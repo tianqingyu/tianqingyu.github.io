@@ -25,6 +25,8 @@
     flex: 0 0 80%;
     background-color: #fff;
     border-radius: 0.1rem;
+    -webkit-box-shadow: 0 0 0.05rem rgba(0,0,0,.4);
+    box-shadow: 0 0 0.05rem rgba(0,0,0,.4);
 }
 .msgbox .main {
     padding: 0.25rem;
@@ -55,4 +57,41 @@
 }
 .msgbox-confirm .action .no {
     border-bottom-right-radius: 0.1rem;
+}
+
+.msgbox-options .main {
+    padding: 0;
+}
+.msgbox-options .main li {
+    padding: 0.08rem 0 0.07rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+}
+.msgbox-options .main li:first-child {
+    border-top: 0;
+}
+
+.msgbox-slide-options {
+    display: block;
+}
+.msgbox-slide-options > .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    transform: translateY(5rem);
+    transition: transform .3s;
+}
+.msgbox-slide-options .main {
+    padding: 0;
+}
+.msgbox-slide-options .main li {
+    padding: 0.08rem 0 0.07rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+}
+.msgbox-slide-options .main li:first-child {
+    border-top: 0;
+}
+.msgbox-slide-options .slide-in {
+    transform: translateY(0);
 }

@@ -9,7 +9,10 @@ define(function(require, exports, module){
 
     var $ = require('$');
 
-    var $d = $('#doc');
+    var $d = $('#doc'),
+        $pt = $d.find('div.page-trade'),
+        $pbh = $d.find('div.page-buy-highs'),
+        $pbl = $d.find('div.page-buy-lows');
 
     return {
         init: function(){
@@ -21,41 +24,65 @@ define(function(require, exports, module){
             var that = this;
 
             // 买涨
-            $d.find('div.page-trade a.button-buy-highs').on('tap', function( evt ){
+            $pt.find('a.button-buy-highs').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $d.find('div.page-trade').hide();
+                $pt.hide();
 
-                $d.find('div.page-buy-highs').show();
+                $pbh.show();
             });
 
             // 买跌
-            $d.find('div.page-trade a.button-buy-lows').on('tap', function( evt ){
+            $pt.find('a.button-buy-lows').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $d.find('div.page-trade').hide();
+                $pt.hide();
 
-                $d.find('div.page-buy-lows').show();
+                $pbl.show();
             });
 
-            $d.find('div.page-buy-highs a.go-back').on('tap', function( evt ){
+            // 股票详情
+            $pt.find('article.make div.stock-detail > ul:first').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $d.find('div.page-trade').show();
+                $d.find('div.msgbox-slide-options').removeClass('hide');
 
-                $d.find('div.page-buy-highs').hide();
+                setTimeout(function(){
+                    $d.find('div.msgbox-slide-options > .content').addClass('slide-in');
+                }, 16);
             });
 
-            $d.find('div.page-buy-lows a.go-back').on('tap', function( evt ){
+            // 返回
+            $pbh.find('a.go-back').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $d.find('div.page-trade').show();
+                $pt.show();
 
-                $d.find('div.page-buy-lows').hide();
+                $pbh.hide();
+            });
+            $pbl.find('a.go-back').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $pt.show();
+
+                $pbl.hide();
+            });
+
+            // overlay hide
+            $d.find('div.msgbox-slide-options').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $d.find('div.msgbox-slide-options > .content').removeClass('slide-in');
+
+                setTimeout(function(){
+                    $d.find('div.overlay-top').addClass('hide');
+                }, 300);
             });
         }
     };
