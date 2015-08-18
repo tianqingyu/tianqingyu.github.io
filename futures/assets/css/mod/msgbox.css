@@ -72,8 +72,6 @@
 
 .msgbox-slide-options {
     display: block;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
 }
 .msgbox-slide-options > .content {
     position: absolute;
@@ -81,8 +79,8 @@
     left: 0;
     right: 0;
     border-radius: 0;
-    -webkit-transform: translateY(5rem);
-    transform: translateY(5rem);
+    -webkit-transform: translate3d(0,5rem,0);
+    transform: translate3d(0,5rem,0);
     -webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
 }
@@ -97,10 +95,10 @@
     border-top: 0;
 }
 .msgbox-slide-options > .slide-in {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 .msgbox-slide-options > .slide-out {
-    -webkit-transform: translateY(5rem);
-    transform: translateY(5rem);
+    -webkit-transform: translate3d(0,5rem,0);
+    transform: translate3d(0,5rem,0);
 }
