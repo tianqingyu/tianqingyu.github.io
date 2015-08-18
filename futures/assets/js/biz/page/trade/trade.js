@@ -81,8 +81,8 @@ define(function(require, exports, module){
                 $d.find('div.msgbox-slide-options > .content').removeClass('slide-in');
 
                 setTimeout(function(){
-                    $d.find('div.overlay-top').addClass('hide');
-                }, 300);
+                    //$d.find('div.overlay-top').addClass('hide');
+                }, 16);
             });
         }
     };
