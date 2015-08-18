@@ -13,6 +13,8 @@
 	left: 0;
 	z-index: 99;
 	background-color: rgba(0,0,0,.3);
+	-webkit-transform: translateZ(0);
+			transform: translateZ(0);
 }
 .overlay-top {
 	z-index: 101;

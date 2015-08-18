@@ -17,7 +17,6 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    transform: translateZ(0);
 }
 .msgbox > .content {
     -webkit-box-flex: 0;
@@ -64,7 +63,7 @@
     padding: 0;
 }
 .msgbox-options .main li {
-    padding: 0.08rem 0 0.07rem 0;
+    padding: 0.09rem 0 0.07rem 0;
     border-top: 0.01rem solid #e5e5e5;
 }
 .msgbox-options .main li:first-child {
@@ -89,7 +88,7 @@
     padding: 0;
 }
 .msgbox-slide-options .main li {
-    padding: 0.08rem 0 0.07rem 0;
+    padding: 0.09rem 0 0.07rem 0;
     border-top: 0.01rem solid #e5e5e5;
 }
 .msgbox-slide-options .main li:first-child {
