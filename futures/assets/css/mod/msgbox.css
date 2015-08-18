@@ -81,7 +81,9 @@
     left: 0;
     right: 0;
     border-radius: 0;
+    -webkit-transform: translateY(5rem);
     transform: translateY(5rem);
+    -webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
 }
 .msgbox-slide-options .main {
@@ -94,6 +96,11 @@
 .msgbox-slide-options .main li:first-child {
     border-top: 0;
 }
-.msgbox-slide-options .slide-in {
+.msgbox-slide-options > .slide-in {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
+}
+.msgbox-slide-options > .slide-out {
+    -webkit-transform: translateY(5rem);
+    transform: translateY(5rem);
 }

@@ -51,6 +51,7 @@ define(function(require, exports, module){
                 $d.find('div.msgbox-slide-options').removeClass('hide');
 
                 setTimeout(function(){
+                    $d.find('div.msgbox-slide-options > .content').removeClass('slide-out');
                     $d.find('div.msgbox-slide-options > .content').addClass('slide-in');
                 }, 16);
             });
@@ -79,6 +80,7 @@ define(function(require, exports, module){
                 evt.preventDefault();
 
                 $d.find('div.msgbox-slide-options > .content').removeClass('slide-in');
+                $d.find('div.msgbox-slide-options > .content').addClass('slide-out');
 
                 setTimeout(function(){
                     $d.find('div.msgbox-slide-options').addClass('hide');
