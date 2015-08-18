@@ -84,7 +84,7 @@ define(function(require, exports, module){
 
                 setTimeout(function(){
                     $d.find('div.msgbox-slide-options').addClass('hide');
-                }, 300);
+                }, 600);
             });
         }
     };
