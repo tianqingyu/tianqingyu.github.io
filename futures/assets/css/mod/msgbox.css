@@ -25,7 +25,6 @@
     flex: 0 0 80%;
     background-color: #fff;
     border-radius: 0.1rem;
-    -webkit-box-shadow: 0 0 0.05rem rgba(0,0,0,.4);
     /*box-shadow: 0 0 0.05rem rgba(0,0,0,.4);*/
 }
 .msgbox .main {
