@@ -145,7 +145,7 @@
     margin: 0.1rem 0.2rem 0.2rem 0.2rem;
 }
 .main-buy-highs .input {
-    width: 0.4rem;
+    width: 0.6rem;
     text-align: center;
 }
 .main-buy-highs .lot,
@@ -181,6 +181,18 @@
     height: 0.4rem;
     line-height: 0.4rem;
     font-size: 0.18rem;
+}
+.main-buy-lows .input {
+    width: 0.6rem;
+    text-align: center;
+}
+.main-buy-lows .trigger {
+    float: none;
+    margin-top: 0.06rem;
+    margin-left: 0.15rem;
+}
+.main-buy-lows .ps {
+    margin: 0.1rem 0.2rem 0.2rem 0.2rem;
 }
 
 /* common

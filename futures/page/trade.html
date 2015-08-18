@@ -336,7 +336,70 @@
         <!-- 内容 -->
         <section class="page-main main-buy-lows">
           <div class="content">
-            <div>xx</div>
+            <ul class="mod-list">
+              <li class="clearfix">
+                <div class="left">沪深300 (IF1509)</div>
+                <div class="right"><span class="text-lesser">15-07-09 14:37:52</span></div>
+              </li>
+              <li class="clearfix">
+                <div class="left"><span class="text-highs">买涨3手</span></div>
+                <div class="right"><span class="text-highs">+3895</span></div>
+              </li>
+            </ul>
+
+            <ul class="mod-list">
+              <li>
+                <label>
+                  <input type="radio" name="sale-condition" checked="checked" />
+                  <span>即时卖出（最新价4166.7）</span>
+                </label>
+              </li>
+              <li class="clearfix">
+                <label>
+                  <input type="radio" name="sale-condition" />
+                  <span>根据盈亏触发即时卖出</span>
+                </label>
+                <div class="trigger">
+                  <span>盈利触发</span>
+                  <input type="text" class="input" value="90000" />
+                  <span>元时，即时卖出</span>
+                </div>
+                <div class="trigger">
+                  <span>亏损触发</span>
+                  <input type="text" class="input" value="9000" />
+                  <span>元时，即时卖出</span>
+                </div>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="sale-condition" />
+                  <span>即时卖出，然后马上<em class="text-lows">买跌</em></span>
+                </label>
+              </li>
+            </ul>
+
+            <ul class="mod-list">
+              <li>
+                <label>
+                  <input type="radio" name="rt-sale-condition" checked="checked" />
+                  <span>共3笔>全部即时卖出（最新价4166.7）</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rt-sale-condition" />
+                  <span><em class="text-highs">买涨共2笔</em>&gt;全部即时卖出</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rt-sale-condition" />
+                  <span><em class="text-lows">买跌共1笔</em>&gt;全部即时卖出</span>
+                </label>
+              </li>
+            </ul>
+
+            <p class="ps text-lesser">投资高手(ID48652)为您本笔交易合作投资人，执行您的买卖指令，并与您共享收益共担风险</p>
 
             <div class="action">
               <a href="javascript:void(0)" class="button button-stress">确&nbsp;定</a>
@@ -345,8 +408,10 @@
         </section>
       </div>
 
+      <!-- 所有页面浮动、定位层的容器 -->
       <div class="float">
         <div class="content">
+          <!-- msgbox-info -->
           <div class="overlay-top msgbox msgbox-info hide">
             <div class="content">
               <div class="main">
