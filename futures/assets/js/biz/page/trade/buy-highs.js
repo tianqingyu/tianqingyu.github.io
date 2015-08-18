@@ -52,11 +52,18 @@ define(function(require, exports, module){
                 $info.addClass('hide');
             });
 
-            $pbh.find('span.more').on('tap', function( evt ){
+            $pbh.find('span.more-lot').on('tap', function( evt ){
 
                 evt.preventDefault();
 
-                $d.find('div.msgbox-options').removeClass('hide');
+                $d.find('div.options-more-lot').removeClass('hide');
+            });
+
+            $pbh.find('span.more-trigger').on('tap', function( evt ){
+
+                evt.preventDefault();
+
+                $d.find('div.options-more-trigger').removeClass('hide');
             });
 
             // overlay hide
