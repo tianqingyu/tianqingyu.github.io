@@ -131,10 +131,10 @@
 .main-trade .open-interest li > .right {
     padding-right: 0;
 }
-.main-trade .open-interest .action {
+.main-trade .open-interest > .action {
     margin: 0.15rem 0.2rem;
 }
-.main-trade .open-interest .action a {
+.main-trade .open-interest > .action a {
     width: 100%;
 }
 
