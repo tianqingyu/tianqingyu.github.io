@@ -23,6 +23,16 @@ define(function(require, exports, module){
 
             var that = this;
 
+            // tabs
+            var cns = 'tab-make tab-open-interest tab-settle';
+
+            $pt.find('ul.mod-tab-sample span').on('tap', function( evt ){
+
+                var cn = 'tab-' + this.className;
+
+                $(this).closest('div.content').removeClass( cns ).addClass( cn );
+            });
+
             // 买涨
             $pt.find('a.button-buy-highs').on('tap', function( evt ){
 

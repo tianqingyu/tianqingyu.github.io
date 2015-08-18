@@ -85,7 +85,7 @@
     padding: 0.1rem 0.2rem;
 }
 
-/* 股票大盘，走势图
+/* 下单：股票大盘，走势图
  ---------------------------------------*/
 .main-trade .stock-chart {
     padding: 0;
@@ -104,23 +104,38 @@
     padding: 0.06rem 0.2rem 0.05rem 0.2rem;
 }
 
-.main-trade .action {
+.main-trade .make .action {
     margin: 0.2rem 0;
 }
-.main-trade .action > div {
+.main-trade .make .action > div {
     width: 50%;
 }
-.main-trade .action > div:first-child {
+.main-trade .make .action > div:first-child {
     padding: 0 0.1rem 0 0.2rem;
 }
-.main-trade .action > div:last-child {
+.main-trade .make .action > div:last-child {
     padding: 0 0.2rem 0 0.1rem;
 }
-.main-trade .action .button {
+.main-trade .make .action .button {
     width: 100%;
     height: 0.4rem;
     line-height: 0.4rem;
     font-size: 0.18rem;
+}
+
+/* 持仓
+ ---------------------------------------*/
+.main-trade .open-interest {
+
+}
+.main-trade .open-interest li > .right {
+    padding-right: 0;
+}
+.main-trade .open-interest .action {
+    margin: 0.15rem 0.2rem;
+}
+.main-trade .open-interest .action a {
+    width: 100%;
 }
 
 /* PAGE: 买入委托页面
@@ -210,13 +225,6 @@
     vertical-align: text-top;
 }
 
-
-
-
-
-
-
-
-
-
-
+.mod-list-std .button-lesser {
+    color: #4471bc;
+}
