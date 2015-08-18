@@ -80,9 +80,9 @@ define(function(require, exports, module){
 
                 $d.find('div.msgbox-slide-options > .content').removeClass('slide-in');
 
-                requestAnimationFrame(function(){
-                    $d.find('div.overlay-top').addClass('hide');
-                });
+                setTimeout(function(){
+                    $d.find('div.msgbox-slide-options').addClass('hide');
+                }, 300);
             });
         }
     };
