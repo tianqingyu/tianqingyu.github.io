@@ -20,7 +20,8 @@ define(function (require, exports, module) {
 
     return {
         init: function(){
-            alert('index');
+            var end = +new Date();
+            alert('opened ' + (end - gStart)/1000 + 's');
             this.wait();
             this.loadImage();
         },
