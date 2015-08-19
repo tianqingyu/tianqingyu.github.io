@@ -23,7 +23,7 @@ define(function(require, exports, module){
 
             var that = this;
 
-            // tabs
+            // nav tabs
             var cns = 'tab-make tab-open-interest tab-settle';
 
             $pt.find('ul.mod-tab-sample span').on('tap', function( evt ){
@@ -31,6 +31,16 @@ define(function(require, exports, module){
                 var cn = 'tab-' + this.className;
 
                 $(this).closest('div.content').removeClass( cns ).addClass( cn );
+            });
+
+            // 图形tabs
+            var cns2 = 'tab-min-market tab-min-tick tab-min-daily';
+
+            $pt.find('div.stock-chart > ul.mod-tab-min > li').on('tap', function( evt ){
+
+                var cn = 'tab-min-' + this.className;
+
+                $(this).closest('div.stock-chart').removeClass( cns2 ).addClass( cn );
             });
 
             // 买涨

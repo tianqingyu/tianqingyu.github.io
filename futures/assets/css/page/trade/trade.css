@@ -85,7 +85,7 @@
     padding: 0.1rem 0.2rem;
 }
 
-/* 下单：股票大盘，走势图
+/* 下单：股票大盘，走势图，k线图
  ---------------------------------------*/
 .main-trade .stock-chart {
     padding: 0;
@@ -95,6 +95,7 @@
 .main-trade .stock-chart .mod-tab-min {
     margin-top: 0.1rem;
 }
+.main-trade .stock-chart article.market,
 .main-trade .stock-chart article.tick,
 .main-trade .stock-chart article.daily {
     display: none;
@@ -121,6 +122,17 @@
     height: 0.4rem;
     line-height: 0.4rem;
     font-size: 0.18rem;
+}
+
+.main-trade .tab-min-market .mod-tab-min .market,
+.main-trade .tab-min-tick .mod-tab-min .tick,
+.main-trade .tab-min-daily .mod-tab-min .daily {
+    border-bottom-color: #0077ee;
+}
+.main-trade .tab-min-market article.market,
+.main-trade .tab-min-tick article.tick,
+.main-trade .tab-min-daily article.daily {
+    display: block;
 }
 
 /* 持仓
