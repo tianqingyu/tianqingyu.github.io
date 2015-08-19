@@ -13,9 +13,6 @@
     <meta name="keywords" content="期货，投资，股指英雄" />
 
     <link rel="stylesheet" href="//www.molayu.com/futures/assets/css/page/home/merge.css" />
-    <script type="text/javascript">
-      var gStart = +new Date();
-    </script>
 </head>
 <body>
 
@@ -190,12 +187,15 @@
       </footer>
     </div>
 
-    <script type="text/javascript">
-      var gScript = +new Date();
+    <script>
+        var gScript = +new Date();
     </script>
-    <script type="text/javascript" src="//www.molayu.com/futures/assets/lib/seajs/3.0.0/sea.js" id="seajsnode"></script>
-    <script type="text/javascript" src="//www.molayu.com/futures/config/app.js"></script>
-    <script type="text/javascript">
+    <script src="//www.molayu.com/futures/assets/lib/seajs/3.0.0/sea.js" id="seajsnode"></script>
+    <script src="//www.molayu.com/futures/assets/lib/jquery/base/2.1.4/jquery.js"></script>
+    <script src="//www.molayu.com/futures/assets/lib/jquery/mobile/1.4.5/jquery.js"></script>
+    <script src="//www.molayu.com/futures/assets/lib/lodash/3.10.1/lodash.js"></script>
+    <script src="//www.molayu.com/futures/config/app.js"></script>
+    <script>
         seajs.use("//www.molayu.com/futures/assets/js/biz/page/home/done.js",function(m){m&&m.init&&m.init();});
     </script>
 
