@@ -21,7 +21,8 @@ define(function (require, exports, module) {
     return {
         init: function(){
             var end = +new Date();
-            alert('opened ' + (end - gStart)/1000 + 's');
+            alert('script loaded ' + (end - gScript)/1000 + 's');
+
             this.wait();
             this.loadImage();
         },
