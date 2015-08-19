@@ -20,6 +20,7 @@ define(function (require, exports, module) {
 
     return {
         init: function(){
+            alert('index');
             this.wait();
             this.loadImage();
         },
