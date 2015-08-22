@@ -54,6 +54,20 @@
     getBy = function( selector ){
         return document.querySelector( selector );
     },
+    childs = function( el ){
+        if ( el.children ) {
+            return el.children;
+        }
+
+        var nodes = el.childNodes,
+            ret = [];
+        for (var i = 0; i < nodes.length; i++) {
+            if ( nodes[i].nodeType === 1 ) {
+                ret.push( nodes[i] );
+            }
+        }
+        return ret;
+    },
     attr = function( el, name, value ){
         // get value
         if ( isString(name) && value == null ) {
@@ -224,10 +238,8 @@
         // timeData = {current, volume, time}
         draw: function( timeData ){
 
-            alert( this.svg.childNodes[1] );
-
-            var gPricesEl = this.svg.children[1],
-                gVolumesEl = this.svg.children[2];
+            var gPricesEl = childs(this.svg)[1],
+                gVolumesEl = childs(this.svg)[2];
 
             if ( !this._init ) {
                 this._init = true;
