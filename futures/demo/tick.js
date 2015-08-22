@@ -615,6 +615,8 @@
 
     function loaded() {
 
+        alert( document.body.children );
+
         try {
             var tick = new Sline({
                 svg: document.querySelector('#tickSline'),
@@ -627,9 +629,11 @@
             });
 
             tick.draw();
+
+            throw new Error('xx');
         }
         catch(err) {
-            alert(err.message);
+            alert(err);
         }
 
         var data = DATA2.chartlist.slice(100);
