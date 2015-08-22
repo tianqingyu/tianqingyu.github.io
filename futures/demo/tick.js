@@ -224,7 +224,7 @@
         // timeData = {current, volume, time}
         draw: function( timeData ){
 
-            alert( this.svg.children );
+            alert( 1 );
 
             var gPricesEl = this.svg.children[1],
                 gVolumesEl = this.svg.children[2];
