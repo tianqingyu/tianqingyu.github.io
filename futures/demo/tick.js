@@ -224,6 +224,8 @@
         // timeData = {current, volume, time}
         draw: function( timeData ){
 
+            alert( this.svg.children );
+
             var gPricesEl = this.svg.children[1],
                 gVolumesEl = this.svg.children[2];
 
@@ -614,8 +616,6 @@
     setTimeout(loaded, 16);
 
     function loaded() {
-
-        alert( document.body.children );
 
         try {
             var tick = new Sline({
