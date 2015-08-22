@@ -615,6 +615,8 @@
 
     function loaded() {
 
+        alert(1);
+
         var tick = new Sline({
             svg: document.querySelector('#tickSline'),
             data: DATA2.chartlist.slice(0,100),
@@ -625,9 +627,9 @@
             ]
         });
 
-        log( tick );
-
         tick.draw();
+
+        alert(2);
 
         var data = DATA2.chartlist.slice(100);
 
