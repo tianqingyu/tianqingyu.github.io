@@ -224,7 +224,7 @@
         // timeData = {current, volume, time}
         draw: function( timeData ){
 
-            alert( this.svg );
+            alert( this.svg.childNodes[1] );
 
             var gPricesEl = this.svg.children[1],
                 gVolumesEl = this.svg.children[2];
@@ -617,24 +617,17 @@
 
     function loaded() {
 
-        try {
-            var tick = new Sline({
-                svg: document.querySelector('#tickSline'),
-                data: DATA2.chartlist.slice(0,100),
-                closingPriceYe: closingPriceYe,
-                period: [
-                    ['9:30', '11:30'],
-                    ['13:00', '15:00']
-                ]
-            });
+        var tick = new Sline({
+            svg: document.querySelector('#tickSline'),
+            data: DATA2.chartlist.slice(0,100),
+            closingPriceYe: closingPriceYe,
+            period: [
+                ['9:30', '11:30'],
+                ['13:00', '15:00']
+            ]
+        });
 
-            tick.draw();
-
-            throw new Error('xx');
-        }
-        catch(err) {
-            alert(err);
-        }
+        tick.draw();
 
         var data = DATA2.chartlist.slice(100);
 
