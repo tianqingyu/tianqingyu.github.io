@@ -615,21 +615,22 @@
 
     function loaded() {
 
-        alert(1);
+        try {
+            var tick = new Sline({
+                svg: document.querySelector('#tickSline'),
+                data: DATA2.chartlist.slice(0,100),
+                closingPriceYe: closingPriceYe,
+                period: [
+                    ['9:30', '11:30'],
+                    ['13:00', '15:00']
+                ]
+            });
 
-        var tick = new Sline({
-            svg: document.querySelector('#tickSline'),
-            data: DATA2.chartlist.slice(0,100),
-            closingPriceYe: closingPriceYe,
-            period: [
-                ['9:30', '11:30'],
-                ['13:00', '15:00']
-            ]
-        });
-
-        tick.draw();
-
-        alert(2);
+            tick.draw();
+        }
+        catch(err) {
+            alert(err.message);
+        }
 
         var data = DATA2.chartlist.slice(100);
 
