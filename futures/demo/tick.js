@@ -611,7 +611,7 @@
     /**
      * TODO demo
      */
-    requestAnimationFrame(loaded);
+    setTimeout(loaded, 16);
 
     function loaded() {
 
