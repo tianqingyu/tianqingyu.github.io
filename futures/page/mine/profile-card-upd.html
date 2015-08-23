@@ -6,12 +6,12 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <title>股指英雄 - 个人信息 - 添加银行卡</title>
+    <title>股指英雄 - 个人信息 - 修改银行卡</title>
 
     <meta name="description" content="股指英雄(www.gzyx.com)，为股指而生" />
     <meta name="keywords" content="期货，投资，股指英雄" />
 
-    <link rel="stylesheet" href="//www.molayu.com/futures/assets/css/page/mine/merge-profile.css" />
+    <link rel="stylesheet" href="//quote.6006.com/assets/css/page/mine/merge-profile.css" />
 </head>
 <body>
 
@@ -19,9 +19,9 @@
       <!-- 头部 -->
       <header class="page-header">
         <div class="content">
-          <h3>添加银行卡</h3>
+          <h3>修改银行卡</h3>
           <div class="left">
-            <a href="//www.molayu.com/futures/page/mine-profile-card.html" class="iconfont go-back">&#xe60c;</a>
+            <a href="//quote.6006.com/page/mine-profile-card.html" class="iconfont go-back">&#xe60c;</a>
           </div>
           <div class="right"></div>
         </div>
@@ -30,19 +30,25 @@
       <!-- 内容 -->
       <section class="page-main main-mine-profile">
         <div class="content">
-          <div class="text-stress tips">为确保资金安全，只能添加“张家辉”的银行卡！</div>
+          <ul class="mod-list">
+            <li>
+              <a href="/profile-card-upd.html/quote.6006.com/page/mine-profile-card-upd.html" class="clearfix">
+                <div class="left img"></div>
+                <div class="left detail">
+                  <div>
+                    <span>招商银行</span>
+                  </div>
+                  <p>1234 **** **** 1234</p>
+                </div>
+              </a>
+            </li>
+          </ul>
 
           <ul class="mod-list">
             <li>
               <label>
                 <span>开户名</span>
                 <input type="text" class="input" value="张家辉" readonly="readonly" />
-              </label>
-            </li>
-            <li>
-              <label>
-                <span>开户银行</span>
-                <input type="text" class="input" />
               </label>
             </li>
             <li>
@@ -65,23 +71,14 @@
             </li>
           </ul>
 
-          <ul class="mod-list">
-            <li>
-              <label>
-                <span>银行卡号</span>
-                <input type="text" class="input" placeholder="请输入银行卡号" />
-              </label>
-            </li>
-            <li>
-              <label>
-                <span>确认卡号</span>
-                <input type="text" class="input" placeholder="请再次确认银行卡号" />
-              </label>
-            </li>
-          </ul>
-
           <div class="action">
-            <a href="javascript:void(0)" class="button button-stress">确 定</a>
+            <div class="btns">
+              <a href="javascript:void(0)" class="button button-stress">确 定</a>
+            </div>
+            <div class="opr">
+              <span class="left"><a href="javascript:void(0)">设为默认卡</a></span>
+              <span class="right"><a href="javascript:void(0)">删除银行卡</a></span>
+            </div>
           </div>
         </div>
       </section>

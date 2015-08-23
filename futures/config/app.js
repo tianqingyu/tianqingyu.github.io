@@ -7,7 +7,7 @@
 
 seajs.config({
 
-    base: '//www.molayu.com/futures/',
+    base: '//quote.6006.com/',
 
     // 预加载的模块
     preload: [
