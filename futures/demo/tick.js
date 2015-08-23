@@ -548,7 +548,7 @@
                 minutes = this.minutes;
 
             var c2x = function( i ){
-                return width / minutes * i + 0.5;
+                return width / minutes * i + (i?0:0.5);
             },
 
             c2y = function( v ){
@@ -682,7 +682,7 @@
 
         var tick = new Sline({
             svg: document.querySelector('#tickSline'),
-            data: DATA2.chartlist,
+            data: DATA2.chartlist.slice(0,100),
             closingPriceYe: closingPriceYe,
             period: [
                 ['9:30', '11:30'],
@@ -703,7 +703,7 @@
                 setTimeout( pool, 1000 );
             }
         };
-        //setTimeout(pool, 1000);
+        setTimeout(pool, 1000);
     }
 })();
 //});
