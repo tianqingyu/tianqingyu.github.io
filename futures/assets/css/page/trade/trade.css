@@ -14,7 +14,7 @@
 
 }
 .main-trade .summary {
-    padding: 0.2rem 0 0.05rem 0;
+    padding: 0.15rem 0 0 0;
     text-align: center;
     background-color: #f8f8f8;
 }
@@ -59,7 +59,7 @@
     line-height: 1;
 }
 .main-trade .stock-detail ul:first-child {
-    padding: 0.2rem;
+    padding: 0.13rem 0.2rem;
 }
 .main-trade .stock-detail .change {
     text-align: right;
