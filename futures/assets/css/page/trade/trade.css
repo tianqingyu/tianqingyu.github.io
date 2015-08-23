@@ -106,7 +106,14 @@
 }
 
 .main-trade .make .action {
-    margin: 0.2rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-top: 0.01rem solid #d8d8d8;
+    background-color: #fff;
 }
 .main-trade .make .action > div {
     width: 50%;

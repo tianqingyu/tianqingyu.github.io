@@ -50,10 +50,13 @@
     border-radius: 0;
 }
 .msgbox-confirm .action .ok {
-    border-bottom-left-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
 }
 .msgbox-confirm .action .no {
-    border-bottom-right-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+}
+.msgbox-confirm .action .button-lesser {
+    color: #4471bc;
 }
 
 .msgbox-options .main {
