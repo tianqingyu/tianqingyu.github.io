@@ -564,7 +564,7 @@
 
             forEach(this.volumes, function( v, i ){
 
-                if ( v == 0) {
+                if ( v == 0 ) {
                     return;
                 }
 
