@@ -10,11 +10,13 @@
     'use strict';
 
     var log = function(){
-        console.log.apply(console, arguments);
-    },
+        if (window.console) {
+            console.log.apply(console, arguments);
+        }
+    };
 
     // common helper
-    isString = function( s ){
+    var isString = function( s ){
         return typeof s === 'string';
     },
     isObject = function( o ){
@@ -35,9 +37,14 @@
             }
         }
     },
+    sort = function( arr ){
+        return arr.sort(function( a, b ){
+            return a < b ? -1 : a > b ? 1 : 0;
+        });
+    };
 
     // svg dom helper
-    create = function( tagName ){
+    var create = function( tagName ){
         return document.createElementNS(
             'http://www.w3.org/2000/svg', tagName
         );
@@ -50,6 +57,9 @@
     },
     remove = function( el ){
         el.parentNode.removeChild( el );
+    },
+    empty = function( el ){
+        el.innerHTML = '';
     },
     getBy = function( selector ){
         return document.querySelector( selector );
@@ -107,7 +117,7 @@
         COLOR_D = '#e8e8e8', // 深色
         COLOR_S = '#f8f8f8', // 浅色
         COLOR_P = '#2f84cc', // 路径颜色
-        COLOR_V = '#e0e0e0', // 成交量颜色
+        COLOR_V = '#ccc', // 成交量颜色
         COLOR_T = '#888'; // 字体颜色
 
     /**
@@ -163,12 +173,12 @@
             this.volumes = this._resolveData().volumes;
 
             // 最高价、最低价
-            var arr = this.prices.slice().sort();
+            var arr = sort( this.prices.slice() );
             this.minPrice = arr[0];
             this.maxPrice = arr[arr.length - 1];
 
             // 最高、最低成交量
-            arr = this.volumes.slice().sort();
+            arr = sort( this.volumes.slice() );
             this.minVolume = arr[0];
             this.maxVolume = arr[arr.length - 1];
 
@@ -231,7 +241,7 @@
 
         _c2close: function( i ){
             return 'L' + this._c2x(i) + ',' + this.priceChartBox.y.end +
-                   'L' + this.priceChartBox.x.begin +',' + this.priceChartBox.y.end + 'Z';
+                   'L' + this.priceChartBox.x.begin + ',' + this.priceChartBox.y.end + 'Z';
         },
 
         // 绘制图形
@@ -247,6 +257,7 @@
                 this._drawFramework( gPricesEl, gVolumesEl );
             }
 
+            // 每分钟更新的数据，添加到当前data中
             if ( timeData && timeData.current > 0 ) {
                 if ( this.data[0].current === 0 ) {
                     this.data.splice(0, 1);
@@ -296,16 +307,14 @@
                 this.volumeChartBox.x.begin,
                 this.volumeChartBox.y.begin + this.volumeChartBox.y.height / 2,
                 this.volumeChartBox.x.end,
-                this.volumeChartBox.y.begin + this.volumeChartBox.y.height / 2,
-                COLOR_S
+                this.volumeChartBox.y.begin + this.volumeChartBox.y.height / 2
             );
             this._drawLine(
                 gVolumesEl,
                 this.volumeChartBox.x.begin,
                 this.volumeChartBox.y.end - 0.5,
                 this.volumeChartBox.x.end,
-                this.volumeChartBox.y.end - 0.5,
-                COLOR_S
+                this.volumeChartBox.y.end - 0.5
             );
 
             // 没有数据的情况，绘制默认的参考线
@@ -320,7 +329,10 @@
         _drawPeriodLine: function( gPricesEl ){
 
             var self = this,
-                len = this.period.length,
+                bx = this.priceChartBox.x,
+                by = this.priceChartBox.y;
+
+            var len = this.period.length,
                 last = len - 1,
                 x = 0;
 
@@ -333,29 +345,29 @@
                 self._drawText(
                     gPricesEl,
                     i === 0 ? x + 1 : x - 15,
-                    self.priceChartBox.y.end + 12,
+                    by.end + 12,
                     stime
                 );
 
                 if ( i === last ) {
-                    x = self.priceChartBox.x.width - 31;
+                    x = bx.width - 31;
 
                     self._drawText(
                         gPricesEl,
                         x,
-                        self.priceChartBox.y.end + 12,
+                        by.end + 12,
                         etime
                     );
                 }
                 else {
-                    x += mins / self.minutes * self.priceChartBox.x.width;
+                    x += mins / self.minutes * bx.width;
 
                     self._drawLine(
                         gPricesEl,
-                        self.priceChartBox.x.begin + x,
-                        self.priceChartBox.y.begin,
-                        self.priceChartBox.x.begin + x,
-                        self.priceChartBox.y.end
+                        bx.begin + x,
+                        by.begin,
+                        bx.begin + x,
+                        by.end
                     );
                 }
             });
@@ -471,8 +483,8 @@
                     this.beginPrice = range[0];
                     this.endPrice = range[len];
                 }
+                // TODO
                 else if ( close < min ) {
-
 
                 }
             }
@@ -525,6 +537,45 @@
 
         _drawBar: function( gVolumesEl ){
 
+            var self = this;
+
+            var bx = this.volumeChartBox.x,
+                by = this.volumeChartBox.y;
+
+            var max = this.maxVolume,
+                width = bx.width,
+                height = by.height,
+                minutes = this.minutes;
+
+            var c2x = function( i ){
+                return width / minutes * i + 0.5;
+            },
+
+            c2y = function( v ){
+                return by.begin + (1 - v / max * 0.9) * height;
+            };
+
+            // 清空之前的绘制线条
+            var nodes = childs( gVolumesEl),
+                i = nodes.length;
+            while ( --i >= 3 ) {
+                remove( nodes[i] );
+            }
+
+            forEach(this.volumes, function( v, i ){
+
+                if ( v == 0) {
+                    return;
+                }
+
+                var x1 = c2x(i),
+                    y1 = c2y(v),
+                    x2 = c2x(i),
+                    y2 = by.end,
+                    color = COLOR_V;
+
+                self._drawLine( gVolumesEl, x1, y1, x2, y2, color );
+            });
         },
 
         _drawLine: function( g, x1, y1, x2, y2, color, dash, refEl ){
@@ -587,7 +638,7 @@
                 v[2] = t2m(etime) - t2m(stime);
 
                 if ( v[2] < 0 ) {
-                    v[2] = v[2] + 24*60;
+                    v[2] += 24*60;
                 }
 
                 minutes += v[2];
@@ -596,7 +647,7 @@
             return minutes;
         },
 
-        // 分解data
+        // 拆分成价格数据和成交量数据
         _resolveData: function(){
 
             var data = this.data,
@@ -631,7 +682,7 @@
 
         var tick = new Sline({
             svg: document.querySelector('#tickSline'),
-            data: DATA2.chartlist.slice(0,100),
+            data: DATA2.chartlist,
             closingPriceYe: closingPriceYe,
             period: [
                 ['9:30', '11:30'],
@@ -641,39 +692,18 @@
 
         tick.draw();
 
+        log(tick);
+
+
         var data = DATA2.chartlist.slice(100);
-
         var pool = function(){
-
             if ( data.length ) {
                 tick.draw( data.shift() );
 
                 setTimeout( pool, 1000 );
             }
         };
-
-        setTimeout(pool, 1000);
+        //setTimeout(pool, 1000);
     }
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//});
