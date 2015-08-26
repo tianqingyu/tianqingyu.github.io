@@ -34,6 +34,8 @@ define(function (require, exports, module) {
 
                 if ( $next[0] ) {
 
+                    $li.css({left: '-100%'});
+
                     $next.css({left: 0});
 
                     $li = $next;
@@ -46,6 +48,8 @@ define(function (require, exports, module) {
                 var $prev = $li.prev();
 
                 if ( $prev[0] ) {
+
+                    $prev.css({left: 0});
 
                     $li.css({left: '100%'});
 
