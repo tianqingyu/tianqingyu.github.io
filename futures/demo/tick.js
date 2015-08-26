@@ -442,51 +442,57 @@
                 ));
             }
             else {
-                var range = [close];
+                var pathEl = getBy('#sline_path_bg'),
+                    pmax = Math.max( max, min, close ),
+                    pmin = Math.min( max, min, close );
 
-                if ( close > max ) {
+                var c, range = [close];
 
-                    var p = close;
+                c = close;
+                while ( c < pmax ) {
+                    c += step;
+                    range.unshift( c );
+                }
 
-                    range.unshift( p + step );
-                    while ( p >= min ) {
-                        p -= step;
-                        range.push( p );
+                c = close;
+                while ( c > pmin ) {
+                    c -= step;
+                    range.push( c );
+                }
+
+                if ( range[0] === close ) {
+                    range.unshift( close + step );
+                }
+                if ( range[range.length - 1] === close ) {
+                    range.push( close - step );
+                }
+
+                var len = range.length - 1;
+
+                forEach(range, function( p, i ){
+
+                    if ( i === 0 || i === len ) {
+                        return;
                     }
-                    range.push( p - step );
 
-                    var len = range.length - 1;
+                    var x1, y1, x2, y2, color, dash;
 
-                    var pathEl = getBy('#sline_path_bg');
+                    if ( p === close ) {
+                        color = COLOR_B;
+                        dash = '3,3';
+                    }
 
-                    forEach(range, function( p, i ){
+                    x1 = self.priceChartBox.x.begin;
+                    y1 = self.priceChartBox.y.height / len * i;
+                    x2 = self.priceChartBox.x.end;
+                    y2 = y1;
 
-                        if ( i === 0 || i === len ) {
-                            return;
-                        }
+                    lines.push(self._drawLine( gPricesEl, x1, y1, x2, y2, color, dash, pathEl ));
+                });
 
-                        var x1, y1, x2, y2, color, dash;
-
-                        if ( p === close ) {
-                            color = COLOR_B;
-                            dash = '3,3';
-                        }
-
-                        x1 = self.priceChartBox.x.begin;
-                        y1 = self.priceChartBox.y.height / len * i;
-                        x2 = self.priceChartBox.x.end;
-                        y2 = y1;
-
-                        lines.push(self._drawLine( gPricesEl, x1, y1, x2, y2, color, dash, pathEl ));
-                    });
-
-                    this.beginPrice = range[0];
-                    this.endPrice = range[len];
-                }
-                // TODO
-                else if ( close < min ) {
-
-                }
+                // Y轴的起始价格、结束价格
+                this.beginPrice = range[0];
+                this.endPrice = range[len];
             }
         },
 
@@ -682,7 +688,7 @@
 
         var tick = new Sline({
             svg: document.querySelector('#tickSline'),
-            data: DATA2.chartlist.slice(0,100),
+            data: DATA2.chartlist,
             closingPriceYe: closingPriceYe,
             period: [
                 ['9:30', '11:30'],
@@ -703,7 +709,7 @@
                 setTimeout( pool, 1000 );
             }
         };
-        setTimeout(pool, 1000);
+        //setTimeout(pool, 1000);
     }
 })();
 //});
