@@ -3,10 +3,9 @@
  * @since 2015/8/5
  */
 
-.main-home-kefu {
-
+.main-home-kefu ul {
+    margin: 0.2rem 0;
 }
-
 .main-home-kefu ul li {
     margin: 0.15rem 0;
 }
@@ -22,23 +21,23 @@
 }
 .main-home-kefu ul img {
     position: absolute;
-    left: -0.8rem;
+    left: -0.5rem;
     top: 0;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.31rem;
+    height: 0.31rem;
 }
 .main-home-kefu ul .detail {
     position: relative;
     display: inline-block;
     border: 1px solid #ddd;
     padding: 0.05rem 0.1rem;
-    margin: 0 0.6rem 0 0.9rem;
+    margin: 0 0.6rem 0 0.7rem;
     background-color: #ddd;
     border-radius: 0.06rem;
 }
 .main-home-kefu ul .detail time {
     position: absolute;
-    right: -0.45rem;
+    right: -0.4rem;
     bottom: 0;
 }
 .main-home-kefu .fr {
@@ -46,11 +45,11 @@
 }
 .main-home-kefu .fr img {
     left: auto;
-    right: -0.8rem;
+    right: -0.5rem;
 }
 .main-home-kefu .fr .detail {
     text-align: left;
-    margin: 0 0.9rem 0 0.6rem;
+    margin: 0 0.7rem 0 0.6rem;
     border-color: #89B9EA;
     background-color: #89B9EA;
 }
@@ -81,7 +80,7 @@
 }
 .main-home-kefu .fr .detail time {
     right: auto;
-    left: -0.45rem;
+    left: -0.4rem;
 }
 
 .main-home-kefu .user-input {
