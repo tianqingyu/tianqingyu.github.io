@@ -7,74 +7,59 @@
     background-color: #edf0f5;
 }
 
-/* pk game
- * ======================*/
-.main-home .pk-game {
-    position: relative;
-    height: 0.56rem;
-    margin: 0.2rem;
-    overflow: hidden;
+.main-home .details {
+    margin: 0.2rem 0.2rem 0 0.2rem;
+}
+.main-home .details .text-xxxl {
+    font-weight: bold;
+    line-height: 1;
+}
+.main-home .details .charts {
+    margin: 0.1rem 0;
+}
+.main-home .details .charts .left {
+    width: 68%;
+    height: 0.27rem;
+    line-height: 0.27rem;
+    padding-right: 0.08rem;
     color: #fff;
-    border-radius: 0.06rem;
-    background-color: #17b03e;
-}
-.main-home .pk-game .bar  {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    border-radius: 0.06rem;
-    background-color: #f05a3c;
-    -webkit-transition: all .5s;
-            transition: all .5s;
-}
-.main-home .pk-game .highs {
-    display: block;
-    margin: 0.08rem 0 0 0.1rem;
-    white-space: nowrap;
-}
-.main-home .pk-game .lows {
-    display: block;
     text-align: right;
-    margin: 0.08rem 0.1rem 0 0;
+    background-color: #F05A3C;
 }
-.main-home .pk-game .pk {
-    position: absolute;
-    top: 0;
-    right: -0.28rem;
-    z-index: 1;
-    width: 0.56rem;
-    height: 0.56rem;
-    line-height: 0.56rem;
-    text-align: center;
-    font-size: 0.18rem;
-    color: #555;
-    background-color: #fff;
-    border-radius: 100%;
+.main-home .details .charts .right {
+    width: 32%;
+    height: 0.27rem;
+    line-height: 0.27rem;
+    padding-left: 0.08rem;
+    color: #fff;
+    background-color: #17B03E;
 }
-.main-home .pk-game .rotate360 {
-    -webkit-transition: -webkit-transform .5s;
-            transition: transform .5s;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-}
-.main-home .pk-game .rotate-360 {
-    -webkit-transition: -webkit-transform .5s;
-            transition: transform .5s;
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+.main-home .details .summary {
+    padding: 0.03rem 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #fff;
+    background-color: #EDC504;
 }
 
+/* 新手练习场 */
 .main-home .novice {
-    margin: 0.2rem;
+    margin: 0.1rem 0;
 }
 .main-home .novice a {
     display: block;
     height: 0.4rem;
     line-height: 0.4rem;
     text-align: center;
-    border: 0.01rem solid #ddd;
+    border-top: 0.01rem solid #ddd;
+    border-bottom: 0.01rem solid #ddd;
     background-color: #fff;
-    border-radius: 0.06rem;
+}
+.main-home .novice em {
+    padding: 0.02rem;
+    margin-left: 0.05rem;
+    color: #fff;
+    vertical-align: top;
+    background-color: #ff7700;
 }
 
 .main-home > .content > p {
@@ -94,4 +79,8 @@
 }
 .main-home .mod-tab-switcher + .mod-list {
     padding-top: 0.1rem;
+}
+
+.main-home .mod-list li > a {
+    display: block;
 }

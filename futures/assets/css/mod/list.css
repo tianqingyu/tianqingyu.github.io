@@ -38,10 +38,10 @@
     display: inline-block;
 }
 .mod-list .detail .name {
-    width: 0.8rem;
+    width: 0.9rem;
 }
 .mod-list .detail .code {
-    width: 0.8rem;
+    width: 0.7rem;
 }
 .mod-list .detail .uname {
     margin-right: 0.2rem;
@@ -54,10 +54,10 @@
 }
 @media all and (max-width: 320px) {
     .mod-list .detail .name {
-        width: 0.7rem;
+        width: 0.8rem;
     }
     .mod-list .detail .code {
-        width: 0.7rem;
+        width: 0.6rem;
     }
 }
 

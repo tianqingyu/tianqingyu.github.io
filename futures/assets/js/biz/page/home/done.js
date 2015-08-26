@@ -10,7 +10,6 @@ define(function(require, exports, module){
     var loader = require('modLoader');
 
     loader([
-        'page/home/index',
-        'page/home/pk-anim'
+        'page/home/index'
     ]);
 });
