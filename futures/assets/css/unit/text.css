@@ -60,3 +60,30 @@
 .text-center {
     text-align: center;
 }
+
+@media all and (max-width: 320px) {
+    .text-m {
+        font-size: 0.14rem;
+        font-style: normal;
+    }
+    .text-xm {
+        font-size: 0.16rem;
+        font-style: normal;
+    }
+    .text-l {
+        font-size: 0.18rem;
+        font-style: normal;
+    }
+    .text-xl {
+        font-size: 0.24rem;
+        font-style: normal;
+    }
+    .text-xxl {
+        font-size: 0.30rem;
+        font-style: normal;
+    }
+    .text-xxxl {
+        font-size: 0.34rem;
+        font-style: normal;
+    }
+}

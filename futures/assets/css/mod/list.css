@@ -52,6 +52,14 @@
     margin-top: 0.15rem;
     color: #ccc;
 }
+@media all and (max-width: 320px) {
+    .mod-list .detail .name {
+        width: 0.7rem;
+    }
+    .mod-list .detail .code {
+        width: 0.7rem;
+    }
+}
 
 /* sample
  * ======================= */
