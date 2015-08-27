@@ -215,7 +215,7 @@
 
             var p = this.closingPriceYe * 0.01;
 
-            // 价格区间的长度
+            // 价格区间的长度（有没有什么办法来自动生成下面的数据？）
             this.priceRangeLength = p < 0.1 ? 0.25 :
                                     p < 1   ? 0.5 :
                                     p < 10  ? 5 :
