@@ -216,7 +216,11 @@
             var p = this.closingPriceYe * 0.01;
 
             // 价格区间的长度
-            this.priceRangeLength = p < 1 ? 0.5 : p < 100 ? 50 : 250;
+            this.priceRangeLength = p < 0.1 ? 0.25 :
+                                    p < 1   ? 0.5 :
+                                    p < 10  ? 5 :
+                                    p < 100 ? 50
+                                            : 250;
 
             // 起始价格
             this.beginPrice = 0;
