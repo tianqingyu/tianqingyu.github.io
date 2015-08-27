@@ -19,8 +19,8 @@
 }
 .main-home .details .charts .left {
     width: 68%;
-    height: 0.27rem;
-    line-height: 0.27rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
     padding-right: 0.08rem;
     color: #fff;
     text-align: right;
@@ -28,14 +28,14 @@
 }
 .main-home .details .charts .right {
     width: 32%;
-    height: 0.27rem;
-    line-height: 0.27rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
     padding-left: 0.08rem;
     color: #fff;
     background-color: #17B03E;
 }
 .main-home .details .summary {
-    padding: 0.03rem 0.2rem;
+    padding: 0.05rem 0.2rem 0.03rem 0.2rem;
     margin-bottom: 0.2rem;
     color: #fff;
     background-color: #EDC504;

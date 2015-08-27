@@ -42,7 +42,7 @@
     height: 0.86rem;
     margin-right: 0.2rem;
     margin-bottom: 0.3rem;
-    border-radius: 100%;
+    text-align: center;
 }
 .main-home-guide .segment-img {
     font-size: 0.12rem;
