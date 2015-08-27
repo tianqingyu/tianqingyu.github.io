@@ -285,37 +285,6 @@
             }
         },
 
-        // 每秒绘制图形
-        perDraw: function( timeData ){
-
-            var gPricesEl = childs(this.svg)[1],
-                gVolumesEl = childs(this.svg)[2];
-
-            if ( !this._init ) {
-                this._init = true;
-
-                this._drawFramework( gPricesEl, gVolumesEl );
-            }
-
-            // 每分钟更新的数据，添加到当前data中
-            if ( timeData && timeData.current > 0 ) {
-
-                this.data[ this.data.length - 1 ] = timeData;
-                this.prices[ this.prices.length - 1 ] = timeData.current;
-                this.volumes[ this.volumes.length - 1 ] = timeData.volume;
-
-                this.minPrice = Math.min( this.minPrice, timeData.current );
-                this.maxPrice = Math.max( this.maxPrice, timeData.current );
-
-                this.minVolume = Math.min( this.minVolume, timeData.volume );
-                this.maxVolume = Math.max( this.maxVolume, timeData.volume );
-            }
-
-            if ( this.prices[0] > 0 || this.volumes[0] > 0 ) {
-                this._drawChart( gPricesEl, gVolumesEl );
-            }
-        },
-
         // 基本框架
         _drawFramework: function( gPricesEl, gVolumesEl ){
 
@@ -741,44 +710,14 @@
         log(tick);
 
 
-        // 模拟增量数据
         var data = DATA2.chartlist.slice(100);
-
-        var crt = 0;
-
-        // 上下浮动50
-        var rnd = function( o ){
-            o.current = crt - 25 + Math.random() * 50;
-        };
-
-        var o, count = 1;
-
         var pool = function(){
-
-            if ( count++ === 1 ) {
-
-                o = data.shift();
-
-                crt = o.current;
-
-                tick.draw( o );
-            }
-
             if ( data.length ) {
+                tick.draw( data.shift() );
 
-                rnd( o );
-
-                if ( count > 5 ) {
-                    count = 1;
-                    o.current = crt;
-                }
-
-                tick.perDraw( o );
-
-                setTimeout( pool, 500 );
+                setTimeout( pool, 1000 );
             }
         };
-
-        setTimeout( pool, 500 );
+        setTimeout(pool, 1000);
     }
 })();
