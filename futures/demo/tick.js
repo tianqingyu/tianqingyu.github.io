@@ -113,12 +113,14 @@
         append( el, tspan );
     };
 
-    var COLOR_B = 'red', // 参考线颜色
-        COLOR_D = '#e8e8e8', // 深色
-        COLOR_S = '#f8f8f8', // 浅色
-        COLOR_P = '#2f84cc', // 路径颜色
-        COLOR_V = '#ccc', // 成交量颜色
-        COLOR_T = '#888'; // 字体颜色
+    var COLOR_B  = 'red',       // 参考线颜色
+        COLOR_D  = '#e8e8e8',   // 深色
+        COLOR_S  = '#f8f8f8',   // 浅色
+        COLOR_P  = '#2f84cc',   // 路径颜色
+        COLOR_T  = '#888',      // 字体颜色
+        COLOR_V  = '#ccc',      // 成交量平的颜色
+        COLOR_VH = '#d0402d',   // 成交量涨的颜色
+        COLOR_VL = '#17b03e';   // 成交量跌的颜色
 
     /**
      * 分时图
@@ -549,7 +551,8 @@
 
             var self = this;
 
-            var bx = this.volumeChartBox.x,
+            var volumes = this.volumes,
+                bx = this.volumeChartBox.x,
                 by = this.volumeChartBox.y;
 
             var max = this.maxVolume,
@@ -572,17 +575,19 @@
                 remove( nodes[i] );
             }
 
-            forEach(this.volumes, function( v, i ){
+            forEach(volumes, function( v, i ){
 
                 if ( v == 0 ) {
                     return;
                 }
 
+                var pv = volumes[ i - 1 ];
+
                 var x1 = c2x(i),
                     y1 = c2y(v),
                     x2 = c2x(i),
                     y2 = by.end,
-                    color = COLOR_V;
+                    color = v > pv ? COLOR_VH : v < pv ? COLOR_VL : COLOR_V;
 
                 self._drawLine( gVolumesEl, x1, y1, x2, y2, color );
             });
