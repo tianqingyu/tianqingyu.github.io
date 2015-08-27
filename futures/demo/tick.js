@@ -2,10 +2,10 @@
  * 股票即时走势图.
  *
  * @author jun.yj
+ * @email god.yangjun@gmail.com
  * @since 15/8/21
  */
 
-//define(function (require, exports, module) {
 (function(){
     'use strict';
 
@@ -697,7 +697,7 @@
 
         var tick = new Sline({
             svg: document.querySelector('#tickSline'),
-            data: DATA2.chartlist,
+            data: DATA2.chartlist.slice(0,100),
             closingPriceYe: closingPriceYe,
             period: [
                 ['9:30', '11:30'],
@@ -718,7 +718,6 @@
                 setTimeout( pool, 1000 );
             }
         };
-        //setTimeout(pool, 1000);
+        setTimeout(pool, 1000);
     }
 })();
-//});
