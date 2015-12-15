@@ -6,7 +6,7 @@
 
 seajs.config({
 
-    base: 'file:///Users/molayu/Workspace/Web/demo/autorepair/res/js',
+    base: 'file:///Users/molayu/Work/mygit/github/autorepair//res/js',
 
     charset: 'UTF-8'
 });
