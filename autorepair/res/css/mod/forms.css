@@ -1,0 +1,17 @@
+/**
+ * 登录
+ *
+ * @author jun.yj
+ * @email god.yangjun@gmail.com
+ * @date 15/12/15
+ */
+
+.forms {
+    text-align: center;
+}
+.forms > li {
+    margin: 0.1rem 0.2rem;
+}
+.forms .input {
+    width: 100%;
+}

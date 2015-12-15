@@ -35,13 +35,12 @@
     background-color: #ddd!important;
 }
 
-.button-buy-highs {
+.button-smscode {
+    display: inline-block;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    padding: 0 0.05rem;
+    vertical-align: middle;
     color: #fff;
-    border-color: #f05a3c;
-    background-color: #f05a3c;
-}
-.button-buy-lows {
-    color: #fff;
-    border-color: #17b03e;
-    background-color: #17b03e;
+    background-color: #53AB5A;
 }

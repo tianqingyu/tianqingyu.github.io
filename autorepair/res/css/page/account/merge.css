@@ -13,5 +13,8 @@
 @import url(../../lang/overlay.css);
 @import url(../../lang/text.css);
 
+/* mod */
+@import url(../../mod/forms.css);
+
 /* page */
 @import url(account.css);

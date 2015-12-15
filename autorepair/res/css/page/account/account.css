@@ -1,0 +1,69 @@
+/**
+ * 登录
+ *
+ * @author jun.yj
+ * @email god.yangjun@gmail.com
+ * @date 15/12/15
+ */
+
+/* 登录 */
+.main-login h1 {
+    margin: 0.2rem 0;
+    text-align: center;
+}
+.main-login .action {
+    margin-top: 0.3rem;
+    text-align: center;
+}
+.main-login .action .button {
+    width: 42%;
+}
+.main-login .action .login {
+    margin-right: 0.1rem;
+}
+.main-login .ps {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* 企业登录 */
+.main-login-corp h1 {
+    margin: 0.2rem 0;
+    text-align: center;
+}
+.main-login-corp .action {
+    margin-top: 0.3rem;
+    text-align: center;
+}
+.main-login-corp .action .button {
+    width: 42%;
+}
+.main-login-corp .ps {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* 注册 */
+.main-register .forms {
+    margin-top: 0.5rem;
+}
+.main-register .forms .smscode {
+    width: 74%;
+}
+.main-register .forms .button-smscode {
+    width: 26%;
+}
+.main-register .forms .plate {
+    margin-bottom: 0.2rem;
+}
+.main-register .action {
+    margin-top: 0.3rem;
+    text-align: center;
+}
+.main-register .action .button {
+    width: 42%;
+}
+.main-register .ps {
+    margin-top: 0.5rem;
+    text-align: center;
+}
