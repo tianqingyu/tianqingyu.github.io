@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* base */
+@import url(../../../lib/normalize.css);
+@import url(../../site/global.css);
+
+/* page */
+@import url(account.css);
