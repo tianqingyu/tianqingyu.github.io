@@ -1,0 +1,148 @@
+/**
+ * @author jun.yj
+ * @date 2015/8/4
+ */
+
+.text-omit    { color: #ccc; }
+.text-lesser  { color: #aaa; }
+.text-minor   { color: #666; }
+.text-stress  { color: #ff7300; }
+.text-force   { color: #f1534a; }
+.text-warning { color: #e31000; }
+
+.text-link    { color: #0077ee; }
+.text-help    { color: #5badf9; }
+.text-head    { color: #53AB5A; }
+
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+.text-middle { vertical-align: middle; }
+.text-bold   { font-weight: bold; }
+.text-del    { text-decoration: line-through; }
+
+.text-s,
+.text-s12 {
+    font-size: 0.12rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s14 {
+    font-size: 0.14rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-m,
+.text-s16 {
+    font-size: 0.16rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-xm,
+.text-s18 {
+    font-size: 0.18rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-l,
+.text-s20 {
+    font-size: 0.2rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s22 {
+    font-size: 0.22rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s24 {
+    font-size: 0.24rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-xl,
+.text-s26 {
+    font-size: 0.26rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s28 {
+    font-size: 0.28rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-xxl,
+.text-s30 {
+    font-size: 0.3rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-xxxl,
+.text-s36 {
+    font-size: 0.36rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s50 {
+    font-size: 0.5rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s52 {
+    font-size: 0.52rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s54 {
+    font-size: 0.54rem;
+    font-style: normal;
+    line-height: 1;
+}
+
+@media all and (max-width: 320px) {
+    .text-s14 {
+        font-size: 0.12rem;
+    }
+    .text-m,
+    .text-s16 {
+        font-size: 0.14rem;
+    }
+    .text-xm,
+    .text-s18 {
+        font-size: 0.16rem;
+    }
+    .text-l,
+    .text-s20 {
+        font-size: 0.18rem;
+    }
+    .text-s22 {
+        font-size: 0.2rem;
+    }
+    .text-s24 {
+        font-size: 0.22rem;
+    }
+    .text-xl,
+    .text-s26 {
+        font-size: 0.24rem;
+    }
+    .text-s28 {
+        font-size: 0.26rem;
+    }
+    .text-xxl,
+    .text-s30 {
+        font-size: 0.28rem;
+    }
+    .text-xxxl,
+    .text-s36 {
+        font-size: 0.34rem;
+    }
+    .text-s50 {
+        font-size: 0.48rem;
+    }
+    .text-s52 {
+        font-size: 0.5rem;
+    }
+    .text-s54 {
+        font-size: 0.52rem;
+    }
+}

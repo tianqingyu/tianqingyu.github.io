@@ -1,0 +1,47 @@
+/**
+ * @author jun.yj
+ * @date 2015/8/4
+ */
+
+.button {
+    display: inline-block;
+    min-width: 0.5rem;
+    height: 0.38rem;
+    line-height: 0.36rem;
+    padding: 0 0.1rem;
+    color: #53AB5A;
+    text-align: center;
+    border: 0.01rem solid #53AB5A;
+    background-color: #fff;
+    border-radius: 0.05rem;
+}
+.button-stress {
+    color: #fff;
+    border-color: #53AB5A;
+    background-color: #53AB5A;
+}
+.button-important {
+    color: #fff;
+    border-color: #ff7300;
+    background-color: #ff7300;
+}
+.button-lesser {
+    color: #888;
+    border-color: #ddd;
+}
+.button-disabled {
+    color: #aaa!important;
+    border-color: #ddd!important;
+    background-color: #ddd!important;
+}
+
+.button-buy-highs {
+    color: #fff;
+    border-color: #f05a3c;
+    background-color: #f05a3c;
+}
+.button-buy-lows {
+    color: #fff;
+    border-color: #17b03e;
+    background-color: #17b03e;
+}
