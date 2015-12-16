@@ -1,0 +1,30 @@
+<section class="page-main main-register">
+  <div class="content">
+    <ul class="forms">
+      <li>
+        <input class="input mobile" type="text" maxlength="20" placeholder="请输入您的手机号"/>
+      </li>
+      <li>
+        <input class="input smscode" type="text" maxlength="20" placeholder="请输入短信验证码"
+       /><a href="javascript:void(0)" class="button-smscode">获取验证码</a>
+      </li>
+      <li>
+        <input class="input plate" type="text" maxlength="20" placeholder="请输入您的车牌号"/>
+      </li>
+      <li>
+        <input class="input name" type="text" maxlength="20" placeholder="请输入您的姓名"/>
+      </li>
+      <li>
+        <input class="input pass" type="text" maxlength="20" placeholder="请输入登录密码"/>
+      </li>
+    </ul>
+
+    <div class="action">
+      <a href="javascript:void(0)" class="button button-stress register">注册</a>
+    </div>
+
+    <div class="ps">
+      <a href="../login/index.html" class="text-link">已有账号登录</a>
+    </div>
+  </div>
+</section>

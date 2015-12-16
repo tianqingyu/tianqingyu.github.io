@@ -14,63 +14,24 @@
 
     <div class="doc" id="doc">
       <!-- 头部 -->
-      <header class="page-header">
-        <div class="content">
-          <h3>注册</h3>
-          <div class="left">
-            <a href="javascript:window.history.back()" class="iconfont go-back">&#xe60c;</a>
-          </div>
-          <div class="right"></div>
-        </div>
-      </header>
+      <div id="header"></div>
 
       <!-- 内容 -->
-      <section class="page-main main-register">
-        <div class="content">
-          <ul class="forms">
-            <li>
-              <input class="input mobile" type="text" maxlength="20" placeholder="请输入您的手机号"/>
-            </li>
-            <li>
-              <input class="input smscode" type="text" maxlength="20" placeholder="请输入短信验证码"
-             /><a href="javascript:void(0)" class="button-smscode">获取验证码</a>
-            </li>
-            <li>
-              <input class="input plate" type="text" maxlength="20" placeholder="请输入您的车牌号"/>
-            </li>
-            <li>
-              <input class="input name" type="text" maxlength="20" placeholder="请输入您的姓名"/>
-            </li>
-            <li>
-              <input class="input pass" type="text" maxlength="20" placeholder="请输入登录密码"/>
-            </li>
-          </ul>
+      <div id="main"></div>
 
-          <div class="action">
-            <a href="javascript:void(0)" class="button button-stress register">注册</a>
-          </div>
-
-          <div class="ps">
-            <a href="../login/index.html" class="text-link">已有账号登录</a>
-          </div>
-        </div>
-      </section>
+      <!-- 底部 -->
+      <div id="footer"></div>
 
       <!-- 所有页面浮动、定位层的容器 -->
       <div class="float">
         <div class="content"></div>
       </div>
-
-      <!-- 底部 -->
-      <footer class="page-footer hide">
-        <div class="content"></div>
-      </footer>
     </div>
 
 
     <script src="http://www.autorepair.com/res/lib/all.js" id="seajsnode"></script>
     <script src="http://www.autorepair.com/config/app.js"></script>
-    <!--<script>seajs.use('page/index/index',function(m){m&&m.init&&m.init();});</script>-->
+    <script>seajs.use('page/register/index',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>

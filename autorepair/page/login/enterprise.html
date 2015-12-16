@@ -14,55 +14,24 @@
 
     <div class="doc" id="doc">
       <!-- 头部 -->
-      <header class="page-header">
-        <div class="content">
-          <h3>企业登录</h3>
-          <div class="left">
-            <a href="javascript:window.history.back()" class="iconfont go-back">&#xe60c;</a>
-          </div>
-          <div class="right"></div>
-        </div>
-      </header>
+      <div id="header"></div>
 
       <!-- 内容 -->
-      <section class="page-main main-login-corp">
-        <div class="content">
-          <h1>比弗汽修</h1>
+      <div id="main"></div>
 
-          <ul class="forms">
-            <li>
-              <input class="input name" type="text" maxlength="20" placeholder="请输入您的姓名" />
-            </li>
-            <li>
-              <input class="input pass" type="text" maxlength="20" placeholder="请输入登录密码" />
-            </li>
-          </ul>
-
-          <div class="action">
-            <a href="javascript:void(0)" class="button button-stress login">登录</a>
-          </div>
-
-          <div class="ps">
-            <a href="javascript:void(0)" class="text-minor">企业用户需先注册普通用户，登录后提交申请</a>
-          </div>
-        </div>
-      </section>
+      <!-- 底部 -->
+      <div id="footer"></div>
 
       <!-- 所有页面浮动、定位层的容器 -->
       <div class="float">
         <div class="content"></div>
       </div>
-
-      <!-- 底部 -->
-      <footer class="page-footer hide">
-        <div class="content"></div>
-      </footer>
     </div>
 
 
     <script src="http://www.autorepair.com/res/lib/all.js" id="seajsnode"></script>
     <script src="http://www.autorepair.com/config/app.js"></script>
-    <!--<script>seajs.use('page/index/index',function(m){m&&m.init&&m.init();});</script>-->
+    <script>seajs.use('page/login/enterprise',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <header class="page-header">
   <div class="content">
-    <h3>登录</h3>
+    <h3>{{title}}</h3>
     <div class="left">
       <a href="javascript:window.history.back()" class="iconfont go-back">&#xe60c;</a>
     </div>

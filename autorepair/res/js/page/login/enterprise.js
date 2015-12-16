@@ -22,7 +22,9 @@ define(function (require, exports, module) {
 
             // header
             net.text('../mods/header.art', function( rs ){
-                $('#header').replaceWith( art.compile(rs)({}) );
+                $('#header').replaceWith( art.compile(rs)({
+                    title: '登录'
+                }));
             });
 
             // footer
@@ -31,7 +33,7 @@ define(function (require, exports, module) {
             });
 
             // main
-            net.text('index.art', function( rs ){
+            net.text('enterprise.art', function( rs ){
                 $('#main').replaceWith( art.compile(rs)({}) );
             });
         }
