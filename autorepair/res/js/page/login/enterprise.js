@@ -23,7 +23,7 @@ define(function (require, exports, module) {
             // header
             net.text('../mods/header.art', function( rs ){
                 $('#header').replaceWith( art.compile(rs)({
-                    title: '登录'
+                    title: '企业用户登录'
                 }));
             });
 
