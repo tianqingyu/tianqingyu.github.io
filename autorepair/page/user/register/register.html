@@ -6,9 +6,9 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>登录</title>
+    <title>注册</title>
 
-    <link rel="stylesheet" href="../../res/css/page/account/merge.css"/>
+    <link rel="stylesheet" href="../../../res/css/page/account/merge.css"/>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
       <!-- 头部 -->
       <header class="page-header">
         <div class="content">
-          <h3>登录</h3>
+          <h3>注册</h3>
           <div class="left">
             <a href="javascript:window.history.back()" class="iconfont go-back">&#xe60c;</a>
           </div>
@@ -25,26 +25,33 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-login">
+      <section class="page-main main-register">
         <div class="content">
-          <h1>比弗汽修</h1>
-
           <ul class="forms">
             <li>
-              <input class="input name" type="text" maxlength="20" placeholder="请输入您的姓名" />
+              <input class="input mobile" type="text" maxlength="20" placeholder="请输入您的手机号"/>
             </li>
             <li>
-              <input class="input pass" type="text" maxlength="20" placeholder="请输入登录密码" />
+              <input class="input smscode" type="text" maxlength="20" placeholder="请输入短信验证码"
+             /><a href="javascript:void(0)" class="button-smscode">获取验证码</a>
+            </li>
+            <li>
+              <input class="input plate" type="text" maxlength="20" placeholder="请输入您的车牌号"/>
+            </li>
+            <li>
+              <input class="input name" type="text" maxlength="20" placeholder="请输入您的姓名"/>
+            </li>
+            <li>
+              <input class="input pass" type="text" maxlength="20" placeholder="请输入登录密码"/>
             </li>
           </ul>
 
           <div class="action">
-            <a href="javascript:void(0)" class="button button-stress login">登录</a>
-            <a href="register.html" class="button register">注册</a>
+            <a href="javascript:void(0)" class="button button-stress register">注册</a>
           </div>
 
           <div class="ps">
-            <a href="login-corp.html" class="text-link">企业用户登录</a>
+            <a href="login.html" class="text-link">已有账号登录</a>
           </div>
         </div>
       </section>
@@ -61,11 +68,8 @@
     </div>
 
 
-    <script src="../../res/lib/jquery.js"></script>
-    <script src="../../res/lib/jqmobile.js"></script>
-    <script src="../../res/lib/lodash.js"></script>
-    <script src="../../res/lib/sea.js" id="seajsnode"></script>
-    <script src="../../config/app.js"></script>
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
     <!--<script>seajs.use('page/index/index',function(m){m&&m.init&&m.init();});</script>-->
 
 </body>

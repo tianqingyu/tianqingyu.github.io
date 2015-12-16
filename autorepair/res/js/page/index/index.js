@@ -7,9 +7,14 @@
 define(function (require, exports, module) {
     'use strict';
 
+    var $ = require('$'),
+        _ = require('_'),
+        art = require('art'),
+        log = require('log');
+
     return {
         init: function(){
-            console.log('test');
+
         }
     }
 });

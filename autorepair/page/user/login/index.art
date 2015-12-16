@@ -1,0 +1,23 @@
+<section class="page-main main-login">
+  <div class="content">
+    <h1>比弗汽修</h1>
+
+    <ul class="forms">
+      <li>
+        <input class="input name" type="text" maxlength="20" placeholder="请输入您的姓名" />
+      </li>
+      <li>
+        <input class="input pass" type="text" maxlength="20" placeholder="请输入登录密码" />
+      </li>
+    </ul>
+
+    <div class="action">
+      <a href="javascript:void(0)" class="button button-stress login">登录</a>
+      <a href="register.html" class="button register">注册</a>
+    </div>
+
+    <div class="ps">
+      <a href="login-corp.html" class="text-link">企业用户登录</a>
+    </div>
+  </div>
+</section>
