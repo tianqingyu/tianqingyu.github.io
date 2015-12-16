@@ -49,6 +49,19 @@ define(function(require, exports, module){
 			return this.ajax( opts );
 		},
 
+		text: function( opts ){
+			if (arguments.length === 2) {
+				var url = opts;
+				opts = {
+					url: url,
+					success: arguments[1]
+				};
+			}
+			opts.type = 'GET';
+			opts.dataType = 'text';
+			return this.ajax( opts );
+		},
+
 		jsonp: function( opts ){
 			opts.type = 'GET';
 			opts.dataType = 'jsonp';

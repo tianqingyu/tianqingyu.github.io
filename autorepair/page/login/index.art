@@ -13,11 +13,11 @@
 
     <div class="action">
       <a href="javascript:void(0)" class="button button-stress login">登录</a>
-      <a href="register.html" class="button register">注册</a>
+      <a href="../register/index.html" class="button register">注册</a>
     </div>
 
     <div class="ps">
-      <a href="login-corp.html" class="text-link">企业用户登录</a>
+      <a href="enterprise.html" class="text-link">企业用户登录</a>
     </div>
   </div>
 </section>

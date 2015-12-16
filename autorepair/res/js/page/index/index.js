@@ -9,23 +9,30 @@ define(function (require, exports, module) {
 
     var $ = require('$'),
         _ = require('_'),
-        art = require('art'),
         log = require('log'),
+        art = require('art'),
         net = require('net');
 
     return {
         init: function(){
+            this.initTmpl();
+        },
 
-            net.ajax({
-                url: 'index.art',
-                type: 'GET',
-                dataType: 'text',
-                success: function( rs ){
-                    log(rs);
-                },
-                error: function(){
-                    log(11);
-                }
+        initTmpl: function(){
+
+            // header
+            net.text('../mods/header.art', function( rs ){
+                $('#header').replaceWith( art.compile(rs)({}) );
+            });
+
+            // footer
+            net.text('../mods/footer.art', function( rs ){
+                $('#footer').replaceWith( art.compile(rs)({}) );
+            });
+
+            // main
+            net.text('index.art', function( rs ){
+                $('#main').replaceWith( art.compile(rs)({}) );
             });
         }
     }
