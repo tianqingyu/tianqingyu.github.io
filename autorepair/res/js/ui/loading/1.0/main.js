@@ -13,7 +13,7 @@ define(function (require, exports, module) {
     var TPL = (
         '<div class="loading hide">' +
           '<div class="content">' +
-            '<img src="//res.6006.com/assets/imgs/loading/01.gif"/>' +
+            '<img src="../../../res/img/loading/01.gif"/>' +
           '</div>' +
         '</div>'
     );
