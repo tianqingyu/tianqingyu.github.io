@@ -6,7 +6,7 @@
 
 seajs.config({
 
-    base: 'file:///Users/molayu/Work/mygit/github/autorepair/res/js',
+    base: 'http://www.autorepair.com/res/js',
 
     // 别名（缩写）
     alias: {
