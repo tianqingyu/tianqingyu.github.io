@@ -57,12 +57,12 @@ define(function(require, exports, module){
 
 		ajax: function( opts ){
 
-			opts.type 	  = opts.type || 'POST';
-			opts.cache 	  = opts.cache || false;
+			opts.type 	  = opts.type 	  || 'POST';
+			opts.cache 	  = opts.cache 	  || false;
 			opts.dataType = opts.dataType || 'json';
 
 			opts.success  = opts.success || result.done;
-			opts.error    = opts.error || result.fail;
+			opts.error    = opts.error 	 || result.fail;
 
 			/* TODO
 			   后端返回的json字符串数据，并非严格的json格式。
