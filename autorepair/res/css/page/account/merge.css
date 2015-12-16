@@ -12,6 +12,7 @@
 @import url(../../lang/loading.css);
 @import url(../../lang/overlay.css);
 @import url(../../lang/text.css);
+@import url(../../mod/msgbox.css);
 
 /* mod */
 @import url(../../mod/forms.css);
