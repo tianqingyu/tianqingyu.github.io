@@ -1,4 +1,4 @@
-{{#view('../mods/header.art', {title:'注册'})}}
+{{#view('../../mods/header.art', {title:'注册'})}}
 
 <section class="page-main main-register">
   <div class="content">
@@ -31,4 +31,4 @@
   </div>
 </section>
 
-{{#view('../mods/footer.art')}}
+{{#view('../../mods/footer.art')}}
