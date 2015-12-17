@@ -1,5 +1,7 @@
+<!-- 头部 -->
 {{#view('../../mods/header.art', {title:'注册'})}}
 
+<!-- 内容 -->
 <section class="page-main main-register">
   <div class="content">
     <ul class="forms">
@@ -31,4 +33,5 @@
   </div>
 </section>
 
+<!-- 底部 -->
 {{#view('../../mods/footer.art')}}

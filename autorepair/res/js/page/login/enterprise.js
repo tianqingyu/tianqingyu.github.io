@@ -20,7 +20,7 @@ define(function (require, exports, module) {
 
         initTmpl: function(){
             net.text('enterprise.art', function( rs ){
-                $('#main').replaceWith( art.compile(rs)({}) );
+                $('#page-content').replaceWith( art.compile(rs)({}) );
             });
         }
     }

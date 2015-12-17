@@ -1,5 +1,7 @@
+<!-- 头部 -->
 {{#view('../../mods/header.art', {title:'登录'})}}
 
+<!-- 内容 -->
 <section class="page-main main-login">
   <div class="content">
     <h1>比弗汽修</h1>
@@ -24,4 +26,5 @@
   </div>
 </section>
 
+<!-- 底部 -->
 {{#view('../../mods/footer.art')}}
