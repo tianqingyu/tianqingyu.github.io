@@ -1,3 +1,5 @@
+{{#view('../mods/header.art', {title:'注册'})}}
+
 <section class="page-main main-register">
   <div class="content">
     <ul class="forms">
@@ -24,7 +26,9 @@
     </div>
 
     <div class="ps">
-      <a href="../login/index.html" class="text-link">已有账号登录</a>
+      <a href="../login/index.html" class="text-link">已有账号，去登录</a>
     </div>
   </div>
 </section>
+
+{{#view('../mods/footer.art')}}

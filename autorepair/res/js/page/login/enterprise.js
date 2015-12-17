@@ -19,20 +19,6 @@ define(function (require, exports, module) {
         },
 
         initTmpl: function(){
-
-            // header
-            net.text('../mods/header.art', function( rs ){
-                $('#header').replaceWith( art.compile(rs)({
-                    title: '企业用户登录'
-                }));
-            });
-
-            // footer
-            net.text('../mods/footer.art', function( rs ){
-                $('#footer').replaceWith( art.compile(rs)({}) );
-            });
-
-            // main
             net.text('enterprise.art', function( rs ){
                 $('#main').replaceWith( art.compile(rs)({}) );
             });

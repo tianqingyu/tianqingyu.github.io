@@ -1,3 +1,5 @@
+{{#view('../mods/header.art', {title:'登录'})}}
+
 <section class="page-main main-login">
   <div class="content">
     <h1>比弗汽修</h1>
@@ -21,3 +23,5 @@
     </div>
   </div>
 </section>
+
+{{#view('../mods/footer.art')}}

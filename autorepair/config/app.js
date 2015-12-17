@@ -35,3 +35,22 @@ seajs.config({
 
     charset: 'UTF-8'
 });
+
+// 加载子模板
+template.helper('view', function( url, data ){
+
+    var rs;
+
+    $.ajax({
+        url: url,
+        type: 'GET',
+        dataType: 'text',
+        async: false,
+        cache: false,
+        success: function( txt ){
+            rs = template.compile( txt )( data || {} );;
+        }
+    });
+
+    return rs;
+});
