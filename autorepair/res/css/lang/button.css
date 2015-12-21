@@ -6,23 +6,21 @@
 .button {
     display: inline-block;
     min-width: 0.5rem;
-    height: 0.38rem;
-    line-height: 0.36rem;
+    height: 0.46rem;
+    line-height: 0.46rem;
     padding: 0 0.1rem;
-    color: #53AB5A;
+    color: #fff;
     text-align: center;
-    border: 0.01rem solid #53AB5A;
-    background-color: #fff;
-    border-radius: 0.05rem;
+    background-color: #f44236;
+    border-radius: 0.06rem;
+    font-size: 0.16rem;
 }
 .button-stress {
     color: #fff;
-    border-color: #53AB5A;
-    background-color: #53AB5A;
+    background-color: #06a5df;
 }
 .button-important {
     color: #fff;
-    border-color: #ff7300;
     background-color: #ff7300;
 }
 .button-lesser {
@@ -31,16 +29,27 @@
 }
 .button-disabled {
     color: #aaa!important;
-    border-color: #ddd!important;
     background-color: #ddd!important;
+}
+
+.button-findback {
+    display: inline-block;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    padding: 0 0.1rem;
+    vertical-align: middle;
+    color: #b8b8b8;
+    border-radius: 0.06rem;
+    background-color: #fff;
 }
 
 .button-smscode {
     display: inline-block;
     height: 0.32rem;
     line-height: 0.32rem;
-    padding: 0 0.05rem;
+    padding: 0 0.1rem;
     vertical-align: middle;
     color: #fff;
-    background-color: #53AB5A;
+    border-radius: 0.06rem;
+    background-color: #f44236;
 }

@@ -6,41 +6,64 @@
  * @date 15/12/15
  */
 
-/* 登录 */
+/* 普通用户登录 */
 .main-login h1 {
-    margin: 0.3rem 0;
+    margin: 0.45rem 0 0.35rem 0;
     text-align: center;
 }
 .main-login .action {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     text-align: center;
 }
 .main-login .action .button {
-    width: 42%;
+    display: block;
+    margin: 0 0.4rem;
 }
 .main-login .action .login {
-    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 .main-login .ps {
-    margin-top: 0.5rem;
+    margin-top: 0.15rem;
     text-align: center;
 }
+.main-login .form-input > .left {
+    width: 62%;
+}
+.main-login .form-input input {
+    width: 72%;
+}
+.main-login .forms > li {
+    margin: 0.2rem 0.4rem;
+}
 
-/* 企业登录 */
+/* 企业用户登录 */
+.main-login-corp > .content {
+    margin: 0.1rem;
+    padding: 0.01rem 0 0.6rem 0;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 0.06rem;
+}
 .main-login-corp h1 {
-    margin: 0.3rem 0;
+    margin: 0.45rem 0 0.35rem 0;
     text-align: center;
 }
 .main-login-corp .action {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     text-align: center;
 }
 .main-login-corp .action .button {
-    width: 42%;
+    display: block;
+    margin: 0 0.4rem;
 }
 .main-login-corp .ps {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     text-align: center;
+}
+.main-login-corp .form-input > .left {
+    width: 62%;
+}
+.main-login-corp .form-input input {
+    width: 72%;
 }
 
 /* 注册 */
@@ -50,20 +73,27 @@
 .main-register .forms .smscode {
     width: 74%;
 }
-.main-register .forms .button-smscode {
-    width: 26%;
-}
-.main-register .forms .plate {
-    margin-bottom: 0.2rem;
-}
 .main-register .action {
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
     text-align: center;
 }
 .main-register .action .button {
-    width: 42%;
+    display: block;
+    margin: 0 0.4rem;
 }
 .main-register .ps {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     text-align: center;
+}
+.main-register .agreement {
+    padding-top: 0.1rem;
+}
+.main-register .form-input > .left {
+    width: 62%;
+}
+.main-register .form-input input {
+    width: 72%;
+}
+.main-register .forms > li {
+    margin: 0.1rem 0.4rem;
 }
