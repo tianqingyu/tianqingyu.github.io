@@ -61,7 +61,7 @@
     </div>
 
     <div class="ps">
-      <a href="../login/index.html" class="text-s16">已有账号，去登录 &gt;</a>
+      <a href="../login/index.html" class="text-link text-s16">已有账号，去登录 &gt;</a>
     </div>
   </div>
 </section>
