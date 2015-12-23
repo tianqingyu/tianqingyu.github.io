@@ -23,8 +23,11 @@
     margin-bottom: 0.1rem;
 }
 .main-login .ps {
-    margin-top: 0.15rem;
+    margin-top: 0.4rem;
     text-align: center;
+}
+.main-login .ps a {
+    color: #fff;
 }
 .main-login .form-input > .left {
     width: 62%;
@@ -40,7 +43,7 @@
 .main-login-corp > .content {
     margin: 0.1rem;
     padding: 0.01rem 0 0.6rem 0;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(255,255,255,.4);
     border-radius: 0.06rem;
 }
 .main-login-corp h1 {

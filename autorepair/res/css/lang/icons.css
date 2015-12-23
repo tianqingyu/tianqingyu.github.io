@@ -3,6 +3,12 @@
  * @date 2015/8/4
  */
 
+.icon-arrow-left {
+    width: 0.34rem;
+    height: 0.25rem;
+    background: transparent url(../../img/icon/01.png) no-repeat scroll 0 0;
+    background-size: contain;
+}
 .icon-logo {
     width: 0.93rem;
     background: transparent url(../../img/logo/01.png) no-repeat scroll 0 0;

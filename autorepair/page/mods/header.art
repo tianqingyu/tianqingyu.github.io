@@ -4,7 +4,7 @@
 
     <div class="left">
       {{if goback != false}}
-      <a href="javascript:window.history.back()" class="iconfont go-back">&#xe60c;</a>
+      <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
       {{/if}}
     </div>
     <div class="right"></div>

@@ -18,7 +18,7 @@
 	text-align: center;
 }
 .page-header .noback {
-	margin-left: 0.5rem;
+	margin-left: 0.74rem;
 	text-align: left;
 }
 .page-header .left a {
@@ -26,9 +26,7 @@
 	margin-left: 0.2rem;
 }
 .page-header .left a.go-back {
-	margin-left: 0;
-	padding-left: 0.14rem;
-	padding-right: 0.1rem;
+    margin-top: 0.12rem;
 }
 .page-header .right {
 	margin-right: 0.2rem;

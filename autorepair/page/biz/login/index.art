@@ -2,7 +2,7 @@
 {{#view('../../mods/header.art', {title:'比弗汽修汽配管理软件', goback:false})}}
 
 <!-- 内容 -->
-<section class="page-main main-login">
+<section class="page-main main-login bg02">
   <div class="content">
     <h1><img class="icon-logo" src="../../../res/img/logo/01.png"/></h1>
 
@@ -34,7 +34,7 @@
     </div>
 
     <div class="ps">
-      <a href="enterprise.html" class="text-link text-s16">企业用户登录 &gt;</a>
+      <a href="enterprise.html" class="text-s16">企业用户登录 &gt;</a>
     </div>
   </div>
 </section>
