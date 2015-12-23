@@ -36,8 +36,7 @@
                 flex: 1;
 }
 .page-footer .img {
-    height: 0.3rem;
-    width: 0.3rem;
+    margin-bottom: 0.05rem;
     color: #ccc;
     font-size: 0.24rem;
 }
@@ -51,9 +50,9 @@
     color: #aaa;
 }
 
-.page-home .page-footer .home span,
-.page-trade .page-footer .trade span,
-.page-hero .page-footer .hero span,
-.page-mine .page-footer .mine span {
-    color: #4471bc;
+.page-reception .page-footer .reception span,
+.page-management .page-footer .management span,
+.page-order .page-footer .order span,
+.page-more .page-footer .more span {
+    color: #1e83d1;
 }

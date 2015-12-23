@@ -1,0 +1,12 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'接车', goback:false})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-reception bg03">
+  <div class="content">
+    xxx
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}
