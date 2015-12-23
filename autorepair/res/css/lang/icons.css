@@ -12,6 +12,7 @@
 .icon-logo {
     width: 0.93rem;
     background: transparent url(../../img/logo/01.png) no-repeat scroll 0 0;
+    background-size: contain;
 }
 .icon-name {
     display: inline-block;
