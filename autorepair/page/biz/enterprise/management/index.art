@@ -4,13 +4,45 @@
 <!-- 内容 -->
 <section class="page-main main-enterprise-management bg03">
   <div class="content">
-    <!-- 拍照 -->
-    <ul class="list">
-      <li>
-        <span class="label">车牌号</span>
-        <span class="text">浙A 123456</span>
-      </li>
-    </ul>
+    <!-- 查询 -->
+    <div class="search">
+      <a href="javascript:void(0)" class="button button-search clearfix">
+        <span class="left">条件查询</span>
+        <span class="right iconfont">&#xe60f;</span>
+      </a>
+    </div>
+
+    <!-- 列表 -->
+    <div class="lists">
+      <ul class="list">
+        <li>
+          <span class="label">车牌号</span>
+          <span class="text text-stress">浙A 123456</span>
+        </li>
+        <li>
+          <span class="label">接车人</span>
+          <span class="text">002号 - 朱素</span>
+        </li>
+        <li>
+          <span class="label">状态</span>
+          <span class="text">已派发</span>
+        </li>
+      </ul>
+      <ul class="list">
+        <li>
+          <span class="label">车牌号</span>
+          <span class="text text-lesser">浙A 123456</span>
+        </li>
+        <li>
+          <span class="label">接车人</span>
+          <span class="text text-lesser">002号 - 朱素</span>
+        </li>
+        <li>
+          <span class="label">状态</span>
+          <span class="text text-lesser">已完工</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 

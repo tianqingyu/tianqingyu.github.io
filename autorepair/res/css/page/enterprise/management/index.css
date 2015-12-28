@@ -5,5 +5,15 @@
  */
 
 .main-enterprise-management {
-
+    min-height: 6rem;
+}
+.main-enterprise-management .search {
+    padding: 0 0.2rem;
+    margin-top: 0.2rem;
+}
+.main-enterprise-management .search .button-search {
+    width: 100%;
+}
+.main-enterprise-management .search .iconfont {
+    margin-right: 0.2rem;
 }

@@ -7,17 +7,31 @@
  */
 
 .list {
-    padding: 0.2rem;
+    zoom: 1;
+    margin: 0.2rem;
+    padding: 0.1rem 0;
     background-color: #fff;
+}
+.list:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.list li {
+    height: 0.3rem;
+    line-height: 0.3rem;
 }
 .list li .label,
 .list li .text {
     float: left;
 }
 .list li .label {
-    width: 26%;
+    width: 25%;
     padding: 0 0.2rem;
 }
 .list li .text {
-    width: 74%;
+    width: 75%;
 }
