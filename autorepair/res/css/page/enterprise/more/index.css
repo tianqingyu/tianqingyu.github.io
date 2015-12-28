@@ -6,4 +6,17 @@
 
 .main-enterprise-more {
     min-height: 6rem;
+    background-color: #f3f3f3;
+}
+
+.main-enterprise-more .ps {
+    margin: 0.2rem;
+    margin-top: 0.5rem;
+}
+.main-enterprise-more .ps div {
+    margin-bottom: 0.05rem;
+}
+.main-enterprise-more .ps img {
+    width: 1.49rem;
+    margin-top: -0.3rem;
 }

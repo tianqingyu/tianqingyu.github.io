@@ -77,6 +77,16 @@
     font-style: normal;
     line-height: 1;
 }
+.text-s32 {
+    font-size: 0.32rem;
+    font-style: normal;
+    line-height: 1;
+}
+.text-s34 {
+    font-size: 0.34rem;
+    font-style: normal;
+    line-height: 1;
+}
 .text-xxxl,
 .text-s36 {
     font-size: 0.36rem;
@@ -131,6 +141,12 @@
     .text-xxl,
     .text-s30 {
         font-size: 0.28rem;
+    }
+    .text-s32 {
+        font-size: 0.3rem;
+    }
+    .text-s34 {
+        font-size: 0.32rem;
     }
     .text-xxxl,
     .text-s36 {

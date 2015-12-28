@@ -17,6 +17,7 @@
 
 /* mod */
 @import url(../../../mod/forms.css);
+@import url(../../../mod/list.css);
 
 /* page */
 @import url(index.css);

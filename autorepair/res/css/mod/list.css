@@ -35,3 +35,42 @@
 .list li .text {
     width: 75%;
 }
+
+.list-nav {
+    margin: 0.2rem;
+}
+.list-nav li {
+    margin: 0.1rem 0;
+}
+.list-nav li > a {
+    display: block;
+    zoom: 1;
+    height: 0.64rem;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.18rem;
+    background-color: #ff5a37;
+    border-radius: 0.08rem;
+}
+.list-nav li > a:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.list-nav li .left img {
+    width: 0.3rem;
+    margin-left: 0.2rem;
+    margin-right: 0.15rem;
+    vertical-align: middle;
+}
+.list-nav li .left span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-nav li .right {
+    margin: 0.2rem 0.2rem 0 0;
+}
+
