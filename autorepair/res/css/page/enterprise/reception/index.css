@@ -4,6 +4,26 @@
  * @date 15/12/15
  */
 
-.main-enterprise-reception {
-    height: 6rem;
+.main-enterprise-reception .photo {
+    margin: 0.2rem;
+    height: 1.5rem;
+    background-color: #6e6f6a;
+    text-align: center;
+    color: #fff;
+}
+.main-enterprise-reception .photo .action {
+    position: relative;
+    top: 0.4rem;
+}
+.main-enterprise-reception .photo .action img {
+    width: 0.48rem;
+    margin-bottom: 0.05rem;
+    vertical-align: middle;
+}
+
+.main-enterprise-reception .action {
+    padding: 0 0.2rem;
+}
+.main-enterprise-reception .action .button {
+    width: 100%;
 }
