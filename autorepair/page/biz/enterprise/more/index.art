@@ -1,0 +1,12 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'更多', goback:false})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-more bg03">
+  <div class="content">
+    xx
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}

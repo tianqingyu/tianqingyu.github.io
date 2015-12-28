@@ -1,0 +1,18 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'车间管理', goback:false})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-management bg03">
+  <div class="content">
+    <!-- 拍照 -->
+    <ul class="list">
+      <li>
+        <span class="label">车牌号</span>
+        <span class="text">浙A 123456</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}

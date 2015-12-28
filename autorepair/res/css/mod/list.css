@@ -1,0 +1,23 @@
+/**
+ * 登录
+ *
+ * @author jun.yj
+ * @email god.yangjun@gmail.com
+ * @date 15/12/15
+ */
+
+.list {
+    padding: 0.2rem;
+    background-color: #fff;
+}
+.list li .label,
+.list li .text {
+    float: left;
+}
+.list li .label {
+    width: 26%;
+    padding: 0 0.2rem;
+}
+.list li .text {
+    width: 74%;
+}

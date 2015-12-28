@@ -1,0 +1,12 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'订单', goback:false})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-order bg03">
+  <div class="content">
+    xx
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}
