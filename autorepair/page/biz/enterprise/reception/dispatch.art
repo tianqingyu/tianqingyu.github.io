@@ -28,8 +28,11 @@
       </li>
     </ul>
 
-    <div class="action-fixed">
+    <div class="action">
       <a href="javascript:void(0)" class="button">确定</a>
     </div>
   </div>
 </section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}
