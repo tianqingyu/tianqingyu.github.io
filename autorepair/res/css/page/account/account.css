@@ -14,10 +14,7 @@
 .main-login .action {
     margin-top: 0.5rem;
     text-align: center;
-}
-.main-login .action .button {
-    display: block;
-    margin: 0 0.4rem;
+    padding: 0 0.4rem;
 }
 .main-login .action .login {
     margin-bottom: 0.1rem;
@@ -52,11 +49,8 @@
 }
 .main-login-corp .action {
     margin-top: 0.5rem;
+    padding: 0 0.4rem;
     text-align: center;
-}
-.main-login-corp .action .button {
-    display: block;
-    margin: 0 0.4rem;
 }
 .main-login-corp .ps {
     margin-top: 0.2rem;
@@ -78,11 +72,8 @@
 }
 .main-register .action {
     margin-top: 0.4rem;
+    padding: 0 0.4rem;
     text-align: center;
-}
-.main-register .action .button {
-    display: block;
-    margin: 0 0.4rem;
 }
 .main-register .ps {
     margin-top: 0.2rem;
