@@ -6,7 +6,7 @@
   <div class="content">
     <!-- 查询 -->
     <div class="search">
-      <a href="javascript:void(0)" class="button button-search clearfix">
+      <a href="search.html" class="button button-search clearfix">
         <span class="left">条件查询</span>
         <span class="right iconfont">&#xe603;</span>
       </a>
@@ -14,34 +14,38 @@
 
     <!-- 列表 -->
     <div class="lists">
-      <ul class="list">
-        <li>
-          <span class="label">车牌号</span>
-          <span class="text text-stress">浙A 123456</span>
-        </li>
-        <li>
-          <span class="label">接车人</span>
-          <span class="text">002号 - 朱素</span>
-        </li>
-        <li>
-          <span class="label">状态</span>
-          <span class="text">已派发</span>
-        </li>
-      </ul>
-      <ul class="list">
-        <li>
-          <span class="label">车牌号</span>
-          <span class="text text-lesser">浙A 123456</span>
-        </li>
-        <li>
-          <span class="label">接车人</span>
-          <span class="text text-lesser">002号 - 朱素</span>
-        </li>
-        <li>
-          <span class="label">状态</span>
-          <span class="text text-lesser">已完工</span>
-        </li>
-      </ul>
+      <a href="state.html">
+        <ul class="list">
+          <li>
+            <span class="label">车牌号</span>
+            <span class="text text-stress">浙A 123456</span>
+          </li>
+          <li>
+            <span class="label">接车人</span>
+            <span class="text">002号 - 朱素</span>
+          </li>
+          <li>
+            <span class="label">状态</span>
+            <span class="text">已派发</span>
+          </li>
+        </ul>
+      </a>
+      <a href="state.html">
+        <ul class="list">
+          <li>
+            <span class="label">车牌号</span>
+            <span class="text text-lesser">浙A 123456</span>
+          </li>
+          <li>
+            <span class="label">接车人</span>
+            <span class="text text-lesser">002号 - 朱素</span>
+          </li>
+          <li>
+            <span class="label">状态</span>
+            <span class="text text-lesser">已完工</span>
+          </li>
+        </ul>
+      </a>
     </div>
   </div>
 </section>

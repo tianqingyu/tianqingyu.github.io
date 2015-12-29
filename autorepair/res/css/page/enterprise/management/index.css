@@ -4,19 +4,26 @@
  * @date 15/12/15
  */
 
-.main-enterprise-management {
-    min-height: 6rem;
+.main-enterprise-management,
+.main-enterprise-management-search,
+.main-enterprise-management-state {
+    min-height: 7.4rem;
 }
-.main-enterprise-management .search {
+
+.main-enterprise-management .lists > a {
+    display: block;
+}
+
+.page-main .search {
     padding: 0 0.2rem;
     margin-top: 0.2rem;
 }
-.main-enterprise-management .search .button-search {
+.page-main .search .button-search {
     width: 100%;
 }
-.main-enterprise-management .search .left {
+.page-main .search .left {
     margin-left: 0.1rem;
 }
-.main-enterprise-management .search .iconfont {
+.page-main .search .iconfont {
     margin-right: 0.2rem;
 }

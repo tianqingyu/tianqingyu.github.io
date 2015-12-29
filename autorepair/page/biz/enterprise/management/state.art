@@ -1,0 +1,56 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'车间状态'})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-management-state bg03">
+  <div class="content">
+    <!-- 列表 -->
+    <div class="lists">
+      <ul class="list">
+        <li>
+          <span class="label">车牌号</span>
+          <span class="text text-stress">浙A 123456</span>
+        </li>
+        <li>
+          <span class="label">接车人</span>
+          <span class="text">002号 - 朱素</span>
+        </li>
+        <li>
+          <span class="label">状态</span>
+          <span class="text">已派发</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="panel-list">
+      <h3>工作内容</h3>
+      <ul class="clearfix">
+        <li>
+          <div>
+            <img src="../../../../res/img/icon/21.png"/><br/>
+            <span>四轮定位</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="../../../../res/img/icon/22.png"/><br/>
+            <span>换刹车片</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="../../../../res/img/icon/23.png"/><br/>
+            <span>气门清洗</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="action">
+      <a href="javascript:void(0)" class="button button-stress">完工</a>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}
