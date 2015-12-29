@@ -8,7 +8,7 @@
     <div class="search">
       <a href="javascript:void(0)" class="button button-search clearfix">
         <span class="left">条件查询</span>
-        <span class="right iconfont">&#xe60f;</span>
+        <span class="right iconfont">&#xe603;</span>
       </a>
     </div>
 

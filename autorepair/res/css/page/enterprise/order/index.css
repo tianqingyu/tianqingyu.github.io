@@ -21,6 +21,9 @@
 .main-enterprise-order .search .button-search {
     width: 100%;
 }
+.main-enterprise-order .search .left {
+    margin-left: 0.1rem;
+}
 .main-enterprise-order .search .iconfont {
     margin-right: 0.2rem;
 }

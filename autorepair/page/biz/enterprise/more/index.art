@@ -12,7 +12,7 @@
             <img src="../../../../res/img/icon/12-1.png"/>
             <span>销售开单列表</span>
           </div>
-          <div class="iconfont right text-s22">&#xe60f;</div>
+          <div class="iconfont right text-s20">&#xe603;</div>
         </a>
       </li>
       <li>
@@ -21,7 +21,7 @@
             <img src="../../../../res/img/icon/13-1.png"/>
             <span>费用申请</span>
           </div>
-          <div class="iconfont right text-s22">&#xe60f;</div>
+          <div class="iconfont right text-s20">&#xe603;</div>
         </a>
       </li>
       <li>
@@ -30,7 +30,7 @@
             <img src="../../../../res/img/icon/14-1.png"/>
             <span>费用审批</span>
           </div>
-          <div class="iconfont right text-s22">&#xe60f;</div>
+          <div class="iconfont right text-s20">&#xe603;</div>
         </a>
       </li>
       <li>
@@ -39,7 +39,7 @@
             <img src="../../../../res/img/icon/15-1.png"/>
             <span>用户权限</span>
           </div>
-          <div class="iconfont right text-s22">&#xe60f;</div>
+          <div class="iconfont right text-s20">&#xe603;</div>
         </a>
       </li>
     </ul>

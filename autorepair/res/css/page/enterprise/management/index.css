@@ -14,6 +14,9 @@
 .main-enterprise-management .search .button-search {
     width: 100%;
 }
+.main-enterprise-management .search .left {
+    margin-left: 0.1rem;
+}
 .main-enterprise-management .search .iconfont {
     margin-right: 0.2rem;
 }
