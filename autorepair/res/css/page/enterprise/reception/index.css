@@ -4,9 +4,12 @@
  * @date 15/12/15
  */
 
-.main-enterprise-reception {
-    min-height: 6rem;
+.main-enterprise-reception,
+.main-enterprise-reception-nav,
+.main-enterprise-reception-detect {
+    min-height: 7rem;
 }
+
 .main-enterprise-reception .photo {
     margin: 0.2rem;
     height: 1.5rem;

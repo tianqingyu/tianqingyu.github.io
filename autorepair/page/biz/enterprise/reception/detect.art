@@ -1,0 +1,42 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'车辆检查'})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-reception-detect bg03">
+  <div class="content">
+    <!-- 列表 -->
+    <fieldset class="list-set">
+      <legend>外部</legend>
+      <ul>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="list-set">
+      <legend>内部</legend>
+      <ul>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+        <li><span>萨嘎</span></li>
+      </ul>
+    </fieldset>
+
+    <div class="action">
+      <a href="javascript:void(0)" class="button">指派工人</a>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}

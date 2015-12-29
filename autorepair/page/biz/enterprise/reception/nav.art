@@ -33,7 +33,7 @@
     <!-- 导航 -->
     <ul class="navs">
       <li class="detect">
-        <a href="javascript:void(0)" class="clearfix">
+        <a href="detect.html" class="clearfix">
           <div class="left">
             <img src="../../../../res/img/icon/16.png"/>
             <span class="text-s18">车辆检查</span>

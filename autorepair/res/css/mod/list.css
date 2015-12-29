@@ -74,3 +74,48 @@
     margin: 0.22rem 0.2rem 0 0;
 }
 
+.list-set {
+    padding: 0;
+    margin: 0.2rem;
+    border: 0;
+    border-top: 0.01rem solid #d3d3d3;
+}
+.list-set legend {
+    margin-left: 40%;
+    margin-bottom: 0.1rem;
+    padding: 0 0.15rem;
+    color: #999;
+    font-size: 0.18rem;
+}
+.list-set ul {
+    zoom: 1;
+}
+.list-set ul:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.list-set li {
+    float: left;
+    width: 33.33%;
+    padding: 0.05rem;
+}
+.list-set li:nth-child(3n+1) {
+    padding-left: 0;
+}
+.list-set li:nth-child(3n+3) {
+    padding-right: 0;
+}
+.list-set li > span {
+    display: block;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.14rem;
+    border-radius: 0.03rem;
+    background-color: #fafafa;
+}
