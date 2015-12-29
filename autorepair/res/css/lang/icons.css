@@ -97,3 +97,12 @@
 .page-more .page-footer .icon-gengduo {
     background-image: url(../../img/icon/10-2.png);
 }
+
+.icon-touxiang {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.3rem;
+    vertical-align: middle;
+    background: transparent url(../../img/icon/20.png) no-repeat scroll left center;
+    background-size: contain;
+}

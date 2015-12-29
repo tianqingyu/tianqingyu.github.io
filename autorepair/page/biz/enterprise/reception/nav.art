@@ -42,7 +42,7 @@
         </a>
       </li>
       <li class="options clearfix">
-        <a href="javascript:void(0)" class="clearfix">
+        <a href="options.html" class="clearfix">
           <div class="left">
             <img src="../../../../res/img/icon/17.png"/>
             <span class="text-s18">项目选择</span>
@@ -51,7 +51,7 @@
         </a>
       </li>
       <li class="history clearfix">
-        <a href="javascript:void(0)" class="clearfix">
+        <a href="history.html" class="clearfix">
           <div class="left">
             <img src="../../../../res/img/icon/18.png"/>
             <span class="text-s18">历史记录</span>
@@ -62,6 +62,3 @@
     </ul>
   </div>
 </section>
-
-<!-- 底部 -->
-{{#view('../../../mods/footer.art')}}

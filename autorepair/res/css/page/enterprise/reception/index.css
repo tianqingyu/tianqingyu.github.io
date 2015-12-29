@@ -6,8 +6,11 @@
 
 .main-enterprise-reception,
 .main-enterprise-reception-nav,
-.main-enterprise-reception-detect {
-    min-height: 7rem;
+.main-enterprise-reception-detect,
+.main-enterprise-reception-options,
+.main-enterprise-reception-history,
+.main-enterprise-reception-dispatch {
+
 }
 
 .main-enterprise-reception .photo {
@@ -116,6 +119,25 @@
 }
 .main-enterprise-reception-nav .navs .history {
     margin-top: 0.4rem;
+}
+
+/* 项目选择 */
+.main-enterprise-reception-options .color-1 {
+    color: #fff;
+    background-color: #5cbfec;
+}
+.main-enterprise-reception-options .color-2 {
+    color: #fff;
+    background-color: #ff8a00;
+}
+.main-enterprise-reception-options .color-3 {
+    color: #fff;
+    background-color: #74d367;
+}
+
+/* 发派工人 */
+.main-enterprise-reception-dispatch .action {
+    margin: 0.2rem 0;
 }
 
 @media all and (max-width: 320px) {

@@ -32,11 +32,8 @@
       </ul>
     </fieldset>
 
-    <div class="action">
-      <a href="javascript:void(0)" class="button">指派工人</a>
+    <div class="action-fixed">
+      <a href="dispatch.html" class="button">发派工人</a>
     </div>
   </div>
 </section>
-
-<!-- 底部 -->
-{{#view('../../../mods/footer.art')}}
