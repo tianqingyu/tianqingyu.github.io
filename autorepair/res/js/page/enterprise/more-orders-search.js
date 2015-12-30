@@ -19,7 +19,7 @@ define(function (require, exports, module) {
         },
 
         initTmpl: function(){
-            net.text('orders-detail.art', function( rs ){
+            net.text('orders-search.art', function( rs ){
                 $('#page-content').replaceWith( art.compile(rs)({}));
             });
         }

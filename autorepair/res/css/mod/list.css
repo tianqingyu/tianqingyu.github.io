@@ -36,6 +36,33 @@
     width: 75%;
 }
 
+.list2 {
+    min-height: 1.3rem;
+    margin: 0.2rem;
+    background-color: #fff;
+    border-radius: 0.06rem;
+}
+.list2 li {
+    height: 0.44rem;
+    line-height: 0.44rem;
+    border-bottom: 0.01rem solid #f3f3f3;
+}
+.list2 li span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.list2 li span:first-child {
+    width: 25%;
+    padding-left: 0.2rem;
+}
+.list2 li span:last-child {
+    color: #666;
+}
+.list2 li:last-child {
+    border-bottom: 0;
+}
+
 .list-nav {
     margin: 0.2rem;
 }

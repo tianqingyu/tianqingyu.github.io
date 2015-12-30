@@ -4,11 +4,30 @@
  * @date 15/12/15
  */
 
+.page-main {
+    min-height: 7.4rem;
+}
+
+.page-main .search {
+    padding: 0 0.2rem;
+    margin-top: 0.2rem;
+}
+.page-main .search .button-search {
+    width: 100%;
+}
+.page-main .search .left {
+    margin-left: 0.1rem;
+}
+.page-main .search .iconfont {
+    margin-right: 0.2rem;
+}
+
 .main-enterprise-more {
     min-height: 6rem;
     background-color: #f3f3f3;
 }
 
+/* 更多 - 首页 */
 .main-enterprise-more .ps {
     margin: 0.2rem;
     margin-top: 0.5rem;
@@ -19,4 +38,15 @@
 .main-enterprise-more .ps img {
     width: 1.49rem;
     margin-top: -0.3rem;
+}
+
+/* 更多 - 销售开单列表 */
+.main-enterprise-more-orders .lists {
+    margin-top: 0.2rem;
+}
+.main-enterprise-more-orders .lists > a {
+    display: block;
+}
+.main-enterprise-more-orders .list2 {
+    margin: 0.1rem 0.2rem;
 }
