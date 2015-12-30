@@ -137,3 +137,44 @@
 .list-emp .curr .icon-touxiang {
     background-image: url(../../../res/img/icon/19.png);
 }
+
+.list-kehu {
+    margin: 0.2rem 0;
+}
+.list-kehu h3 {
+    padding: 0.1rem 0 0.1rem 0.2rem;
+    border-bottom: 0.01rem solid #d4d4d4;
+    background-color: #f8f8f8;
+}
+.list-kehu li {
+    padding-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    background-color: #f8f8f8;
+}
+.list-kehu fieldset {
+    padding: 0 0 0.08rem 0;
+    margin-left: 0.2rem;
+    border: 0;
+    border-top: 0.01rem solid #ebebed;
+}
+.list-kehu legend {
+    padding-right: 0.1rem;
+}
+.list-kehu legend img {
+    width: 0.13rem;
+    margin-right: 0.02rem;
+    vertical-align: baseline;
+}
+.list-kehu dt,
+.list-kehu dd {
+    float: left;
+    height: 0.24rem;
+    line-height: 0.24rem;
+}
+.list-kehu dt {
+    width: 17%;
+}
+.list-kehu dd {
+    width: 83%;
+    color: #666;
+}

@@ -11,6 +11,11 @@
     width: 71%;
 }
 
+.page-main {
+    min-height: 7.4rem;
+}
+
+/* 客户管理首页 */
 .main-enterprise-order {
     min-height: 6rem;
 }
@@ -26,4 +31,24 @@
 }
 .main-enterprise-order .search .iconfont {
     margin-right: 0.2rem;
+}
+.main-enterprise-order .lists > a {
+    display: block;
+}
+
+/* 客户信息 */
+.main-enterprise-order-detail {
+    background-color: #e5e5e5;
+}
+.main-enterprise-order-detail .detail .list {
+    margin: 0;
+}
+.main-enterprise-order-detail .list li .label {
+    width: 23%;
+}
+.main-enterprise-order-detail .list li .text {
+    width: 77%;
+}
+.main-enterprise-order-detail .list-kehu {
+    margin-top: 0.1rem;
 }
