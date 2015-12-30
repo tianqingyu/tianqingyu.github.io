@@ -1,0 +1,12 @@
+<!-- 头部 -->
+{{#view('../../../mods/header.art', {title:'销售开单列表'})}}
+
+<!-- 内容 -->
+<section class="page-main main-enterprise-more-orders">
+  <div class="content">
+
+  </div>
+</section>
+
+<!-- 底部 -->
+{{#view('../../../mods/footer.art')}}

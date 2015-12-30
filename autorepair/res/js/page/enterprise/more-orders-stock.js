@@ -1,6 +1,4 @@
 /**
- * 车间管理页面.
- *
  * @author jun.yj
  * @email god.yangjun@gmail.com
  * @date 15/12/14
@@ -21,7 +19,7 @@ define(function (require, exports, module) {
         },
 
         initTmpl: function(){
-            net.text('index.art', function( rs ){
+            net.text('orders-stock.art', function( rs ){
                 $('#page-content').replaceWith( art.compile(rs)({}));
             });
         }
