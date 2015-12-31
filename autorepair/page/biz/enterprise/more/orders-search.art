@@ -2,7 +2,7 @@
 {{#view('../../../mods/header.art', {title:'订单查询'})}}
 
 <!-- 内容 -->
-<section class="page-main main-enterprise-order-search">
+<section class="page-main main-enterprise-orders-search">
   <div class="content">
     <!-- 表单 -->
     <ul class="forms-list">

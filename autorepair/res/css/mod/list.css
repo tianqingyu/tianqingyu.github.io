@@ -6,6 +6,7 @@
  * @date 15/12/15
  */
 
+/* 标准1 */
 .list {
     zoom: 1;
     margin: 0.2rem;
@@ -36,6 +37,7 @@
     width: 75%;
 }
 
+/* 标准2 */
 .list2 {
     min-height: 1.3rem;
     margin: 0.2rem;
@@ -63,6 +65,26 @@
     border-bottom: 0;
 }
 
+/* 标准3 */
+.list3 {
+    margin: 0.2rem;
+}
+.list3 li {
+    padding: 0.1rem 0;
+    border-bottom: 0.01rem solid #d4d4d4;
+}
+.list3 li span {
+    display: inline-block;
+    padding: 0.03rem 0.2rem;
+}
+.list3 li span:first-child {
+    border-right: 0.01rem solid #d4d4d4;
+}
+.list3 li span:last-child {
+    color: #666;
+}
+
+/* 更多 - 导航 */
 .list-nav {
     margin: 0.2rem;
 }
@@ -101,6 +123,7 @@
     margin: 0.22rem 0.2rem 0 0;
 }
 
+/* 集合列表 */
 .list-set {
     padding: 0;
     margin: 0.2rem;
@@ -147,6 +170,7 @@
     background-color: #fafafa;
 }
 
+/* 员工列表 */
 .list-emp li {
     padding-left: 20%;
     height: 0.6rem;
@@ -165,6 +189,7 @@
     background-image: url(../../../res/img/icon/19.png);
 }
 
+/* 客户列表 */
 .list-kehu {
     margin: 0.2rem 0;
 }
