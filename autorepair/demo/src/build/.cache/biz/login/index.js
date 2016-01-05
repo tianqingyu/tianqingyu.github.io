@@ -1,9 +1,0 @@
-/*TMODJS:{"version":10,"md5":"d9f309d69259dc9285a25446718ca8da"}*/
-template('biz/login/index',function($data,$filename
-/**/) {
-'use strict';var $utils=this,$helpers=$utils.$helpers,$string=$utils.$string,view=$helpers.view,title=$data.title,test=$data.test,testObj=$data.testObj,$out='';$out+='<!-- 头部 -->\n';
-$out+=$string(view('../../mods/header', {title:'哈哈', test: testObj}));
-$out+='\n\n<!-- 内容 -->\n<section class="page-main main-login bg02">\n  <div class="content">\n    <h1><img class="icon-logo" src="../../../res/img/logo/01.png"/></h1>\n\n    <ul class="forms">\n      <li>\n        <div class="form-input clearfix">\n          <div class="left">\n            <span class="icon-name"></span>\n            <input class="name" type="text" maxlength="20" placeholder="请输入您的姓名" />\n          </div>\n        </div>\n      </li>\n      <li>\n        <div class="form-input clearfix">\n          <div class="left">\n            <span class="icon-pass"></span>\n            <input class="pass" type="text" maxlength="20" placeholder="请输入登录密码" />\n          </div>\n          <div class="right">\n            <a class="button-findback" href="javascript:void(0)">忘记密码？</a>\n          </div>\n        </div>\n      </li>\n    </ul>\n\n    <div class="action">\n      <a href="javascript:void(0)" class="button login">登录</a>\n      <a href="../register/index.html" class="button button-stress register">注册</a>\n    </div>\n\n    <div class="ps">\n      <a href="enterprise.html" class="text-s16">企业用户登录 &gt;</a>\n    </div>\n  </div>\n</section>\n\n';
-$out+=$string(view('../../mods/footer'));
-return new String($out);
-});

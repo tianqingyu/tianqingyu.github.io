@@ -32,7 +32,7 @@ seajs.config({
         'data/city'		: 'data/address/1.0/city',
 
         // template
-        'art': 'build/template'
+        'art' : 'build/template'
     },
 
     charset: 'UTF-8'
