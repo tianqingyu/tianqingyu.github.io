@@ -30,11 +30,13 @@
     text-align: center;
 }
 .msgbox .action {
+    padding: 0;
     border-top: 0.01rem solid #e5e5e5;
     text-align: center;
 }
 .msgbox .action .button {
     color: #0077ee;
+    background-color: #fff;
 }
 
 .msgbox-info .action .button {
