@@ -1,8 +1,8 @@
-/*TMODJS:{"version":3,"md5":"dcc897f20ddfd65b977e607830e08acc"}*/
+/*TMODJS:{"version":5,"md5":"d3db45ecdb8d50a05d59746b4f94ede7"}*/
 template('enterprise/more/index',function($data,$filename
 /**/) {
-'use strict';var $utils=this,$helpers=$utils.$helpers,$string=$utils.$string,view=$helpers.view,title=$data.title,goback=$data.goback,$out='';$out+='<!-- 头部 -->\n';
-$out+=$string(view('mods/header', {title:'更多', goback:false}));
+'use strict';var $utils=this,$helpers=$utils.$helpers,$string=$utils.$string,view=$helpers.view,title=$data.title,goback=$data.goback,exist=$data.exist,$out='';$out+='<!-- 头部 -->\n';
+$out+=$string(view('mods/header', {title:'更多', goback:false, exist:true}));
 $out+='\n\n<!-- 内容 -->\n<section class="page-main main-enterprise-more">\n  <div class="content">\n    <!-- 导航列表 -->\n    <ul class="list-nav">\n      <li>\n        <a href="orders.html">\n          <div class="left">\n            <img src="../../../res/img/icon/12-1.png"/>\n            <span>销售开单列表</span>\n          </div>\n          <div class="iconfont right text-s20">&#xe603;</div>\n        </a>\n      </li>\n      <li>\n        <a href="apply.html">\n          <div class="left">\n            <img src="../../../res/img/icon/13-1.png"/>\n            <span>费用申请</span>\n          </div>\n          <div class="iconfont right text-s20">&#xe603;</div>\n        </a>\n      </li>\n      <li>\n        <a href="approve.html">\n          <div class="left">\n            <img src="../../../res/img/icon/14-1.png"/>\n            <span>费用审批</span>\n          </div>\n          <div class="iconfont right text-s20">&#xe603;</div>\n        </a>\n      </li>\n      <li>\n        <a href="permission.html">\n          <div class="left">\n            <img src="../../../res/img/icon/15-1.png"/>\n            <span>用户权限</span>\n          </div>\n          <div class="iconfont right text-s20">&#xe603;</div>\n        </a>\n      </li>\n    </ul>\n\n    <!-- ps -->\n    <div class="ps">\n      <div class="text-stress text-s32">7000多家客户</div>\n      <div class="text-minor text-s18">覆盖全国各地</div>\n      <img class="right" src="../../../res/img/other/01.jpg"/>\n    </div>\n  </div>\n</section>\n\n<!-- 底部 -->\n';
 $out+=$string(view('mods/footer'));
 return new String($out);
