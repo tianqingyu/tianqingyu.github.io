@@ -1,5 +1,5 @@
 <!-- 头部 -->
-{{include '../../mods/header'}}
+{{#view('../../mods/header', {title:'哈哈', test: testObj})}}
 
 <!-- 内容 -->
 <section class="page-main main-login bg02">
@@ -38,3 +38,5 @@
     </div>
   </div>
 </section>
+
+{{#view('../../mods/footer')}}

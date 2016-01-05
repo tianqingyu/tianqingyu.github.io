@@ -20,10 +20,12 @@
     </div>
 
 
-    <script src="../build/template.js"></script>
+    <script src="../src/build/template.js"></script>
     <script>
-        var html = template('tpl/index', {
-          title: 'test123'
+        var html = template('biz/login/index', {
+          testObj: {
+            a: 123
+          }
         });
 
         document.getElementById('page-content').innerHTML = html;
