@@ -19,9 +19,7 @@ define(function (require, exports, module) {
         },
 
         initTmpl: function(){
-            net.text('detect.art', function( rs ){
-                $('#page-content').replaceWith( art.compile(rs)({}));
-            });
+            $('#page-content').replaceWith( art('enterprise/reception/detect', {}) );
         }
     }
 });
