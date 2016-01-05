@@ -1,17 +1,21 @@
 <!-- 头部 -->
-{{#view('../../../mods/header.art', {title:'客户查询'})}}
+{{#view('mods/header', {title:'车间查询'})}}
 
 <!-- 内容 -->
-<section class="page-main main-enterprise-order-search bg03">
+<section class="page-main main-enterprise-management-search bg03">
   <div class="content">
     <!-- 表单 -->
     <ul class="forms-list">
       <li class="clearfix">
-        <label>姓名</label>
+        <label>送修人</label>
         <input type="text" placeholder=""/>
       </li>
       <li class="clearfix">
         <label>车牌号</label>
+        <input type="text" placeholder=""/>
+      </li>
+      <li class="clearfix">
+        <label>状态</label>
         <input type="text" placeholder=""/>
       </li>
       <li class="clearfix">
@@ -32,4 +36,4 @@
 </section>
 
 <!-- 底部 -->
-{{#view('../../../mods/footer.art')}}
+{{#view('mods/footer')}}
