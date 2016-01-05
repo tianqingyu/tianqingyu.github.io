@@ -1,0 +1,9 @@
+/*TMODJS:{"version":2,"md5":"4e2160f0451b4fc26112ed051590bfb8"}*/
+template('enterprise/order/index',function($data,$filename
+/**/) {
+'use strict';var $utils=this,$helpers=$utils.$helpers,$string=$utils.$string,view=$helpers.view,title=$data.title,goback=$data.goback,$out='';$out+='<!-- 头部 -->\n';
+$out+=$string(view('mods/header', {title:'客户列表', goback:false}));
+$out+='\n\n<!-- 内容 -->\n<section class="page-main main-enterprise-order bg03">\n  <div class="content">\n    <!-- 查询 -->\n    <div class="search">\n      <a href="search.html" class="button button-search clearfix">\n        <span class="left">条件查询</span>\n        <span class="right iconfont">&#xe603;</span>\n      </a>\n    </div>\n\n    <!-- 列表 -->\n    <div class="lists">\n      <a href="detail.html">\n        <ul class="list">\n          <li>\n            <span class="label">客户姓名</span>\n            <span class="text text-minor">大山</span>\n          </li>\n          <li>\n            <span class="label">车牌号</span>\n            <span class="text text-minor">浙A 123456</span>\n          </li>\n          <li>\n            <span class="label">车型</span>\n            <span class="text text-minor">小汽车</span>\n          </li>\n        </ul>\n      </a>\n      <a href="detail.html">\n        <ul class="list">\n          <li>\n            <span class="label">客户姓名</span>\n            <span class="text text-minor">大山</span>\n          </li>\n          <li>\n            <span class="label">车牌号</span>\n            <span class="text text-minor">浙A 123456</span>\n          </li>\n          <li>\n            <span class="label">车型</span>\n            <span class="text text-minor">小汽车</span>\n          </li>\n        </ul>\n      </a>\n    </div>\n  </div>\n</section>\n\n<!-- 底部 -->\n';
+$out+=$string(view('mods/footer'));
+return new String($out);
+});
