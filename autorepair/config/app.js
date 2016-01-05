@@ -6,14 +6,13 @@
 
 seajs.config({
 
-    base: 'http://www.autorepair.com/res/js',
+    base: '../../../res/js',
 
     // 别名（缩写）
     alias: {
         // lang
         '$'	        : 'lang/jquery',
         '_'         : 'lang/lodash',
-        'art'       : 'lang/art',
         'log'       : 'lang/log',
         'net'       : 'lang/net',
         'class'     : 'lang/class',
@@ -30,7 +29,10 @@ seajs.config({
 
         // data
         'data/province'	: 'data/address/1.0/province',
-        'data/city'		: 'data/address/1.0/city'
+        'data/city'		: 'data/address/1.0/city',
+
+        // template
+        'art': 'build/template'
     },
 
     charset: 'UTF-8'

@@ -6,6 +6,10 @@
  * @date 15/12/15
  */
 
+html {
+    background-color: #fff;
+}
+
 /* 普通用户登录 */
 .main-login h1 {
     margin: 0.45rem 0 0.35rem 0;

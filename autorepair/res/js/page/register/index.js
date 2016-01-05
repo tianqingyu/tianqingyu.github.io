@@ -19,9 +19,7 @@ define(function (require, exports, module) {
         },
 
         initTmpl: function(){
-            net.text('index.art', function( rs ){
-                $('#page-content').replaceWith( art.compile(rs)({}) );
-            });
+            $('#page-content').replaceWith( art('account/register/index', {}) );
         }
     }
 });
