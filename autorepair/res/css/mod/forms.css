@@ -84,3 +84,39 @@
     width: 0.22rem;
     height: 0.21rem;
 }
+
+.forms-list2 {
+    margin: 0.2rem;
+    border: 0.1rem solid transparent;
+    border-image: url(../../../res/img/other/06.png) 20 20 stretch;
+}
+.forms-list2 li {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0 0 0.1rem;
+    background-color: #fff;
+}
+.forms-list2 li > label,
+.forms-list2 li > span {
+    float: left;
+}
+.forms-list2 li > label {
+    width: 20%;
+}
+.forms-list2 li > span {
+    width: 80%;
+    color: #666;
+}
+.forms-list2 li > span > img {
+    float: right;
+    width: 0.225rem;
+    height: 0.15rem;
+    margin-top: 0.2rem;
+}
+.forms-list2 li .forms-select {
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 0.03rem;
+    padding-right: 0.2rem;
+    font-size: 0.16rem;
+}
