@@ -166,3 +166,17 @@
 .main-enterprise-more-approve-detail .list3 li span:first-child {
     min-width: 0.98rem;
 }
+
+/* 更多 - 用户权限 */
+.main-enterprise-more-permission .lists {
+    margin-top: 0.2rem;
+}
+.main-enterprise-more-permission .lists > a {
+    display: block;
+}
+.main-enterprise-more-permission .list2 {
+    margin: 0.1rem 0.2rem;
+}
+.main-enterprise-more-permission .assigned {
+    background-color: #ffc552;
+}

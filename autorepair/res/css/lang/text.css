@@ -6,7 +6,7 @@
 .text-omit    { color: #ccc; }
 .text-lesser  { color: #aaa; }
 .text-minor   { color: #666; }
-.text-stress  { color: #ff7300; }
+.text-stress  { color: #ff7300!important; }
 .text-force   { color: #f1534a; }
 .text-warning { color: #e31000; }
 
