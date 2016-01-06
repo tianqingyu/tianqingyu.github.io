@@ -21,11 +21,11 @@
 }
 .button-important {
     color: #fff;
-    background-color: #ff7300;
+    background-color: #2abd91;
 }
 .button-lesser {
     color: #888;
-    border-color: #ddd;
+    background-color: #ddd;
 }
 .button-disabled {
     color: #aaa!important;

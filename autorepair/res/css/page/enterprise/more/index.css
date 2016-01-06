@@ -150,3 +150,19 @@
     margin-bottom: 0.2rem;
     background-color: #2abd92;
 }
+
+/* 更多 - 费用审批 */
+.main-enterprise-more-approve .lists {
+    margin-top: 0.2rem;
+}
+.main-enterprise-more-approve .lists > a {
+    display: block;
+}
+.main-enterprise-more-approve .list2 {
+    margin: 0.1rem 0.2rem;
+}
+
+/* 更多 - 费用审批 - 费用详情 */
+.main-enterprise-more-approve-detail .list3 li span:first-child {
+    min-width: 0.98rem;
+}

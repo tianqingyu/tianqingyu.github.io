@@ -1,10 +1,53 @@
 <!-- 头部 -->
-{{#view('mods/header', {title:'费用申请', goback:false})}}
+{{#view('mods/header', {title:'费用申请'})}}
 
 <!-- 内容 -->
 <section class="page-main main-enterprise-more-apply">
   <div class="content">
-    xx
+    <!-- 表单 -->
+    <ul class="forms-list">
+      <li class="clearfix">
+        <label>部门</label>
+        <span class="forms-select">
+          <span>请选择</span>
+          <img src="../../../res/img/icon/26.png"/>
+        </span>
+      </li>
+      <li class="clearfix">
+        <label>类型</label>
+        <span class="forms-select">
+          <span>请选择</span>
+          <img src="../../../res/img/icon/26.png"/>
+        </span>
+      </li>
+      <li class="clearfix">
+        <label>名称</label>
+        <span class="forms-select">
+          <span>请选择</span>
+          <img src="../../../res/img/icon/26.png"/>
+        </span>
+      </li>
+      <li class="clearfix">
+        <label>金额</label>
+        <input type="text" placeholder="请输入..."/>
+      </li>
+      <li class="clearfix">
+        <label>备注</label>
+        <input type="text" placeholder="请输入..."/>
+      </li>
+      <li class="clearfix">
+        <label>付款日期</label>
+        <span class="forms-calendar">
+          <span>请选择</span>
+          <img src="../../../res/img/icon/27.png"/>
+        </span>
+      </li>
+    </ul>
+
+    <!-- action -->
+    <div class="action">
+      <a href="javascript:void(0)" class="button">提交</a>
+    </div>
   </div>
 </section>
 

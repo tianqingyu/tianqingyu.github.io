@@ -77,3 +77,13 @@
     -ms-flex-align: center;
     align-items: center;
 }
+.action-cloum {
+    padding: 0 0.2rem;
+}
+.action-cloum .button {
+    display: inline-block;
+    width: 46.5%;
+}
+.action-cloum .button:first-child {
+    margin-right: 0.15rem;
+}

@@ -60,3 +60,27 @@
     padding: 0 0.1rem;
     border: 0;
 }
+.forms-list li .forms-select,
+.forms-list li .forms-calendar {
+    float: left;
+    width: 71%;
+    padding: 0 0.2rem 0 0.1rem;
+    text-align: center;
+    color: #aaa;
+}
+.forms-list li .forms-select > span,
+.forms-list li .forms-calendar > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.forms-list li .forms-select img {
+    float: right;
+    width: 0.225rem;
+    height: 0.15rem;
+    margin-top: 0.03rem;
+}
+.forms-list li .forms-calendar img {
+    float: right;
+    width: 0.22rem;
+    height: 0.21rem;
+}
