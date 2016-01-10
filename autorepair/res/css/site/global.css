@@ -24,11 +24,13 @@ html {
 html,
 body {
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
 }
 
 body {
     position: relative;
+    overflow: hidden;
     font: 14px/1.5 arial,tahoma,sans-serif,"\5B8B\4F53";
 }
 @media all and (max-width: 320px) {
@@ -128,11 +130,11 @@ a {
 }
 
 .page-main {
-    padding-top: 0.5rem;
-    padding-bottom: 0.6rem;
-}
-
-.nofooter .page-main {
-    padding-bottom: 0;
-    margin-bottom: 0.2rem;
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.6rem;
+    width: 100%;
+    padding-bottom: 0.2rem;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }

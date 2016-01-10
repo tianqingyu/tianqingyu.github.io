@@ -11,10 +11,6 @@
     width: 71%;
 }
 
-.page-main {
-    min-height: 7.4rem;
-}
-
 /* 客户管理首页 */
 .main-enterprise-order .search {
     padding: 0 0.2rem;
@@ -49,4 +45,13 @@
 }
 .main-enterprise-order-detail .list-kehu {
     margin-top: 0.1rem;
+}
+
+@media all and (max-width: 320px) {
+    .list li .label {
+        width: 32%;
+    }
+    .list li .text {
+        width: 68%;
+    }
 }

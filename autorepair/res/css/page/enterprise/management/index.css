@@ -4,12 +4,6 @@
  * @date 15/12/15
  */
 
-.main-enterprise-management,
-.main-enterprise-management-search,
-.main-enterprise-management-state {
-    min-height: 7.4rem;
-}
-
 .main-enterprise-management .lists > a {
     display: block;
 }

@@ -4,7 +4,7 @@
  */
 
 .page-header {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 100;
 	width: 100%;
