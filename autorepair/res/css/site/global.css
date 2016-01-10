@@ -138,3 +138,7 @@ a {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+
+.nofooter .page-main {
+    bottom: 0;
+}
