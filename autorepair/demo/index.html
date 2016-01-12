@@ -9,11 +9,54 @@
     <title>普通用户登录</title>
 
     <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
       .doc {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+      }
+      .doc > header,
+      .doc > main,
+      .doc > footer {
+        width: 100%;
       }
       .doc > header {
-
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: gray;
+      }
+      .doc > main {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin: auto;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .doc > footer {
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: gray;
+      }
+      .doc > main > .content {
+        padding: 20px;
       }
     </style>
 </head>
@@ -28,7 +71,94 @@
 
       <main>
         <div class="content">
-          main
+          <div class="container elem">
+                <span class="label">&lt;div class="container"&gt;</span>
+
+                <nav class="elem elem-red">
+                  <span class="label">&lt;nav&gt;</span>
+                  <ul>
+                    <li>
+                      <a href="flexbox.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="flexbox.html">Taco Menu</a>
+                    </li>
+                    <li>
+                      <a href="flexbox.html">Draft List</a>
+                    </li>
+                    <li>
+                      <a href="flexbox.html">Hours</a>
+                    </li>
+                    <li>
+                      <a href="flexbox.html">Directions</a>
+                    </li>
+                    <li>
+                      <a href="flexbox.html">Contact</a>
+                    </li>
+                  </ul>
+                  <span class="endlabel">&lt;/nav&gt;</span>
+                </nav>
+
+                <div class="elem elem-red flex-column">
+                  <span class="label">&lt;div class="flex-column"&gt;</span>
+
+                  <section class="elem elem-green">
+                    <span class="label">&lt;section&gt;</span>
+                    <p>
+                      Flexbox好容易使用！
+                    </p>
+                    <span class="endlabel">&lt;/section&gt;</span>
+                  </section>
+
+                  <section class="elem elem-green ipsum">
+                    <span class="label">&lt;section&gt;</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+                    </p>
+                    <span class="endlabel">&lt;/section&gt;</span>
+                  </section>
+
+                  <span class="endlabel">&lt;/div&gt;</span>
+                </div>
+
+              </div>
+
+            <div class="container elem">
+
+                <section class="elem elem-green initial">
+                  <span class="label">&lt;div class="initial"&gt;</span>
+                  <p>
+                    空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。
+                  </p>
+                  <span class="endlabel">&lt;/div&gt;</span>
+                </section>
+
+                <section class="elem elem-green none">
+                  <span class="label">&lt;div class="none"&gt;</span>
+                  <p>
+                    无论窗口如何变化，我的宽度一直是200px。
+                  </p>
+                  <span class="endlabel">&lt;/div&gt;</span>
+                </section>
+
+                <section class="elem elem-green flex1">
+                  <span class="label">&lt;div class="flex1"&gt;</span>
+                  <p>
+                    我会占满剩余宽度的1/3。
+                  </p>
+                  <span class="endlabel">&lt;/div&gt;</span>
+                </section>
+
+                <section class="elem elem-green flex2">
+                  <span class="label">&lt;div class="flex2"&gt;</span>
+                  <p>
+                    我会占满剩余宽度的2/3。
+                  </p>
+                  <span class="endlabel">&lt;/div&gt;</span>
+                </section>
+
+              </div>
+
         </div>
       </main>
 
