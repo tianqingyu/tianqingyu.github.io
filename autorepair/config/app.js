@@ -8,7 +8,6 @@ seajs.config({
 
     base: '../../../res/js',
 
-    // 别名（缩写）
     alias: {
         // lang
         '$'	        : 'lang/jquery',
@@ -29,10 +28,7 @@ seajs.config({
 
         // data
         'data/province'	: 'data/address/1.0/province',
-        'data/city'		: 'data/address/1.0/city',
-
-        // template
-        'art' : 'build/template'
+        'data/city'		: 'data/address/1.0/city'
     },
 
     charset: 'UTF-8'
