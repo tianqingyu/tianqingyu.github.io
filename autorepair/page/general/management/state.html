@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>车辆状态</title>
+
+    <link rel="stylesheet" href="../../../res/css/page/enterprise/management/merge.css"/>
+</head>
+<body>
+
+    <div id="doc" class="doc page-management">
+      <header class="page-header">
+        <div class="content">
+          <h3 class="noback">车间状态</h3>
+          <div class="left">
+            <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
+          </div>
+          <div class="right">
+          </div>
+        </div>
+      </header>
+
+      <!-- 内容 -->
+      <section class="page-main main-enterprise-management-state bg03">
+        <div class="content">
+          <!-- 列表 -->
+          <div class="lists">
+            <ul class="list">
+              <li>
+                <span class="label">车牌号</span>
+                <span class="text text-stress">浙A 123456</span>
+              </li>
+              <li>
+                <span class="label">接车人</span>
+                <span class="text">002号 - 朱素</span>
+              </li>
+              <li>
+                <span class="label">状态</span>
+                <span class="text">已派发</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel-list">
+            <h3>工作内容</h3>
+            <ul class="clearfix">
+              <li>
+                <div>
+                  <img src="../../../res/img/icon/21.png"/><br/>
+                  <span>四轮定位</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="../../../res/img/icon/22.png"/><br/>
+                  <span>换刹车片</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="../../../res/img/icon/23.png"/><br/>
+                  <span>气门清洗</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="action">
+            <a href="javascript:void(0)" class="button button-stress">完工</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 所有浮层的容器 -->
+      <div class="float">
+        <div class="content"></div>
+      </div>
+
+      <footer class="page-footer">
+        <div class="content">
+          <ul>
+            <li class="reception">
+              <a href="../reception/index.html">
+                <span class="icon-jieche img"></span><span>接车</span>
+              </a>
+            </li>
+            <li class="management">
+              <a href="../management/index.html">
+                <span class="icon-chejianguanli img"></span><span>车间管理</span>
+              </a>
+            </li>
+            <li class="order">
+              <a href="../order/index.html">
+                <span class="icon-dingdan img"></span><span>客户订单</span>
+              </a>
+            </li>
+            <li class="more">
+              <a href="../more/index.html">
+                <span class="icon-gengduo img"></span><span>更多+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
+    <script>seajs.use('page/enterprise/management-state',function(m){m&&m.init&&m.init();});</script>
+
+</body>
+</html>
