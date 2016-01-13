@@ -12,16 +12,11 @@ define(function (require, exports, module) {
     var $ = require('$'),
         _ = require('_'),
         log = require('log'),
-        art = require('art'),
         net = require('net');
 
     return {
         init: function(){
-            this.initTmpl();
-        },
 
-        initTmpl: function(){
-            $('#page-content').replaceWith( art('enterprise/management/index', {}) );
         }
     }
 });
