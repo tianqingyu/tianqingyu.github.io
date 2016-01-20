@@ -83,6 +83,14 @@
 .list3 li span:last-child {
     color: #666;
 }
+.list3 li input {
+    display: inline-block;
+    width: 71%;
+    height: 0.27rem;
+    padding: 0 0.2rem;
+    border: 0;
+    background-color: transparent;
+}
 
 /* 更多 - 导航 */
 .list-nav {
