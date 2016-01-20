@@ -46,3 +46,14 @@
 .main-general-more-search-result .list3 {
     background-color: #fff;
 }
+
+/* 更多 - 通用性查询 */
+.main-general-more-common-result .lists {
+    margin: 0.2rem 0;
+}
+.main-general-more-common-result .list2 {
+    margin: 0.1rem 0.2rem;
+}
+.main-general-more-common-result .list2 li span:first-child {
+    width: 29%;
+}
