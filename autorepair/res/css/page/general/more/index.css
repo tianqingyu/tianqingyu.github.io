@@ -57,3 +57,83 @@
 .main-general-more-common-result .list2 li span:first-child {
     width: 29%;
 }
+
+/* 更多 - 申请企业用户 */
+.main-general-more-apply-enterprise .search .user-input {
+    margin-bottom: 0.1rem;
+    border: 0.01rem solid #fff;
+}
+.main-general-more-apply-enterprise .search .user-input label,
+.main-general-more-apply-enterprise .search .user-input input {
+    float: left;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+.main-general-more-apply-enterprise .search .user-input label {
+    width: 24%;
+    padding-left: 0.2rem;
+    border-right: 0.01rem solid #ededed;
+    background-color: #f6f6f6;
+}
+.main-general-more-apply-enterprise .search .user-input input {
+    width: 76%;
+    padding: 0 0.1rem;
+    border: 0;
+}
+.main-general-more-apply-enterprise .search .action {
+    padding: 0;
+}
+.main-general-more-apply-enterprise .search .action .button {
+    border-radius: 0;
+    background-color: #f68827;
+}
+.main-general-more-apply-enterprise .results {
+    margin: 0.2rem;
+}
+.main-general-more-apply-enterprise .results li {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-bottom: 0.03rem solid #f3f3f3;
+    background-color: #fff;
+}
+.main-general-more-apply-enterprise .results .img {
+    display: inline-block;
+    width: 0.17rem;
+    height: 0.17rem;
+    margin: 0 0.2rem;
+    background: transparent url(../../../../../res/img/icon/25-1.png) no-repeat scroll 0 0;
+    background-size: contain;
+    vertical-align: text-bottom;
+}
+.main-general-more-apply-enterprise .results .curr {
+    color: #ff6600;
+}
+.main-general-more-apply-enterprise .results .curr .img {
+    background-image: url(../../../../../res/img/icon/25-2.png);
+}
+
+/* 更多 - 查询申请 */
+.main-general-more-apply-search .results {
+    margin: 0.2rem;
+}
+.main-general-more-apply-search .results li {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-bottom: 0.03rem solid #f3f3f3;
+    background-color: #fff;
+}
+.main-general-more-apply-search .results .img {
+    display: inline-block;
+    width: 0.17rem;
+    height: 0.17rem;
+    margin: 0 0.2rem;
+    background: transparent url(../../../../../res/img/icon/25-1.png) no-repeat scroll 0 0;
+    background-size: contain;
+    vertical-align: text-bottom;
+}
+.main-general-more-apply-search .results .curr {
+    color: #ff6600;
+}
+.main-general-more-apply-search .results .curr .img {
+    background-image: url(../../../../../res/img/icon/25-2.png);
+}
