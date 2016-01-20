@@ -178,6 +178,61 @@
     background-color: #fafafa;
 }
 
+/* 集合列表2 */
+.list-set2 {
+    padding: 0;
+    margin: 0.2rem;
+    border: 0;
+    border-top: 0.01rem solid #d3d3d3;
+}
+.list-set2 legend {
+    margin-left: 40%;
+    margin-bottom: 0.1rem;
+    padding: 0 0.15rem;
+    color: #999;
+    font-size: 0.18rem;
+}
+.list-set2 ul {
+    zoom: 1;
+}
+.list-set2 ul:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.list-set2 li {
+    float: left;
+    width: 33.33%;
+    border-right: 0.01rem solid #ebebeb;
+    border-bottom: 0.01rem solid #ebebeb;
+}
+.list-set2 li > span {
+    position: relative;
+    display: block;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.14rem;
+    border-radius: 0.02rem;
+    background-color: #fafafa;
+}
+.list-set2 li .curr {
+    color: #000;
+    font-weight: bold;
+}
+.list-set2 li .curr:after {
+    content: "✕";
+    position: absolute;
+    right: 0.05rem;
+    top: 0.02rem;
+    line-height: 1;
+    color: #999;
+}
+
 /* 员工列表 */
 .list-emp li {
     padding-left: 20%;
