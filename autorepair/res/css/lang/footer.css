@@ -53,7 +53,8 @@
 .page-reception .page-footer .reception span,
 .page-management .page-footer .management span,
 .page-order .page-footer .order span,
-.page-more .page-footer .more span {
+.page-more .page-footer .more span,
+.page-reservation .page-footer .reservation span {
     color: #1e83d1;
 }
 
