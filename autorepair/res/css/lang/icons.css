@@ -101,6 +101,12 @@
 .page-reservation .page-footer .icon-jieche {
     background-image: url(../../img/icon/07-2.png);
 }
+.page-repair .page-footer .icon-chejianguanli {
+    background-image: url(../../img/icon/08-2.png);
+}
+.page-business .page-footer .icon-dingdan {
+    background-image: url(../../img/icon/09-2.png);
+}
 
 .icon-touxiang {
     display: inline-block;

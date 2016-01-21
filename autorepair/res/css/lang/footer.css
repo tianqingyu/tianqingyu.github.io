@@ -54,7 +54,9 @@
 .page-management .page-footer .management span,
 .page-order .page-footer .order span,
 .page-more .page-footer .more span,
-.page-reservation .page-footer .reservation span {
+.page-reservation .page-footer .reservation span,
+.page-repair .page-footer .repair span,
+.page-business .page-footer .business span {
     color: #1e83d1;
 }
 
