@@ -137,3 +137,8 @@
 .main-general-more-apply-search .results .curr .img {
     background-image: url(../../../../../res/img/icon/25-2.png);
 }
+
+/* 汽修预约 */
+.main-general-reservation .list-set2 legend {
+    margin-left: 35%;
+}
