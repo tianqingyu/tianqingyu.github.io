@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <title>商户查询</title>
 
-    <link rel="stylesheet" href="../../../res/css/page/enterprise/order/merge.css"/>
+    <link rel="stylesheet" href="../../../res/css/page/general/more/merge.css"/>
 </head>
 <body>
 
@@ -24,50 +24,30 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-enterprise-order bg03">
+      <section class="page-main main-enterprise-order">
         <div class="content">
-          <!-- 查询 -->
-          <div class="search">
-            <a href="search.html" class="button button-search clearfix">
-              <span class="left">条件查询</span>
-              <span class="right iconfont">&#xe603;</span>
-            </a>
-          </div>
+          <!-- 表单 -->
+          <ul class="forms-list">
+            <li class="clearfix">
+              <label>名称</label>
+              <input type="text" placeholder="请输入..."/>
+            </li>
+            <li class="clearfix">
+              <label>区号</label>
+              <input type="text" placeholder="请输入..."/>
+            </li>
+            <li class="clearfix">
+              <label>车型</label>
+              <span class="forms-select">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/26.png"/>
+              </span>
+            </li>
+          </ul>
 
-          <!-- 列表 -->
-          <div class="lists">
-            <a href="detail.html">
-              <ul class="list">
-                <li>
-                  <span class="label">客户姓名</span>
-                  <span class="text text-minor">大山</span>
-                </li>
-                <li>
-                  <span class="label">车牌号</span>
-                  <span class="text text-minor">浙A 123456</span>
-                </li>
-                <li>
-                  <span class="label">车型</span>
-                  <span class="text text-minor">小汽车</span>
-                </li>
-              </ul>
-            </a>
-            <a href="detail.html">
-              <ul class="list">
-                <li>
-                  <span class="label">客户姓名</span>
-                  <span class="text text-minor">大山</span>
-                </li>
-                <li>
-                  <span class="label">车牌号</span>
-                  <span class="text text-minor">浙A 123456</span>
-                </li>
-                <li>
-                  <span class="label">车型</span>
-                  <span class="text text-minor">小汽车</span>
-                </li>
-              </ul>
-            </a>
+          <!-- action -->
+          <div class="action">
+            <a href="detail.html" class="button">查询</a>
           </div>
         </div>
       </section>

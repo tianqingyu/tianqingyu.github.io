@@ -142,3 +142,11 @@
 .main-general-reservation .list-set2 legend {
     margin-left: 35%;
 }
+
+/* 商户查询 */
+.main-general-business-detail .list li .label {
+    width: 33%;
+}
+.main-general-business-detail .list li .text {
+    width: 67%;
+}
