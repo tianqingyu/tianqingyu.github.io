@@ -150,3 +150,29 @@
 .main-general-business-detail .list li .text {
     width: 67%;
 }
+
+/* 汽修查询 */
+.main-general-repair .results {
+    margin: 0.2rem;
+}
+.main-general-repair .results li {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-bottom: 0.03rem solid #f3f3f3;
+    background-color: #fff;
+}
+.main-general-repair .results .img {
+    display: inline-block;
+    width: 0.17rem;
+    height: 0.17rem;
+    margin: 0 0.2rem;
+    background: transparent url(../../../../../res/img/icon/25-1.png) no-repeat scroll 0 0;
+    background-size: contain;
+    vertical-align: text-bottom;
+}
+.main-general-repair .results .curr {
+    color: #ff6600;
+}
+.main-general-repair .results .curr .img {
+    background-image: url(../../../../../res/img/icon/25-2.png);
+}
