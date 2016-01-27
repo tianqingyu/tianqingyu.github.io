@@ -70,23 +70,18 @@ define(function(require, exports, module){
 
 		ajax: function( opts ){
 
-			opts.type 	  = opts.type 	  || 'POST';
-			opts.cache 	  = opts.cache 	  || false;
-			opts.dataType = opts.dataType || 'json';
+			// TODO server读取配置
+			if ( !/^http/.test( opts.url ) ) {
+				opts.url = seajs.data.server + '/' + opts.url;
+			}
+
+			opts.type 	     = opts.type 	    || 'POST';
+			opts.cache 	     = opts.cache 	    || false;
+			opts.dataType    = opts.dataType    || 'json';
+			opts.contentType = opts.contentType || 'application/json';
 
 			opts.success  = opts.success || result.done;
 			opts.error    = opts.error 	 || result.fail;
-
-			/* TODO
-			   后端返回的json字符串数据，并非严格的json格式。
-			   用 JSON.parse 去解析会有问题，只能使用 eval 来做了。
-			   之后的数据改造，必须改成返回严格格式的json字符串数据。
-			 */
-			opts.converters = {
-				'text json': function( rs ){
-					return json.parse( rs && rs.replace(/[\n\r]/g, ' ') );
-				}
-			};
 
 			return new Net( opts );
 		}
