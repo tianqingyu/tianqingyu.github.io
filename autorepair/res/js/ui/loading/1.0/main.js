@@ -11,9 +11,11 @@ define(function (require, exports, module) {
         $d = $('#doc');
 
     var TPL = (
-        '<div class="loading hide">' +
-          '<div class="content">' +
-            '<img src="http://www.autorepair.com/res/img/loading/01.gif"/>' +
+        '<div class="overlay">' +
+          '<div class="loading">' +
+            '<div class="content">' +
+              '<img src="http://www.autorepair.com/res/img/loading/01.gif"/>' +
+            '</div>' +
           '</div>' +
         '</div>'
     );
@@ -48,7 +50,7 @@ define(function (require, exports, module) {
                 counter > -1 && counter++;
             }
 
-            $el.removeClass('hide');
+            $el.show();
 
             return this;
         },
@@ -63,7 +65,7 @@ define(function (require, exports, module) {
             }
 
             if ( counter === 0 ) {
-                $el.addClass('hide');
+                $el.hide();
             }
 
             return this;

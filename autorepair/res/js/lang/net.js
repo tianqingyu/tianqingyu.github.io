@@ -75,6 +75,9 @@ define(function(require, exports, module){
 				opts.url = seajs.data.server + '/' + opts.url;
 			}
 
+			// TODO 后端获取json格式字符串
+			opts.data = json.stringify( opts.data );
+
 			opts.type 	     = opts.type 	    || 'POST';
 			opts.cache 	     = opts.cache 	    || false;
 			opts.dataType    = opts.dataType    || 'json';
