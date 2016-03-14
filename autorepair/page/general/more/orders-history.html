@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>费用审批</title>
+    <title>订单详情</title>
 
     <link rel="stylesheet" href="../../../res/css/page/enterprise/more/merge.css"/>
 </head>
@@ -15,7 +15,7 @@
     <div id="doc" class="doc page-more">
       <header class="page-header">
         <div class="content">
-          <h3 class="noback">费用审批</h3>
+          <h3 class="noback">订单历史</h3>
           <div class="left">
             <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
           </div>
@@ -25,44 +25,68 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-enterprise-more-approve">
+      <section class="page-main main-enterprise-more-orders-detail">
+              
         <div class="content">
           <!-- 列表 -->
           <div class="lists">
-            <a href="approve-detail.html">
-              <ul class="list2">
-                <li>
-                  <span>客户：</span>
-                  <span>刘大山</span>
-                </li>
-                <li>
-                  <span>编码：</span>
-                  <span>30000786</span>
-                </li>
-                <li>
-                  <span>总价：</span>
-                  <span>546元</span>
-                </li>
-              </ul>
-            </a>
-            <a href="approve-detail.html">
-              <ul class="list2">
-                <li>
-                  <span>客户：</span>
-                  <span>刘大山</span>
-                </li>
-                <li>
-                  <span>编码：</span>
-                  <span>30000786</span>
-                </li>
-                <li>
-                  <span>总价：</span>
-                  <span>546元</span>
-                </li>
-              </ul>
-            </a>
+            <ul class="list"> 
+              <li>
+                <span class="label">商家：</span>
+                <span class="text text-stress">比弗汽修</span>
+              </li>
+              <li>
+                <span class="label">编码：</span>
+                <span class="text">213123</span>
+              </li>
+              <li>
+                <span class="label">品名：</span>
+                <span class="text">离合器</span>
+              </li>
+              <li>
+                <span class="label">车型：</span>
+                <span class="text text-stress">本田</span>
+              </li>
+              <li>
+                <span class="label">数量：</span>
+                <span class="text">111</span>
+              </li>
+              <li>
+                <span class="label">价格：</span>
+                <span class="text">321</span>
+              </li>
+            </ul>
+            <ul class="list">
+               
+             <li>
+                <span class="label">商家：</span>
+                <span class="text text-stress">比弗汽修</span>
+              </li>
+              <li>
+                <span class="label">编码：</span>
+                <span class="text">213123</span>
+              </li>
+              <li>
+                <span class="label">品名：</span>
+                <span class="text">离合器</span>
+              </li>
+              <li>
+                <span class="label">车型：</span>
+                <span class="text text-stress">本田</span>
+              </li>
+              <li>
+                <span class="label">数量：</span>
+                <span class="text">111</span>
+              </li>
+              <li>
+                <span class="label">价格：</span>
+                <span class="text">321</span>
+              </li>
+            </ul>
           </div>
         </div>
+          
+          
       </section>
 
       <!-- 所有浮层的容器 -->
@@ -101,7 +125,7 @@
 
     <script src="../../../res/lib/all.js" id="seajsnode"></script>
     <script src="../../../config/app.js"></script>
-    <script>seajs.use('page/enterprise/more-approve',function(m){m&&m.init&&m.init();});</script>
+    <script>seajs.use('page/enterprise/more-orders-detail',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>

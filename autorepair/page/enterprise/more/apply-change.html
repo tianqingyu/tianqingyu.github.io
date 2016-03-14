@@ -6,51 +6,74 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>汽修查询申请</title>
+    <title>费用申请</title>
 
-    <link rel="stylesheet" href="../../../res/css/page/general/more/merge.css"/>
+    <link rel="stylesheet" href="../../../res/css/page/enterprise/more/merge.css"/>
 </head>
 <body>
 
     <div id="doc" class="doc page-more">
       <header class="page-header">
         <div class="content">
-          <h3 class="noback">商家查询申请</h3>
+          <h3 class="noback">费用申请</h3>
           <div class="left">
             <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
           </div>
-          <div class="right"></div>
+          <div class="right">
+          </div>
         </div>
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-general-more-apply-search">
+      <section class="page-main main-enterprise-more-apply">
         <div class="content">
-          <!-- 列表 -->
+          <!-- 表单 -->
           <ul class="forms-list">
             <li class="clearfix">
-              <label>商家名称</label>
+              <label>部门</label>
+              <span class="forms-select">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/26.png"/>
+              </span>
+            </li>
+            <li class="clearfix">
+              <label>类型</label>
+              <span class="forms-select">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/26.png"/>
+              </span>
+            </li>
+            <li class="clearfix">
+              <label>名称</label>
+              <span class="forms-select">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/26.png"/>
+              </span>
+            </li>
+            <li class="clearfix">
+              <label>金额</label>
               <input type="text" placeholder="请输入..."/>
             </li>
             <li class="clearfix">
-              <label>申请人姓名</label>
+              <label>备注</label>
               <input type="text" placeholder="请输入..."/>
             </li>
             <li class="clearfix">
-              <label>申请手机号</label>
-              <input type="text" placeholder="请输入..."/>
+              <label>付款日期</label>
+              <span class="forms-calendar">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/27.png"/>
+              </span>
             </li>
-            </ul>
+          </ul>
 
+          <!-- action -->
           <div class="action">
-            <a href="javascript:void(0)" class="button">查询申请</a>
+            <a href="javascript:void(0)" class="button">提交</a>
           </div>
           
-          <br/>
           
-          <div class="action">
-            <a href="apply-search-history.html" class="button">申请历史</a>
-          </div>
+          
         </div>
       </section>
 
@@ -86,6 +109,11 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
+    <script>seajs.use('page/enterprise/more-apply',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>

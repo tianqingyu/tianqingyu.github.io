@@ -9,6 +9,8 @@
     <title>用户权限分配</title>
 
     <link rel="stylesheet" href="../../../res/css/page/enterprise/more/merge.css"/>
+    
+    <link rel="stylesheet" href="../../../res/css/page/general/more/merge.css"/>
 </head>
 <body>
 
@@ -25,24 +27,56 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-enterprise-more-permission-assign">
+      <!-- 内容 -->
+      <section class="page-main main-general-more-apply-enterprise">
         <div class="content">
-          <ul class="forms-list2">
-            <li class="clearfix">
-              <label>姓名：</label>
-              <span>丁泉城</span>
+          <!-- 搜索 -->
+          <div class="search">
+            <div class="user-input clearfix">
+              <label>姓名</label>
+              <input type="text" placeholder="张三"/>
+            </div>
+          </div>
+
+          <!-- 列表 -->
+          <ul class="results">
+            <li class="curr">
+              <span class="img"></span>
+              <span>前台接车</span>
             </li>
-            <li class="clearfix">
-              <label>类型：</label>
-              <span class="forms-select">
-                <span>未分配</span>
-                <img src="../../../res/img/icon/26.png"/>
-              </span>
+            
+            <li class="curr">
+              <span class="img"></span>
+              <span>车间管理</span>
+            </li>
+            <li class="curr">
+              <span class="img"></span>
+              <span>费用申请</span>
+            </li>
+            <li class="curr">
+              <span class="img"></span>
+              <span>费用审核</span>
+            </li>
+            <li class="curr">
+              <span class="img"></span>
+              <span>用户权限</span>
+            </li>
+            <li class="curr">
+              <span class="img"></span>
+              <span>商家申请审核</span>
+            </li>
+            <li class="curr">
+              <span class="img"></span>
+              <span>消费明细</span>
+            </li>
+            <li class="curr">
+              <span class="img"></span>
+              <span>财务查询</span>
             </li>
           </ul>
 
           <div class="action">
-            <a href="javascript:void(0)" class="button button-important">设置</a>
+            <a href="javascript:void(0)" class="button">设置</a>
           </div>
         </div>
       </section>
@@ -56,18 +90,18 @@
         <div class="content">
           <ul>
             <li class="reception">
-              <a href="../reception/index.html">
-                <span class="icon-jieche img"></span><span>接车</span>
-              </a>
-            </li>
-            <li class="management">
-              <a href="../management/index.html">
-                <span class="icon-chejianguanli img"></span><span>车间管理</span>
+              <a href="../more/search.html">
+                <span class="icon-jieche img"></span><span>底盘号</span>
               </a>
             </li>
             <li class="order">
-              <a href="../order/index.html">
-                <span class="icon-dingdan img"></span><span>客户订单</span>
+              <a href="../more/common.html">
+                <span class="icon-dingdan img"></span><span>&nbsp;&nbsp;&nbsp;通用性</span>
+              </a>
+            </li>
+            <li class="management">
+              <a href="../business/index.html">
+                <span class="icon-chejianguanli img"></span><span>&nbsp;&nbsp;&nbsp;商家</span>
               </a>
             </li>
             <li class="more">

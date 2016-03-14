@@ -6,52 +6,61 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>车架号查询</title>
+    <title>商户查询</title>
 
     <link rel="stylesheet" href="../../../res/css/page/general/more/merge.css"/>
 </head>
 <body>
 
-    <div id="doc" class="doc page-reception">
+    <div id="doc" class="doc page-management">
       <header class="page-header">
         <div class="content">
-          <h3 class="noback">车架号查询</h3>
+          <h3>商户查询</h3>
           <div class="left">
-            <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
           </div>
-          <div class="right"></div>
+          <div class="right">
+          </div>
+          <div class="left">
+          </div>
+          <div class="right">
+            <a href="../../account/login/index.html">退出</a>
+          </div>
         </div>
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-general-more-search-result">
+      <section class="page-main main-enterprise-order">
         <div class="content">
-          <ul class="list3">
-            <li>
-              <span>车架号</span>
-              <span>JNKDLLLLLL</span>
+          <!-- 表单 -->
+          <ul class="forms-list">
+            <li class="clearfix">
+              <label>名称</label>
+              <input type="text" placeholder="请输入..."/>
             </li>
-            <li>
-              <span>厂家</span>
-              <span>日产汽车</span>
+            <li class="clearfix">
+              <label>区号</label>
+              <input type="text" placeholder="请输入..."/>
             </li>
-            <li>
-              <span>品牌</span>
-              <span>英菲尼迪</span>
+            <li class="clearfix">
+              <label>品牌</label>
+              <span class="forms-select">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/26.png"/>
+              </span>
             </li>
-            <li>
-              <span>车型</span>
-              <span>EX25</span>
-            </li>
-            <li>
-              <span>排量</span>
-              <span>2.5</span>
-            </li>
-            <li>
-              <span></span>
-              <span>更多字段都会根据后台数据在这里显示</span>
+            <li class="clearfix">
+              <label>车型</label>
+              <span class="forms-select">
+                <span>请选择</span>
+                <img src="../../../res/img/icon/26.png"/>
+              </span>
             </li>
           </ul>
+
+          <!-- action -->
+          <div class="action">
+            <a href="detail.html" class="button">查询</a>
+          </div>
         </div>
       </section>
 

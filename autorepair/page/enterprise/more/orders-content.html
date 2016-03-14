@@ -6,53 +6,84 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>车架号查询</title>
+    <title>订单详情</title>
 
-    <link rel="stylesheet" href="../../../res/css/page/general/more/merge.css"/>
+    <link rel="stylesheet" href="../../../res/css/page/enterprise/more/merge.css"/>
 </head>
 <body>
 
-    <div id="doc" class="doc page-reception">
+    <div id="doc" class="doc page-more">
       <header class="page-header">
         <div class="content">
-          <h3 class="noback">车架号查询</h3>
+          <h3 class="noback">订单详情</h3>
           <div class="left">
             <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
           </div>
-          <div class="right"></div>
+          <div class="right">
+          </div>
         </div>
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-general-more-search-result">
+      <section class="page-main main-enterprise-more-orders-detail">
         <div class="content">
           <ul class="list3">
             <li>
-              <span>车架号</span>
-              <span>JNKDLLLLLL</span>
+              <span>商家</span>
+              <span>比弗汽修</span>
             </li>
             <li>
-              <span>厂家</span>
-              <span>日产汽车</span>
-            </li>
-            <li>
-              <span>品牌</span>
-              <span>英菲尼迪</span>
-            </li>
-            <li>
-              <span>车型</span>
-              <span>EX25</span>
-            </li>
-            <li>
-              <span>排量</span>
-              <span>2.5</span>
-            </li>
-            <li>
-              <span></span>
-              <span>更多字段都会根据后台数据在这里显示</span>
+              <span>编码</span>
+              <span>30000692</span>
             </li>
           </ul>
+
+          <div class="table">
+            <table>
+              <colgroup>
+                <col class="col-1"/>
+                <col class="col-2"/>
+                <col class="col-3"/>
+              </colgroup>
+              <thead>
+                <th>编码</th>
+                <th>名称</th>
+                <th>车型</th>
+                <th>库存</th>
+                <th>价格</th>
+              </thead>
+              <tbody>
+                <tr>
+                 <th>0123</th>
+                <th>离合器</th>
+                <th>B33</th>
+                <th>4</th>
+                <th>123</th>
+                </tr>
+                <tr>
+                  <th>0123</th>
+                <th>离合器</th>
+                <th>B33</th>
+                <th>4</th>
+                <th>123</th>
+                </tr>
+                <tr>
+                  <th>0123</th>
+                <th>离合器</th>
+                <th>B33</th>
+                <th>4</th>
+                <th>123</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+           
+           
         </div>
+        
+        
       </section>
 
       <!-- 所有浮层的容器 -->
@@ -87,6 +118,11 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
+    <script>seajs.use('page/enterprise/more-orders-detail',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>

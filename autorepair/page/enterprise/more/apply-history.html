@@ -6,16 +6,16 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>车辆状态</title>
+    <title>费用申请</title>
 
-    <link rel="stylesheet" href="../../../res/css/page/enterprise/management/merge.css"/>
+    <link rel="stylesheet" href="../../../res/css/page/enterprise/more/merge.css"/>
 </head>
 <body>
 
     <div id="doc" class="doc page-more">
       <header class="page-header">
         <div class="content">
-          <h3 class="noback">车间状态</h3>
+          <h3 class="noback">费用申请列表</h3>
           <div class="left">
             <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
           </div>
@@ -25,53 +25,87 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-enterprise-management-state bg03">
+      <section class="page-main main-enterprise-more-apply">
+      
+      
         <div class="content">
           <!-- 列表 -->
+          <a href="apply-change.html">
           <div class="lists">
             <ul class="list">
+            
               <li>
-                <span class="label">车牌号</span>
-                <span class="text text-stress">浙A 123456</span>
+                <span class="label">部门：</span>
+                <span class="text text-stress">修理部</span>
               </li>
               <li>
-                <span class="label">接车人</span>
-                <span class="text">002号 - 朱素</span>
+                <span class="label">类型：</span>
+                <span class="text">修理</span>
               </li>
               <li>
-                <span class="label">状态</span>
-                <span class="text">已派发</span>
+                <span class="label">名称：</span>
+                <span class="text">器材</span>
               </li>
+              <li>
+                <span class="label">金额：</span>
+                <span class="text">123</span>
+              </li>
+              
+              <li>
+                <span class="label">付款日期：</span>
+                <span class="text">2016-1-1</span>
+              </li>
+              
+              <li>
+                <span class="label">备注：</span>
+                <span class="text">33</span>
+              </li>
+              
+              <li>
+                <span class="label">审核：</span>
+                <span class="text">通过</span>
+              </li>
+              
+              
+              
+            </ul>
+            <ul class="list">
+               
+              <li>
+                <span class="label">部门：</span>
+                <span class="text text-stress">修理部</span>
+              </li>
+              <li>
+                <span class="label">类型：</span>
+                <span class="text">修理</span>
+              </li>
+              <li>
+                <span class="label">名称：</span>
+                <span class="text">器材</span>
+              </li>
+              <li>
+                <span class="label">金额：</span>
+                <span class="text">123</span>
+              </li>
+              
+              <li>
+                <span class="label">付款日期：</span>
+                <span class="text">2016-1-1</span>
+              </li>
+              
+              <li>
+                <span class="label">备注：</span>
+                <span class="text">33</span>
+              </li>
+              
+              <li>
+                <span class="label">审核：</span>
+                <span class="text">通过</span>
+              </li>
+              
             </ul>
           </div>
-
-          <div class="panel-list">
-            <h3>工作内容</h3>
-            <ul class="clearfix">
-              <li>
-                <div>
-                  <img src="../../../res/img/icon/21.png"/><br/>
-                  <span>四轮定位</span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <img src="../../../res/img/icon/22.png"/><br/>
-                  <span>换刹车片</span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <img src="../../../res/img/icon/23.png"/><br/>
-                  <span>气门清洗</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="action">
-            <a href="javascript:void(0)" class="button button-stress">完工</a>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -111,7 +145,7 @@
 
     <script src="../../../res/lib/all.js" id="seajsnode"></script>
     <script src="../../../config/app.js"></script>
-    <script>seajs.use('page/enterprise/management-state',function(m){m&&m.init&&m.init();});</script>
+    <script>seajs.use('page/enterprise/more-apply',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>
