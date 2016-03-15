@@ -29,37 +29,37 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-enterprise-order">
+      <section class="page-main main-business-search">
         <div class="content">
           <!-- 表单 -->
           <ul class="forms-list">
             <li class="clearfix">
               <label>名称</label>
-              <input type="text" placeholder="请输入..."/>
+              <input type="text" placeholder="请输入..." name="name"/>
             </li>
-            <li class="clearfix">
+            <!--<li class="clearfix">
               <label>区号</label>
-              <input type="text" placeholder="请输入..."/>
-            </li>
-            <li class="clearfix">
+              <input type="text" placeholder="请输入..." name="postcode"/>
+            </li>-->
+            <!--<li class="clearfix">
               <label>品牌</label>
               <span class="forms-select">
                 <span>请选择</span>
                 <img src="../../../res/img/icon/26.png"/>
               </span>
-            </li>
-            <li class="clearfix">
+            </li>-->
+            <!--<li class="clearfix">
               <label>车型</label>
               <span class="forms-select">
                 <span>请选择</span>
                 <img src="../../../res/img/icon/26.png"/>
               </span>
-            </li>
+            </li>-->
           </ul>
 
           <!-- action -->
           <div class="action">
-            <a href="detail.html" class="button">查询</a>
+            <a href="detail.html" class="button" id="do-query">查询</a>
           </div>
         </div>
       </section>
@@ -96,6 +96,11 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
+    <script>seajs.use('page/enterprise/business-search',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>
