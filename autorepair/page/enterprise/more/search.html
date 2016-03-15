@@ -29,17 +29,17 @@
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-general-more-search">
+      <section class="page-main main-more-search">
         <div class="content">
           <ul class="list3">
             <li>
               <span>底盘号</span>
-              <input type="text" placeholder="请输入..." maxlength="20"/>
+              <input type="text" placeholder="请输入..." maxlength="20" name="vinInfo"/>
             </li>
           </ul>
 
           <div class="action">
-            <a href="search-result.html" class="button">查询</a>
+            <a href="search-result.html" class="button" id="do-query">查询</a>
           </div>
         </div>
       </section>
@@ -76,6 +76,11 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
+    <script>seajs.use('page/enterprise/more-search',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>
