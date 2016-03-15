@@ -20,21 +20,12 @@ define(function (require, exports, module) {
         test: function(){
 
             net.post({
-                url: 'selclient.do',
+                url: 'selArea.do',
                 data: {
-
+                    areaname: '西湖区'
                 },
                 success: function( rs ){
-
-                    if ( rs.code == null ) {
-                        that.renderData( rs.data );
-                    }
-                    else {
-                        msgbox.alert( rs.msg );
-                    }
-                },
-                complete: function(){
-                    loading.hide();
+                    log( rs );
                 }
             });
         }
