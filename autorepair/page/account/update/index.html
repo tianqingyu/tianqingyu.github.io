@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <title>普通用户登录</title>
+    <title>更新</title>
 
     <link rel="stylesheet" href="../../../res/css/page/account/merge.css"/>
 </head>
@@ -15,25 +15,39 @@
     <div id="doc" class="doc nofooter">
       <header class="page-header">
         <div class="content">
-          <h3>比弗汽修汽配管理软件</h3>
+          <h3 class="noback">更新</h3>
+
           <div class="left">
+
+            <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
+
           </div>
           <div class="right">
+
           </div>
         </div>
       </header>
 
       <!-- 内容 -->
-      <section class="page-main main-login bg02">
+      <section class="page-main main-register main-update">
         <div class="content">
-          <h1><img class="icon-logo" src="../../../res/img/logo/01.png"/></h1>
-
           <ul class="forms">
             <li>
               <div class="form-input clearfix">
                 <div class="left">
-                  <span class="icon-name"></span>
-                  <input class="name" type="text" maxlength="20" placeholder="请输入您的手机号" />
+                  <span class="icon-mobile"></span>
+                  <input class="mobile" type="text" maxlength="20" placeholder="请输入您的手机号" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="form-input clearfix">
+                <div class="left">
+                  <span class="icon-smscode"></span>
+                  <input class="smscode" type="text" maxlength="20" placeholder="请输入短信验证码" />
+                </div>
+                <div class="right">
+                  <a class="button-smscode" href="javascript:void(0)">获取验证码</a>
                 </div>
               </div>
             </li>
@@ -43,20 +57,20 @@
                   <span class="icon-pass"></span>
                   <input class="pass" type="password" maxlength="20" placeholder="请输入登录密码" />
                 </div>
-                <div class="right">
-                  <a class="button-findback" href="../update/index.html">忘记密码？</a>
+              </div>
+            </li>
+            <li>
+              <div class="form-input clearfix">
+                <div class="left">
+                  <span class="icon-pass"></span>
+                  <input class="pass2" type="password" maxlength="20" placeholder="请确认登录密码" />
                 </div>
               </div>
             </li>
           </ul>
 
           <div class="action">
-            <a href="javascript:void(0)" class="button login">登录</a>
-            <a href="../register/index.html" class="button button-stress register">注册</a>
-          </div>
-
-          <div class="ps">
-            <a href="enterprise.html" class="text-s16">企业用户登录 &gt;</a>
+            <a href="javascript:void(0)" class="button update">确认修改</a>
           </div>
         </div>
       </section>
@@ -70,7 +84,7 @@
 
     <script src="../../../res/lib/all.js" id="seajsnode"></script>
     <script src="../../../config/app.js"></script>
-    <script>seajs.use('page/login/index',function(m){m&&m.init&&m.init();});</script>
+    <script>seajs.use('page/update/index',function(m){m&&m.init&&m.init();});</script>
 
 </body>
 </html>

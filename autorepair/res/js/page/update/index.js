@@ -16,7 +16,7 @@ define(function (require, exports, module) {
         msgbox = require('ui/msgbox');
 
     var $d = $('#doc'),
-        $m = $d.find('section.main-register');
+        $m = $d.find('section.main-update');
 
     return {
         init: function(){
@@ -25,24 +25,24 @@ define(function (require, exports, module) {
 
         wait: function(){
 
-            // 注册
-            $m.find('div.action > a.register').on('tap', function( evt ){
+            var that = this;
+
+            // 修改
+            $m.find('div.action > a.update').on('tap', function( evt ){
                 evt.preventDefault();
 
-                if ( $(this).hasClass('button-disabled') ) {
+                if ( !that.check() ) {
                     return;
                 }
 
                 loading.show();
 
                 net.post({
-                    url: 'registered.do',
+                    url: 'updateuser.do',
                     data: {
-                        "phonenumber" : $m.find('input.mobile').val(),
-                        "SMSCode"     : $m.find('input.smscode').val(),
-                        "carnumber"   : $m.find('input.plate').val(),
-                        "username"    : $m.find('input.name').val(),
-                        "password"    : $m.find('input.pass').val()
+                        phonenumber : $m.find('input.mobile').val(),
+                        SMSCode     : $m.find('input.smscode').val(),
+                        password    : $m.find('input.pass').val()
                     },
                     success: function( rs ){
                         msgbox.alert( rs.msg, function(){
@@ -55,17 +55,6 @@ define(function (require, exports, module) {
                         loading.hide();
                     }
                 });
-            });
-
-            // 确认协议
-            $('#do-agreement').on('click', function(){
-
-                if ( !$(this).prop('checked') ) {
-                    $m.find('div.action > a.register').addClass('button-disabled');
-                }
-                else {
-                    $m.find('div.action > a.register').removeClass('button-disabled');
-                }
             });
 
             // 获取短信验证码
@@ -84,6 +73,24 @@ define(function (require, exports, module) {
                     }
                 });
             });
+        },
+
+        check: function(){
+
+            var pass = $m.find('input.pass').val(),
+                pass2 = $m.find('input.pass2').val();
+
+            if ( pass === '' ) {
+                msgbox.alert('请输入密码');
+                return false;
+            }
+
+            if ( pass !== pass2 ) {
+                msgbox.alert('您二次输入的密码不同，请确认');
+                return false;
+            }
+
+            return true;
         }
     }
 });
