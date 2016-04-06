@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <title>接车</title>
 
-    <link rel="stylesheet" href="../../../res/css/page/enterprise/reception/merge.css"/>
+    <link rel="stylesheet" href="../../../../res/css/page/enterprise/reception/merge.css"/>
 </head>
 <body>
 
@@ -30,11 +30,11 @@
           <!-- 接车信息 -->
           <div class="details">
             <ul class="photos clearfix">
-              <li><img src="../../../res/img/other/02.jpg"/></li>
-              <li><img src="../../../res/img/other/03.jpg"/></li>
-              <li><img src="../../../res/img/other/03.jpg"/></li>
-              <li><img src="../../../res/img/other/03.jpg"/></li>
-              <li><img src="../../../res/img/other/04.jpg"/></li>
+              <li><img src="../../../../res/img/other/02.jpg"/></li>
+              <li><img src="../../../../res/img/other/03.jpg"/></li>
+              <li><img src="../../../../res/img/other/03.jpg"/></li>
+              <li><img src="../../../../res/img/other/03.jpg"/></li>
+              <li><img src="../../../../res/img/other/04.jpg"/></li>
               <li><div><span class="iconfont">&#xe600;</span></div></li>
             </ul>
             <div class="type text-s16 text-minor clearfix">
@@ -58,7 +58,7 @@
             <li class="detect">
               <a href="detect.html" class="clearfix">
                 <div class="left">
-                  <img src="../../../res/img/icon/16.png"/>
+                  <img src="../../../../res/img/icon/16.png"/>
                   <span class="text-s18">车辆检查</span>
                 </div>
                 <div class="right iconfont text-lesser">&#xe603;</div>
@@ -67,21 +67,21 @@
             <li class="options clearfix">
               <a href="options.html" class="clearfix">
                 <div class="left">
-                  <img src="../../../res/img/icon/17.png"/>
+                  <img src="../../../../res/img/icon/17.png"/>
                   <span class="text-s18">项目选择</span>
                 </div>
                 <div class="right iconfont text-lesser">&#xe603;</div>
               </a>
             </li>
-            <li class="history clearfix">
-              <a href="../management/index.html" class="clearfix">
-                <div class="left">
-                  <img src="../../../res/img/icon/18.png"/>
-                  <span class="text-s18">历史记录</span>
-                </div>
-                <div class="right iconfont text-lesser">&#xe603;</div>
-              </a>
-            </li>
+            <!--<li class="history clearfix">-->
+              <!--<a href="../management/index.html" class="clearfix">-->
+                <!--<div class="left">-->
+                  <!--<img src="../../../../res/img/icon/18.png"/>-->
+                  <!--<span class="text-s18">历史记录</span>-->
+                <!--</div>-->
+                <!--<div class="right iconfont text-lesser">&#xe603;</div>-->
+              <!--</a>-->
+            <!--</li>-->
           </ul>
         </div>
       </section>
@@ -120,9 +120,12 @@
     </div>
 
 
-    <script src="../../../res/lib/all.js" id="seajsnode"></script>
-    <script src="../../../config/app.js"></script>
-    <script>seajs.use('page/enterprise/reception-nav',function(m){m&&m.init&&m.init();});</script>
+    <script src="../../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../../config/app.js"></script>
+    <script>
+      seajs.config({base:'../../../../res/js'});
+      seajs.use('page/enterprise/reception-nav',function(m){m&&m.init&&m.init();});
+    </script>
 
 </body>
 </html>

@@ -8,15 +8,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <title>车间管理</title>
 
-    <link rel="stylesheet" href="../../../res/css/page/enterprise/management/merge.css"/>
+    <link rel="stylesheet" href="../../../../res/css/page/enterprise/management/merge.css"/>
 </head>
 <body>
 
     <div id="doc" class="doc page-more">
       <header class="page-header">
         <div class="content">
-          <h3>车间管理</h3>
+          <h3 class="noback">车间管理</h3>
           <div class="left">
+            <a href="javascript:window.history.back()" class="icon-arrow-left go-back"></a>
           </div>
           <div class="right">
           </div>
@@ -114,9 +115,12 @@
     </div>
 
 
-    <script src="../../../res/lib/all.js" id="seajsnode"></script>
-    <script src="../../../config/app.js"></script>
-    <script>seajs.use('page/enterprise/management',function(m){m&&m.init&&m.init();});</script>
+    <script src="../../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../../config/app.js"></script>
+    <script>
+      seajs.config({base:'../../../../res/js'});
+      seajs.use('page/enterprise/management',function(m){m&&m.init&&m.init();});
+    </script>
 
 </body>
 </html>
