@@ -19,7 +19,7 @@ define(function (require, exports, module) {
     var $d = $('#doc'),
         $m = $d.find('section.main-login');
 
-    var URL = '../../general/more/search.html';
+    var URL = '../../chassis/index.html';
 
     return {
         init: function(){
@@ -45,7 +45,7 @@ define(function (require, exports, module) {
                         success: function( rs ){
 
                             if ( rs.sessionid ) {
-                                auth.setLogin( rs.sessionid );
+                                auth.setLogin( rs.sessionid, '1' );
 
                                 window.location.href = URL;
                             }

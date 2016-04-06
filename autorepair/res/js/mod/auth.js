@@ -8,19 +8,29 @@ define(function(require, exports, module){
 
 	var log = require('log');
 
-	var NAME = 'SESSIONID';
+	var NAME = 'SESSIONID',
+		TYPE = 'USERTYPE';
 
 	return {
 		isLogin: function(){
 			return !!this.getSID();
 		},
 
-		setLogin: function( sessionid ){
+		setLogin: function( sessionid, type ){
 			sessionStorage.setItem( NAME, sessionid );
+			sessionStorage.setItem( TYPE, type );
 		},
 
 		getSID: function(){
 			return sessionStorage.getItem( NAME );
+		},
+
+		isGeneral: function(){
+			return sessionStorage.getItem( TYPE ) === '1';
+		},
+
+		isEnterprise: function(){
+			return sessionStorage.getItem( TYPE ) === '2';
 		}
 	};
 });
