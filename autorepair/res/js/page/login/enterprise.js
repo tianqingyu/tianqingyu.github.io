@@ -17,7 +17,7 @@ define(function (require, exports, module) {
         loading = require('ui/loading');
 
     var $d = $('#doc'),
-        $m = $d.find('section.main-login');
+        $m = $d.find('section.main-login-corp');
 
     var URL = '../../chassis/index.html';
 
