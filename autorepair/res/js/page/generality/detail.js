@@ -190,7 +190,7 @@ define(function (require, exports, module) {
                 );
             });
 
-            $m.find('div.show-list-2 .list3').html( ss );
+            $m.find('div.show-list-2 .list3').html( ss ).parent()[0].scrollTop = 0;
         },
 
         render3: function( id ){
@@ -235,7 +235,7 @@ define(function (require, exports, module) {
                 );
             });
 
-            $m.find('div.show-list-3 .list3').html( ss );
+            $m.find('div.show-list-3 .list3').html( ss ).parent()[0].scrollTop = 0;
         }
     }
 });

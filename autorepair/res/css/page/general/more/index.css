@@ -80,6 +80,19 @@
     padding-top: 0.05rem;
     border-bottom: 0.01rem dotted #e0e0e0;
 }
+.main-general-more-common-result .show-list-1,
+.main-general-more-common-result .show-list-2,
+.main-general-more-common-result .show-list-3 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.2rem;
+}
 .main-general-more-common-result .show-list-1 .list li:last-child .items:last-child {
     border-bottom: 0;
 }
