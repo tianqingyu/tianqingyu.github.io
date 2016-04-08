@@ -15,7 +15,7 @@ define(function (require, exports, module) {
     var urlUtil = require('util/url');
 
     var $d = $('#doc'),
-        $m = $d.find('section.main-more-search');
+        $m = $d.find('section.main-general-more-common');
 
     return {
         init: function(){
@@ -36,7 +36,8 @@ define(function (require, exports, module) {
 
         getParams: function(){
             return {
-                vinInfo: $m.find('input[name="vinInfo"]').val()
+                mode: 1,
+                s_art_nr: $m.find('input.s-art-nr').val()
             };
         }
     }

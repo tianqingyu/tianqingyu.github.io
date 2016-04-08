@@ -27,33 +27,63 @@
       <section class="page-main main-general-more-common-result">
         <div class="content">
           <div class="content">
-          <ul class="list3">
-            <li>
-              <span>编号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              <span>车型</span>
-            </li>
-            <li>
-              <span>30000123</span>
-              <span>日产汽车</span>
-            </li>
-            <li>
-              <span>32134312</span>
-              <span>英菲尼迪</span>
-            </li>
-            <li>
-              <span>30000123</span>
-              <span>雪弗兰创库</span>
-            </li>
-            <li>
-              <span>30000123</span>
-              <span>奔驰</span>
-            </li>
-            <li>
-              <span></span>
-              <span>更多字段都会根据后台数据在这里显示</span>
-            </li>
-          </ul>
-        </div>
+            <div class="show-list-1">
+              <!--<ul class="list">
+                <li>
+                  <h3 class="pinpai">AIRTEX</h3>
+                </li>
+                <li>
+                  <h4 class="xinghao">Water Pump (Cooling System)</h4>
+                  <ul class="items">
+                    <li>
+                      <span class="label">品牌编号：</span>
+                      <span class="text">1543</span>
+                    </li>
+                    <li>
+                      <span class="label">配件型号：</span>
+                      <span class="text">Water Pump</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="javascript:void(0)" class="text-link">原厂编号</a>　
+                      <a href="javascript:void(0)" class="text-link">适用车型</a>　
+                    </li>
+                  </ul>
+                </li>
+              </ul>-->
+            </div>
+
+            <div class="show-list-2 hide">
+              <ul class="list3">
+                <li>
+                  <span>品牌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span>号码</span>
+                </li>
+                <!--<li>
+                  <span>&nbsp;</span>
+                  <span>&nbsp;</span>
+                </li>-->
+              </ul>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="text-link close">关闭</a>
+              </div>
+            </div>
+
+            <div class="show-list-3 hide">
+              <ul class="list3">
+                <li>
+                  <span>描述&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span>车型</span>
+                </li>
+                <!--<li>
+                  <span>&nbsp;</span>
+                  <span>&nbsp;</span>
+                </li>-->
+              </ul>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="text-link close">关闭</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -89,6 +119,14 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../config/app.js"></script>
+    <script>
+      seajs.config({base:'../../res/js'});
+      seajs.use('page/generality/detail',function(m){m&&m.init&&m.init();});
+    </script>
 
 </body>
 </html>

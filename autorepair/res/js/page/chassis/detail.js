@@ -58,6 +58,8 @@ define(function (require, exports, module) {
 
             if ( data ) {
 
+                data = JSON.parse( data );
+
                 var o = data[0];
 
                 $ul.find('span.CJMC').text( o.CJMC );

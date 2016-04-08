@@ -31,15 +31,14 @@
       <section class="page-main main-general-more-common">
         <div class="content">
           <ul class="list3">
-            
             <li>
-              <span>编码</span>
-              <input type="text" placeholder="请输入..." maxlength="20"/>
+              <span>配件编号</span>
+              <input type="text" class="s-art-nr" placeholder="请输入..." maxlength="20"/>
             </li>
           </ul>
 
           <div class="action">
-            <a href="result.html" class="button">查询</a>
+            <a href="result.html" class="button" id="do-query">查询</a>
           </div>
         </div>
       </section>
@@ -76,6 +75,14 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../config/app.js"></script>
+    <script>
+      seajs.config({base:'../../res/js'});
+      seajs.use('page/generality/index',function(m){m&&m.init&&m.init();});
+    </script>
 
 </body>
 </html>
