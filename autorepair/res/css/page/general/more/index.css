@@ -112,6 +112,11 @@
     width: 29%;
 }
 
+/* 商家查询 */
+.main-business-detail .list li {
+    line-height: normal;
+}
+
 /* 更多 - 申请企业用户 */
 .main-general-more-apply-enterprise .search .user-input {
     margin-bottom: 0.1rem;
