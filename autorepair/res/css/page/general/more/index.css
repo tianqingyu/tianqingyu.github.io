@@ -113,8 +113,11 @@
 }
 
 /* 商家查询 */
-.main-business-detail .list li {
-    line-height: normal;
+.main-business-detail .lists {
+    margin-top: 0.2rem;
+}
+.main-business-detail .list {
+    margin: 0.1rem 0.2rem;
 }
 
 /* 更多 - 申请企业用户 */

@@ -65,11 +65,10 @@ define(function (require, exports, module) {
                   '</li>' +
                   '<li>' +
                     '<span class="label">电话：</span>' +
-                    '<span class="text">${area_code}-${tel}</span>' +
+                    '<span class="text">' +
+                      '<a href="tel:${area_code}${tel}" class="text-link">${area_code}-${tel}&nbsp;&nbsp;呼叫</a>' +
+                    '</span>' +
                   '</li>' +
-                  '<div class="action">' +
-                    '<a href="tel:${area_code}${tel}" class="button">呼叫</a>' +
-                  '</div>' +
                 '</ul>'
             );
 
