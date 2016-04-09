@@ -196,6 +196,12 @@
 .main-general-more-apply-search .results .curr .img {
     background-image: url(../../../../../res/img/icon/25-2.png);
 }
+.main-general-more-apply-search .forms-list li > label {
+    width: 37%;
+}
+.main-general-more-apply-search .forms-list li input {
+    width: 63%;
+}
 
 /* 汽修预约 */
 .main-general-reservation .list-set2 legend {

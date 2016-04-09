@@ -30,20 +30,20 @@
           <ul class="forms-list">
             <li class="clearfix">
               <label>商家名称</label>
-              <input type="text" placeholder="请输入..."/>
+              <input type="text" class="business" placeholder="请输入..."/>
             </li>
             <li class="clearfix">
               <label>申请人姓名</label>
-              <input type="text" placeholder="请输入..."/>
+              <input type="text" class="username" placeholder="请输入..."/>
             </li>
             <li class="clearfix">
               <label>申请手机号</label>
-              <input type="text" placeholder="请输入..."/>
+              <input type="text" class="mobile" placeholder="请输入..."/>
             </li>
             </ul>
 
           <div class="action">
-            <a href="javascript:void(0)" class="button">查询申请</a>
+            <a href="javascript:void(0)" class="button submit">提交查询申请</a>
             <!--<a href="apply-search-history.html" class="button">申请历史</a>-->
           </div>
         </div>
@@ -81,6 +81,13 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="../../../res/lib/all.js" id="seajsnode"></script>
+    <script src="../../../config/app.js"></script>
+    <script>
+      seajs.use('page/more/public/apply-search',function(m){m&&m.init&&m.init();});
+    </script>
 
 </body>
 </html>

@@ -19,7 +19,7 @@ define(function(require, exports, module){
 
 	process = function( rs, callback ){
 
-		var msg  = rs.msg;
+		var msg  = rs.msg || rs.message;
 
 		var fn = function(){
 
