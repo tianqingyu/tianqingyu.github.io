@@ -45,7 +45,7 @@ define(function (require, exports, module) {
                         success: function( rs ){
 
                             if ( rs.sessionid ) {
-                                auth.setLogin( rs.sessionid, '1' );
+                                auth.setLogin( rs.sessionid, auth.USER_GENERAL );
 
                                 window.location.href = URL;
                             }

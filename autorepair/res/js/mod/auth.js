@@ -12,6 +12,10 @@ define(function(require, exports, module){
 		TYPE = 'USERTYPE';
 
 	return {
+
+		USER_GENERAL: '1',
+		USER_ENTERPRISE: '2',
+
 		isLogin: function(){
 			return !!this.getSID();
 		},
@@ -26,11 +30,11 @@ define(function(require, exports, module){
 		},
 
 		isGeneral: function(){
-			return sessionStorage.getItem( TYPE ) === '1';
+			return sessionStorage.getItem( TYPE ) === this.USER_GENERAL;
 		},
 
 		isEnterprise: function(){
-			return sessionStorage.getItem( TYPE ) === '2';
+			return sessionStorage.getItem( TYPE ) === this.USER_ENTERPRISE;
 		}
 	};
 });
