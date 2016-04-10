@@ -9,7 +9,8 @@ define(function(require, exports, module){
 	var log = require('log');
 
 	var NAME = 'LOGINSID',
-		TYPE = 'USERTYPE';
+		TYPE = 'USERTYPE',
+		PHONE = 'MOBILE';
 
 	return {
 
@@ -20,13 +21,18 @@ define(function(require, exports, module){
 			return !!this.getSID();
 		},
 
-		setLogin: function( sessionid, type ){
+		setLogin: function( sessionid, type, phone ){
 			sessionStorage.setItem( NAME, sessionid );
 			sessionStorage.setItem( TYPE, type );
+			sessionStorage.setItem( PHONE, phone );
 		},
 
 		getSID: function(){
 			return sessionStorage.getItem( NAME );
+		},
+
+		getPhone: function(){
+			return sessionStorage.getItem( PHONE );
 		},
 
 		isGeneral: function(){

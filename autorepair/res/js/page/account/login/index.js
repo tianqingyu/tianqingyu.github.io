@@ -45,7 +45,11 @@ define(function (require, exports, module) {
                         success: function( rs ){
 
                             if ( rs.sessionid ) {
-                                auth.setLogin( rs.sessionid, auth.USER_GENERAL );
+
+                                auth.setLogin(
+                                    rs.sessionid,
+                                    auth.USER_GENERAL,
+                                    $.trim( $m.find('input.name').val() ) );
 
                                 window.location.href = URL;
                             }
