@@ -72,7 +72,7 @@ define(function (require, exports, module) {
             return {
                 company_id        : $m.find('input.business').val(),
                 login_userinfo_id : $.trim( $m.find('input.mobile').val() ),
-                name              : $.trim( $m.find('input.username').val() ),
+                name              : encodeURIComponent( $.trim( $m.find('input.username').val() ) ),
                 requestnote       : '',
                 sessionid         : auth.getSID()
             };

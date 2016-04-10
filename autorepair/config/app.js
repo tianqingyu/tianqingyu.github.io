@@ -8,7 +8,7 @@ seajs.config({
 
     base: '../../../res/js',
 
-    server: 'http://www.bifu111.com:9001/befapp/services',
+    server: 'http://www.bifu111.com:9000/befapp/services',
 
     alias: {
         // lang
