@@ -30,16 +30,13 @@ define(function (require, exports, module) {
 
                 var o = that.getParams();
 
-                if ( !o.name ) {
-                    o.mode = 1;
-                }
-
                 this.href += '?' + urlUtil.toQueryString( o );
             });
         },
 
         getParams: function(){
             return {
+                mode: '1',
                 name: $m.find('input[name="name"]').val()
             };
         }
