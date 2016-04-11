@@ -27,13 +27,15 @@ define(function (require, exports, module) {
 
             var that = this;
 
-            $('#do-query').on('tap', function(){
+            $('#do-query').on('tap', function( evt ){
+
+                evt.preventDefault();
 
                 var o = that.getParams();
 
                 if ( that.check( o ) ) {
 
-                    this.href += '?' + urlUtil.toQueryString( o );
+                    window.location.href = this.href + '?' + urlUtil.toQueryString( o );
                 }
             });
         },
