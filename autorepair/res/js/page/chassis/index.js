@@ -12,7 +12,8 @@ define(function (require, exports, module) {
         log = require('log'),
         net = require('net');
 
-    var urlUtil = require('util/url');
+    var urlUtil = require('util/url'),
+        msgbox = require('ui/msgbox');
 
     var $d = $('#doc'),
         $m = $d.find('section.main-more-search');
@@ -30,13 +31,26 @@ define(function (require, exports, module) {
 
                 var o = that.getParams();
 
-                this.href += '?' + urlUtil.toQueryString( o );
+                if ( that.check( o ) ) {
+
+                    this.href += '?' + urlUtil.toQueryString( o );
+                }
             });
+        },
+
+        check: function( o ){
+
+            if ( o.vinInfo === '' || o.vinInfo.length !== 17 ) {
+                msgbox.alert('请输入17位底盘号');
+                return false;
+            }
+
+            return true;
         },
 
         getParams: function(){
             return {
-                vinInfo: $m.find('input[name="vinInfo"]').val()
+                vinInfo: $.trim( $m.find('input[name="vinInfo"]').val() )
             };
         }
     }

@@ -12,7 +12,8 @@ define(function (require, exports, module) {
         log = require('log'),
         net = require('net');
 
-    var urlUtil = require('util/url');
+    var urlUtil = require('util/url'),
+        msgbox = require('ui/msgbox');
 
     var $d = $('#doc'),
         $m = $d.find('section.main-business-search');
@@ -30,14 +31,26 @@ define(function (require, exports, module) {
 
                 var o = that.getParams();
 
-                this.href += '?' + urlUtil.toQueryString( o );
+                if ( that.check( o ) ) {
+                    this.href += '?' + urlUtil.toQueryString( o );
+                }
             });
+        },
+
+        check: function( o ){
+
+            if ( o.name === '' ) {
+                msgbox.alert('请输入商家名称');
+                return false;
+            }
+
+            return true;
         },
 
         getParams: function(){
             return {
                 mode: '1',
-                name: $m.find('input[name="name"]').val()
+                name: $.trim( $m.find('input[name="name"]').val() )
             };
         }
     }

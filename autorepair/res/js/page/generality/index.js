@@ -12,7 +12,8 @@ define(function (require, exports, module) {
         log = require('log'),
         net = require('net');
 
-    var urlUtil = require('util/url');
+    var urlUtil = require('util/url'),
+        msgbox = require('ui/msgbox');
 
     var $d = $('#doc'),
         $m = $d.find('section.main-general-more-common');
@@ -30,14 +31,26 @@ define(function (require, exports, module) {
 
                 var o = that.getParams();
 
-                this.href += '?' + urlUtil.toQueryString( o );
+                if ( that.check( o ) ) {
+                    this.href += '?' + urlUtil.toQueryString( o );
+                }
             });
+        },
+
+        check: function( o ){
+
+            if ( o.s_art_nr === '' ) {
+                msgbox.alert('请输入配件编号');
+                return false;
+            }
+
+            return true;
         },
 
         getParams: function(){
             return {
-                mode: 1,
-                s_art_nr: $m.find('input.s-art-nr').val()
+                mode: '1',
+                s_art_nr: $.trim( $m.find('input.s-art-nr').val() )
             };
         }
     }
