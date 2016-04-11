@@ -46,6 +46,9 @@
 .main-general-more-search-result .list3 {
     background-color: #fff;
 }
+.main-general-more-search-result .list3 li span:first-child {
+    width: 25%;
+}
 
 /* 更多 - 通用性查询 */
 .main-general-more-common .s-art-nr {
