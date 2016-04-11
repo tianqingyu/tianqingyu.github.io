@@ -58,7 +58,9 @@ define(function (require, exports, module) {
 
             if ( data ) {
 
-                data = JSON.parse( data );
+                if ( _.isString( data ) ) {
+                    data = JSON.parse( data );
+                }
 
                 var o = data[0];
 
