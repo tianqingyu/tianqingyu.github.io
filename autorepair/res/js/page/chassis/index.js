@@ -52,6 +52,8 @@ define(function (require, exports, module) {
 
         getParams: function(){
             return {
+                suohao: 'o',
+                login_userinfo_id: '-1',
                 vinInfo: $.trim( $m.find('input[name="vinInfo"]').val() )
             };
         }
