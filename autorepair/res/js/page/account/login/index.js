@@ -40,7 +40,8 @@ define(function (require, exports, module) {
                         url: 'login.do',
                         data: {
                             phonenumber: $.trim( $m.find('input.name').val() ),
-                            password: $m.find('input.pass').val()
+                            password: $m.find('input.pass').val(),
+                            username: auth.USER_GENERAL
                         },
                         success: function( rs ){
 
