@@ -122,6 +122,15 @@ a {
     user-select: none;
 }
 
+.loading span {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    vertical-align: middle;
+    background: transparent url(../../img/loading/01.gif) no-repeat scroll 0 0;
+    background-size: contain;
+}
+
 /**
  * <span class="cny">&yen;</span>
  */

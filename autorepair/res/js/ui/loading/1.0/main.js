@@ -14,7 +14,7 @@ define(function (require, exports, module) {
         '<div class="overlay">' +
           '<div class="loading">' +
             '<div class="content">' +
-              '<img src="http://www.autorepair.com/res/img/loading/01.gif"/>' +
+              '<span></span>' +
             '</div>' +
           '</div>' +
         '</div>'
