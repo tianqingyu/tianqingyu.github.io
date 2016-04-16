@@ -14,12 +14,40 @@ define(function (require, exports, module) {
         log = require('log'),
         net = require('net');
 
+    var auth = require('mod/auth'),
+        strings = require('util/strings');
+
+    var $d = $('#doc'),
+        $m = $d.find('section.main-enterprise-more');
+
     return {
         init: function(){
-            this.initTmpl();
+            this.render();
         },
 
-        initTmpl: function(){
+        render: function(){
+
+            var menus = auth.getMenus();
+
+            var tpl = (
+                '<li>' +
+                  '<a href="${url}">' +
+                    '<div class="left">' +
+                      '<img src="${icon}"/>' +
+                      '<span>${name}</span>' +
+                    '</div>' +
+                    '<div class="iconfont right text-s20">&#xe603;</div>' +
+                  '</a>' +
+                '</li>'
+            );
+
+            var html = '';
+
+            _.each(menus, function( o ){
+                html += strings.format( tpl, o );
+            });
+
+            $m.find('ul.list-nav').html( html );
         }
     }
 });

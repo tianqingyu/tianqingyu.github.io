@@ -10,7 +10,8 @@ define(function(require, exports, module){
 
 	var NAME = 'LOGINSID',
 		TYPE = 'USERTYPE',
-		PHONE = 'MOBILE';
+		PHONE = 'MOBILE',
+		MENUS = 'MENUS';
 
 	return {
 
@@ -21,14 +22,19 @@ define(function(require, exports, module){
 			return !!this.getSID();
 		},
 
-		setLogin: function( sessionid, type, phone ){
-			sessionStorage.setItem( NAME, sessionid );
+		setLogin: function( rs, type, phone ){
+			sessionStorage.setItem( MENUS, JSON.stringify(rs.data) );
+			sessionStorage.setItem( NAME, rs.sessionid );
 			sessionStorage.setItem( TYPE, type );
 			sessionStorage.setItem( PHONE, phone );
 		},
 
 		getSID: function(){
 			return sessionStorage.getItem( NAME );
+		},
+
+		getMenus: function(){
+			return JSON.parse( sessionStorage.getItem( MENUS ) );
 		},
 
 		getPhone: function(){

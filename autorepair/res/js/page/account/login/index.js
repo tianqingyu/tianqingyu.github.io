@@ -48,7 +48,7 @@ define(function (require, exports, module) {
                             if ( rs.sessionid ) {
 
                                 auth.setLogin(
-                                    rs.sessionid,
+                                    rs,
                                     auth.USER_GENERAL,
                                     $.trim( $m.find('input.name').val() ) );
 
