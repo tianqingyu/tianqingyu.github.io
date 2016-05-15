@@ -55,13 +55,20 @@ define(function (require, exports, module) {
 
             var o = this.getParams();
 
+            if ( !o.company_id ) {
+                msgbox.alert('请输入商户名称');
+                return false;
+            }
             if ( !o.name ) {
                 msgbox.alert('请输入申请人姓名');
                 return false;
             }
-
-            if ( !o.login_userinfo_id ) {
+            if ( !o.phonenumber ) {
                 msgbox.alert('请输入申请人手机号');
+                return false;
+            }
+            if ( !o.vehicl_code ) {
+                msgbox.alert('请输入车牌号');
                 return false;
             }
 
@@ -70,11 +77,12 @@ define(function (require, exports, module) {
 
         getParams: function(){
             return {
-                company_id        : $m.find('input.business').val(),
-                login_userinfo_id : $.trim( $m.find('input.mobile').val() ),
-                name              : encodeURIComponent( $.trim( $m.find('input.username').val() ) ),
-                requestnote       : '',
-                sessionid         : auth.getSID()
+                sessionid   : auth.getSID(),
+                company_id  : $.trim( $m.find('input.business').val() ),
+                name        : encodeURIComponent( $.trim( $m.find('input.username').val() ) ),
+                phonenumber : $.trim( $m.find('input.mobile').val() ),
+                vehicl_code : encodeURIComponent( $.trim( $m.find('input.vehicl-code').val() ) ),
+                requestnote : encodeURIComponent( $.trim( $m.find('input.requestnote').val() ) )
             };
         }
     }
